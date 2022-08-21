@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-21T09:46:24Z" name="Default suite" finished-at="2022-08-21T09:46:24Z" duration-ms="15">
+  <suite started-at="2022-08-21T16:00:31Z" name="Default suite" finished-at="2022-08-21T16:00:31Z" duration-ms="14">
     <groups>
     </groups>
-    <test started-at="2022-08-21T09:46:24Z" name="Default test" finished-at="2022-08-21T09:46:24Z" duration-ms="15">
-      <class name="javaBasic.Topic_02_Excercise">
-        <test-method signature="RunEx()[pri:0, instance:javaBasic.Topic_02_Excercise@139982de]" started-at="2022-08-21T09:46:24Z" name="RunEx" finished-at="2022-08-21T09:46:24Z" duration-ms="5" status="PASS">
+    <test started-at="2022-08-21T16:00:31Z" name="Default test" finished-at="2022-08-21T16:00:31Z" duration-ms="14">
+      <class name="javaBasic.Topic_06_Exercise">
+        <test-method signature="Exercise()[pri:0, instance:javaBasic.Topic_06_Exercise@229f66ed]" started-at="2022-08-21T16:00:31Z" name="Exercise" finished-at="2022-08-21T16:00:31Z" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RunEx -->
-      </class> <!-- javaBasic.Topic_02_Excercise -->
+        </test-method> <!-- Exercise -->
+      </class> <!-- javaBasic.Topic_06_Exercise -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
