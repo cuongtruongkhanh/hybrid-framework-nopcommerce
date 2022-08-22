@@ -21,12 +21,12 @@ public class Topic_01_Variable_Type {
 		System.out.println(browser_Name);
 		System.out.println(Topic_01_Variable_Type.browser_Name); 
 		
-		Scanner scanner = new Scanner(System.in);
-		String name = scanner.nextLine();
-		
-		System.out.println(name);
-		System.out.println(name);
-		
+		try (Scanner scanner = new Scanner(System.in)) {
+			String name = scanner.nextLine();
+			
+			System.out.println(name);
+			System.out.println(name);
+		}
 		System.out.println(number);
 		
 		//voi bien khong phai static thi phai khoi tao du lieu cho ham
