@@ -13,7 +13,6 @@ public class Topic_08_For_Foreach {
 		//Ex02();
 		//Ex03();
 		Ex04();
-		
 	}
 	
 	public void Ex01() {
