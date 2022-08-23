@@ -12,7 +12,8 @@ public class Topic_08_For_Foreach {
 		//Ex01();
 		//Ex02();
 		//Ex03();
-		Ex04();
+		//Ex04();
+		Ex07();
 	}
 	
 	public void Ex01() {
@@ -56,6 +57,13 @@ public class Topic_08_For_Foreach {
 		System.out.println(c);
 	}
 
-	
+	public void Ex07() {
+		int a = scanner.nextInt();
+		int giai_thua = 1;
+		for (int i = a; i > 0; i--) {
+			giai_thua *= i;
+		}
+		System.out.println(giai_thua);
+	}
 	
 }
