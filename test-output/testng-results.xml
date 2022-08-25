@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-25T04:35:50Z" name="Default suite" finished-at="2022-08-25T04:35:50Z" duration-ms="26">
+  <suite started-at="2022-08-25T09:09:30Z" name="Default suite" finished-at="2022-08-25T09:09:31Z" duration-ms="839">
     <groups>
     </groups>
-    <test started-at="2022-08-25T04:35:50Z" name="Default test" finished-at="2022-08-25T04:35:50Z" duration-ms="26">
-      <class name="eclipseTips.Topic_03_Getter_Setter">
-        <test-method signature="TC_01()[pri:0, instance:eclipseTips.Topic_03_Getter_Setter@31190526]" started-at="2022-08-25T04:35:50Z" name="TC_01" finished-at="2022-08-25T04:35:50Z" duration-ms="7" status="PASS">
+    <test started-at="2022-08-25T09:09:30Z" name="Default test" finished-at="2022-08-25T09:09:31Z" duration-ms="839">
+      <class name="javaBasic.Topic_09_Excersie">
+        <test-method signature="runEx()[pri:0, instance:javaBasic.Topic_09_Excersie@710f4dc7]" started-at="2022-08-25T09:09:30Z" name="runEx" finished-at="2022-08-25T09:09:31Z" duration-ms="821" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01 -->
-      </class> <!-- eclipseTips.Topic_03_Getter_Setter -->
+        </test-method> <!-- runEx -->
+      </class> <!-- javaBasic.Topic_09_Excersie -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
