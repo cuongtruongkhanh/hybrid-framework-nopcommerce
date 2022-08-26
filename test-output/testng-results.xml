@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-25T09:09:30Z" name="Default suite" finished-at="2022-08-25T09:09:31Z" duration-ms="839">
+  <suite started-at="2022-08-26T10:49:11Z" name="Default suite" finished-at="2022-08-26T10:49:11Z" duration-ms="26">
     <groups>
     </groups>
-    <test started-at="2022-08-25T09:09:30Z" name="Default test" finished-at="2022-08-25T09:09:31Z" duration-ms="839">
-      <class name="javaBasic.Topic_09_Excersie">
-        <test-method signature="runEx()[pri:0, instance:javaBasic.Topic_09_Excersie@710f4dc7]" started-at="2022-08-25T09:09:30Z" name="runEx" finished-at="2022-08-25T09:09:31Z" duration-ms="821" status="PASS">
+    <test started-at="2022-08-26T10:49:11Z" name="Default test" finished-at="2022-08-26T10:49:11Z" duration-ms="26">
+      <class name="javaBasic.Topic_11_Exercise">
+        <test-method signature="runExercise11()[pri:0, instance:javaBasic.Topic_11_Exercise@682b2fa]" started-at="2022-08-26T10:49:11Z" name="runExercise11" finished-at="2022-08-26T10:49:11Z" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runEx -->
-      </class> <!-- javaBasic.Topic_09_Excersie -->
+        </test-method> <!-- runExercise11 -->
+      </class> <!-- javaBasic.Topic_11_Exercise -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
