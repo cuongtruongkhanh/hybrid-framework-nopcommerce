@@ -2,44 +2,44 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-03T15:58:49Z" name="Default suite" finished-at="2022-09-03T15:59:02Z" duration-ms="13133">
+  <suite started-at="2022-09-06T07:16:30Z" name="Default suite" finished-at="2022-09-06T07:16:53Z" duration-ms="22817">
     <groups>
     </groups>
-    <test started-at="2022-09-03T15:58:49Z" name="Default test" finished-at="2022-09-03T15:59:02Z" duration-ms="13133">
-      <class name="com.nopcommerce.user.Level_03_Page_Object">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nopcommerce.user.Level_03_Page_Object@37ceb1df]" started-at="2022-09-03T15:58:49Z" name="beforeClass" finished-at="2022-09-03T15:58:53Z" duration-ms="3599" status="PASS">
+    <test started-at="2022-09-06T07:16:30Z" name="Default test" finished-at="2022-09-06T07:16:53Z" duration-ms="22817">
+      <class name="com.nopcommerce.user.Level_03_Page_Object_Register">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nopcommerce.user.Level_03_Page_Object_Register@367ffa75]" started-at="2022-09-06T07:16:30Z" name="beforeClass" finished-at="2022-09-06T07:16:38Z" duration-ms="7902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Register_01_Empty_Data()[pri:0, instance:com.nopcommerce.user.Level_03_Page_Object@37ceb1df]" started-at="2022-09-03T15:58:53Z" name="Register_01_Empty_Data" finished-at="2022-09-03T15:58:55Z" duration-ms="1751" status="PASS">
+        <test-method signature="Register_01_Empty_Data()[pri:0, instance:com.nopcommerce.user.Level_03_Page_Object_Register@367ffa75]" started-at="2022-09-06T07:16:38Z" name="Register_01_Empty_Data" finished-at="2022-09-06T07:16:41Z" duration-ms="3081" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Register_01_Empty_Data -->
-        <test-method signature="Register_02_Invalid_Email()[pri:0, instance:com.nopcommerce.user.Level_03_Page_Object@37ceb1df]" started-at="2022-09-03T15:58:55Z" name="Register_02_Invalid_Email" finished-at="2022-09-03T15:58:56Z" duration-ms="1149" status="PASS">
+        <test-method signature="Register_02_Invalid_Email()[pri:0, instance:com.nopcommerce.user.Level_03_Page_Object_Register@367ffa75]" started-at="2022-09-06T07:16:41Z" name="Register_02_Invalid_Email" finished-at="2022-09-06T07:16:42Z" duration-ms="1508" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Register_02_Invalid_Email -->
-        <test-method signature="Register_03_Success()[pri:0, instance:com.nopcommerce.user.Level_03_Page_Object@37ceb1df]" started-at="2022-09-03T15:58:56Z" name="Register_03_Success" finished-at="2022-09-03T15:58:58Z" duration-ms="2226" status="PASS">
+        <test-method signature="Register_03_Success()[pri:0, instance:com.nopcommerce.user.Level_03_Page_Object_Register@367ffa75]" started-at="2022-09-06T07:16:42Z" name="Register_03_Success" finished-at="2022-09-06T07:16:47Z" duration-ms="4528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Register_03_Success -->
-        <test-method signature="Register_04_Existing_Email()[pri:0, instance:com.nopcommerce.user.Level_03_Page_Object@37ceb1df]" started-at="2022-09-03T15:58:58Z" name="Register_04_Existing_Email" finished-at="2022-09-03T15:58:59Z" duration-ms="1184" status="PASS">
+        <test-method signature="Register_04_Existing_Email()[pri:0, instance:com.nopcommerce.user.Level_03_Page_Object_Register@367ffa75]" started-at="2022-09-06T07:16:47Z" name="Register_04_Existing_Email" finished-at="2022-09-06T07:16:49Z" duration-ms="1702" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Register_04_Existing_Email -->
-        <test-method signature="Register_05_Password_Less_Than_6_Chars()[pri:0, instance:com.nopcommerce.user.Level_03_Page_Object@37ceb1df]" started-at="2022-09-03T15:58:59Z" name="Register_05_Password_Less_Than_6_Chars" finished-at="2022-09-03T15:59:00Z" duration-ms="1126" status="PASS">
+        <test-method signature="Register_05_Password_Less_Than_6_Chars()[pri:0, instance:com.nopcommerce.user.Level_03_Page_Object_Register@367ffa75]" started-at="2022-09-06T07:16:49Z" name="Register_05_Password_Less_Than_6_Chars" finished-at="2022-09-06T07:16:50Z" duration-ms="1428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Register_05_Password_Less_Than_6_Chars -->
-        <test-method signature="Register_06_Invalid_Confirm_Password()[pri:0, instance:com.nopcommerce.user.Level_03_Page_Object@37ceb1df]" started-at="2022-09-03T15:59:00Z" name="Register_06_Invalid_Confirm_Password" finished-at="2022-09-03T15:59:02Z" duration-ms="1610" status="PASS">
+        <test-method signature="Register_06_Invalid_Confirm_Password()[pri:0, instance:com.nopcommerce.user.Level_03_Page_Object_Register@367ffa75]" started-at="2022-09-06T07:16:50Z" name="Register_06_Invalid_Confirm_Password" finished-at="2022-09-06T07:16:52Z" duration-ms="1833" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Register_06_Invalid_Confirm_Password -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_03_Page_Object@37ceb1df]" started-at="2022-09-03T15:59:02Z" name="afterClass" finished-at="2022-09-03T15:59:02Z" duration-ms="477" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_03_Page_Object_Register@367ffa75]" started-at="2022-09-06T07:16:52Z" name="afterClass" finished-at="2022-09-06T07:16:53Z" duration-ms="814" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.nopcommerce.user.Level_03_Page_Object -->
+      </class> <!-- com.nopcommerce.user.Level_03_Page_Object_Register -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -17,4 +17,14 @@ public class HomePageObject extends BasePage {
 		clickToElement(driver, HomePageUI.REGISTER_LINK);
 	}
 
+	public void clickToLoginLink() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public boolean isMyAccountLinkDisplayed() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }
