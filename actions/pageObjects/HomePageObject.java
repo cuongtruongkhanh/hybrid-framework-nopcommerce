@@ -24,8 +24,8 @@ public class HomePageObject extends BasePage {
 	}
 
 	public boolean isMyAccountLinkDisplayed() {
-		// TODO Auto-generated method stub
-		return false;
+		waitForElementVisible(driver, HomePageUI.MY_ACCOUNT_LINK);
+		return isElementDisplayed(driver, HomePageUI.MY_ACCOUNT_LINK);
 	}
 
 }

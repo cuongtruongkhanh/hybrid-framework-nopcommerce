@@ -31,12 +31,13 @@ public class LoginPageObject extends BasePage {
 	}
 
 	public String getErrorMessageUnsucessful() {
-		// TODO Auto-generated method stub
-		return null;
+		waitForElementVisible(driver, LoginPageUI.UNSUCCESSFULL_ERROR_MESSAGE);
+		return getElementText(driver, LoginPageUI.UNSUCCESSFULL_ERROR_MESSAGE);
 	}
 
-	public void inputToPasswordTextbox(String string) {
-		// TODO Auto-generated method stub
+	public void inputToPasswordTextbox(String password) {
+		waitForAllElmentVisible(driver, LoginPageUI.PASSWORD_TEXTBOX);
+		sendKeyToElement(driver, LoginPageUI.PASSWORD_TEXTBOX, password);
 
 	}
 
