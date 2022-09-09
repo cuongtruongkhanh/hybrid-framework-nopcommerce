@@ -1,50 +1,28 @@
 package com.nopcommerce.user;
 
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import common.BasePage;
+import common.BaseTest;
 import pageObjects.HomePageObject;
 import pageObjects.RegisterPageObject;
 
-public class Level_04_Multiple_Browser extends BasePage {
+public class Level_04_Multiple_Browser extends BaseTest {
 	private WebDriver driver;
 	private String firstName, lastName, password, emailAddress;
-
 	private HomePageObject homePage;
 	private RegisterPageObject registerPage;
-	private String projectPath = System.getProperty("user.dir");
 
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
-		System.out.println("Run on" + browserName);
-		if (browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
-			driver = new FirefoxDriver();
-		} else if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
-			driver = new ChromeDriver();
-		} else if (browserName.equals("edge")) {
-			System.setProperty("webdriver.edge.driver", projectPath + "\\browserDrivers\\msedgedriver.exe");
-			driver = new EdgeDriver();
-		} else {
-			throw new RuntimeException("Browser name invalid");
-		}
-
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		driver.get("https://demo.nopcommerce.com/");
+		driver = getBrowserDriver(browserName);
 		homePage = new HomePageObject(driver);
 		firstName = "Automation";
 		lastName = "FC";
