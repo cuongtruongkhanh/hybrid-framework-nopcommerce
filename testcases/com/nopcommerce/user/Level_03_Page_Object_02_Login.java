@@ -15,7 +15,7 @@ import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.RegisterPageObject;
 
-public class Level_03_Page_Object_Login extends BasePage {
+public class Level_03_Page_Object_02_Login extends BasePage {
 	private WebDriver driver;
 	private String firstName, lastName, validPassword, existingEmail, invalidEmail, notExistEmail, incorrectPassword;
 
