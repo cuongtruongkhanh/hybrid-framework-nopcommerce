@@ -2,22 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="NopCommerce">
 
-  <test name="Run on Firefox">
-  <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="com.nopcommerce.user.Level_04_Multiple_Browser"/>
-    </classes>
-  </test>
-
-  <test name="Run on Chrome">
-  <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.nopcommerce.user.Level_04_Multiple_Browser"/>
-    </classes>
-  </test>
-
-  <test name="Run on Edge">
-  <parameter name="browser" value="edge"/>
+  <test name="Run on Headless Brave">
+  <parameter name="browser" value="brave"/>
     <classes>
       <class name="com.nopcommerce.user.Level_04_Multiple_Browser"/>
     </classes>
