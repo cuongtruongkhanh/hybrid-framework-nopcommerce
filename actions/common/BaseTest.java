@@ -1,5 +1,6 @@
 package common;
 
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -58,6 +59,11 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		driver.get("https://demo.nopcommerce.com/");
 		return driver;
+	}
+
+	protected int generateRandomNumber() {
+		Random rand = new Random();
+		return rand.nextInt(9999);
 	}
 
 }

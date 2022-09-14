@@ -28,7 +28,6 @@ public class Level_05_Page_Factory extends BaseTest {
 		lastName = "FC";
 		emailAddress = "afc" + generateRandomNumber() + "@gmail.com";
 		password = "123456";
-
 	}
 
 	@Test
