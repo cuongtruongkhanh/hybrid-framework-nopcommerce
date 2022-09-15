@@ -124,7 +124,6 @@ public class Level_06_Page_Generator_Manager_III extends BaseTest {
 		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 
 		myAccountPage = homePage.clickToMyAccountLink();
-		myAccountPage.clickToNewsletterCheckbox();
 
 	}
 

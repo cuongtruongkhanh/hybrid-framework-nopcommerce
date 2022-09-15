@@ -9,8 +9,8 @@ public class MyAccountPageObject {
 		this.driver = driver;
 	}
 
-	public void clickToNewsletterCheckbox() {
+	public boolean isMyAccountPageDisplayed() {
 		// TODO Auto-generated method stub
-
+		return false;
 	}
 }
