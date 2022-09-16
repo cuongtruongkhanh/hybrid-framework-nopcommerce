@@ -74,20 +74,20 @@ public class Level_07_Switch_Page extends BaseTest {
 		// Page A khi chuyen qua Page B thi phai viet ham de mo qua page B (action: open/click/ ...)
 
 		// Customer info -> address
-		addressPage = CustomerInfoPage.openAddressPage();
+		addressPage = CustomerInfoPage.openAddressPage(driver);
 		// Address -> My Product review
 		myProductReviewPage = addressPage.openMyProductReviewPage();
 		// My product review -> Reward point
 		rewardPointPage = myProductReviewPage.openRewardPointPage();
 		// Reward Point -> Address
-		addressPage = rewardPointPage.openAddressPage();
+		addressPage = rewardPointPage.openAddressPage(driver);
 
 		// Address -> Reward Point
 		rewardPointPage = addressPage.openRewardPointPage();
 		// Reward Point -> My product review
 		myProductReviewPage = rewardPointPage.openMyProductReviewPage();
 		// My product review -> Address
-		addressPage = myProductReviewPage.openAddressPage();
+		addressPage = myProductReviewPage.openAddressPage(driver);
 	}
 
 	@Test

@@ -15,6 +15,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObjects.AddressPageObject;
+import pageObjects.PageGeneratorManager;
+import pageUIs.BasePageUI;
+
 public class BasePage {
 
 	public static BasePage getBasePageObject() {
@@ -318,6 +322,12 @@ public class BasePage {
 	protected void waitForElementClickable(WebDriver driver, String xpathLocator) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		explicitWait.until(ExpectedConditions.elementToBeClickable(getByXpath(xpathLocator)));
+	}
+
+	public AddressPageObject openAddressPage(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.ADDRESS_LINK);
+		clickToElement(driver, BasePageUI.ADDRESS_LINK);
+		return PageGeneratorManager.getAddressPage(driver);
 	}
 
 	private long longTimeout = 30;
