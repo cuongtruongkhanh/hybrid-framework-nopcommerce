@@ -10,11 +10,14 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
+import pageObjects.AddressPageObject;
+import pageObjects.CustomerInfoPageObject;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
-import pageObjects.MyAccountPageObject;
+import pageObjects.MyProductReviewPageObject;
 import pageObjects.PageGeneratorManager;
 import pageObjects.RegisterPageObject;
+import pageObjects.RewardPointPageObject;
 
 public class Level_07_Switch_Page extends BaseTest {
 
@@ -59,14 +62,39 @@ public class Level_07_Switch_Page extends BaseTest {
 	}
 
 	@Test
-	public void User_03_My_Account() {
-		myAccountPage = homePage.clickToMyAccountLink();
-		Assert.assertTrue(myAccountPage.isMyAccountPageDisplayed());
+	public void User_03_Customer_Info() {
+		CustomerInfoPage = homePage.clickToMyAccountLink();
+		Assert.assertTrue(CustomerInfoPage.isCustomerInfoPageDisplayed());
 
 	}
 
 	@Test
 	public void User_04_Switch_Page() {
+		// Knowledge cua Page Object
+		// Page A khi chuyen qua Page B thi phai viet ham de mo qua page B (action: open/click/ ...)
+
+		// Customer info -> address
+		addressPage = CustomerInfoPage.openAddressPage();
+		// Address -> My Product review
+		myProductReviewPage = addressPage.openMyProductReviewPage();
+		// My product review -> Reward point
+		rewardPointPage = myProductReviewPage.openRewardPointPage();
+		// Reward Point -> Address
+		addressPage = rewardPointPage.openAddressPage();
+
+		// Address -> Reward Point
+		rewardPointPage = addressPage.openRewardPointPage();
+		// Reward Point -> My product review
+		myProductReviewPage = rewardPointPage.openMyProductReviewPage();
+		// My product review -> Address
+		addressPage = myProductReviewPage.openAddressPage();
+	}
+
+	@Test
+	public void User_05_Switch_Role() {
+		// Role user -> role admin
+
+		// Role admin -> role user
 	}
 
 	@AfterClass
@@ -78,7 +106,10 @@ public class Level_07_Switch_Page extends BaseTest {
 	private HomePageObject homePage;
 	private RegisterPageObject registerPage;
 	private LoginPageObject loginPage;
-	private MyAccountPageObject myAccountPage;
+	private CustomerInfoPageObject CustomerInfoPage;
+	private AddressPageObject addressPage;
+	private RewardPointPageObject rewardPointPage;
+	private MyProductReviewPageObject myProductReviewPage;
 	private String firstName, lastName, validPassword, emailAdress;
 
 }
