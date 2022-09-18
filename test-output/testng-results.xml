@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-18T13:39:34Z" name="NopCommerce" finished-at="2022-09-18T13:39:50Z" duration-ms="16531">
+  <suite started-at="2022-09-18T16:15:03Z" name="NopCommerce" finished-at="2022-09-18T16:15:21Z" duration-ms="18011">
     <groups>
     </groups>
-    <test started-at="2022-09-18T13:39:34Z" name="Run on Firefox" finished-at="2022-09-18T13:39:50Z" duration-ms="16531">
+    <test started-at="2022-09-18T16:15:03Z" name="Run on Firefox" finished-at="2022-09-18T16:15:21Z" duration-ms="18011">
       <class name="com.nopcommerce.user.Level_08_Switch_Role">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_08_Switch_Role@70325e14]" started-at="2022-09-18T13:39:34Z" name="beforeClass" finished-at="2022-09-18T13:39:37Z" duration-ms="2938" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_08_Switch_Role@70325e14]" started-at="2022-09-18T16:15:03Z" name="beforeClass" finished-at="2022-09-18T16:15:07Z" duration-ms="3641" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Role_01_User_To_Admin()[pri:0, instance:com.nopcommerce.user.Level_08_Switch_Role@70325e14]" started-at="2022-09-18T13:39:37Z" name="Role_01_User_To_Admin" finished-at="2022-09-18T13:39:48Z" duration-ms="11572" status="PASS">
+        <test-method signature="Role_01_User_To_Admin()[pri:0, instance:com.nopcommerce.user.Level_08_Switch_Role@70325e14]" started-at="2022-09-18T16:15:07Z" name="Role_01_User_To_Admin" finished-at="2022-09-18T16:15:19Z" duration-ms="12165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Role_01_User_To_Admin -->
-        <test-method signature="Role_02_Admin_To_User()[pri:0, instance:com.nopcommerce.user.Level_08_Switch_Role@70325e14]" started-at="2022-09-18T13:39:48Z" name="Role_02_Admin_To_User" finished-at="2022-09-18T13:39:50Z" duration-ms="1552" status="PASS">
+        <test-method signature="Role_02_Admin_To_User()[pri:0, instance:com.nopcommerce.user.Level_08_Switch_Role@70325e14]" started-at="2022-09-18T16:15:19Z" name="Role_02_Admin_To_User" finished-at="2022-09-18T16:15:20Z" duration-ms="1567" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Role_02_Admin_To_User -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_08_Switch_Role@70325e14]" started-at="2022-09-18T13:39:50Z" name="afterClass" finished-at="2022-09-18T13:39:50Z" duration-ms="461" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_08_Switch_Role@70325e14]" started-at="2022-09-18T16:15:20Z" name="afterClass" finished-at="2022-09-18T16:15:21Z" duration-ms="629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
