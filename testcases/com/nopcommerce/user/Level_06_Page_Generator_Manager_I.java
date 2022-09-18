@@ -10,24 +10,24 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.user.UserHomePageObject;
+import pageObjects.user.UserLoginPageObject;
+import pageObjects.user.UserRegisterPageObject;
 
 public class Level_06_Page_Generator_Manager_I extends BaseTest {
 	private WebDriver driver;
 	private String firstName, lastName, validPassword, existingEmail, invalidEmail, notExistEmail, incorrectPassword;
 
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
 
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
 		// 1
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
@@ -41,10 +41,10 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 		incorrectPassword = "654321";
 
 		System.out.println("Pre-condition - Step 01: Click to Register link");
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		// 2
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		System.out.println("Pre-condition - Step 02: Input to require fields");
 		registerPage.inputToFirstnameTextbox(firstName);
@@ -64,17 +64,17 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 
 		// click logout thì bussiness sẽ quay về trang HomePage
 		// 3
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 
 	}
 
 	@Test
 	public void Login_01_Empty_Data() {
 		System.out.println("Login_01_Empty_Data - Step 01: Click to Login link");
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 		// từ trang Home - Click Login link -> qua trang Login
 		// 4
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		System.out.println("Login_01_Empty_Data - Step 02: Click to Login button");
 		loginPage.clickToLoginButton();
@@ -86,10 +86,10 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 	@Test
 	public void Login_02_Invalid_Email() {
 		System.out.println("Login_02_Invalid_Email - Step 01: Click to Login link");
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 		// từ trang Home - Click Login link -> qua trang Login
 		// 5
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		System.out.println("Login_02_Invalid_Email - Step 02: Input invalid email");
 		loginPage.inputToEmailTextbox(invalidEmail);
 		System.out.println("Login_02_Invalid_Email - Step 03: Click to Login button");
@@ -101,10 +101,10 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 	@Test
 	public void Login_03_Email_Not_Exist() {
 		System.out.println("Login_03_Email_Not_Exist - Step 01: Click to Login link");
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 		// từ trang Home - Click Login link -> qua trang Login
 		// 6
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		System.out.println("Login_03_Email_Not_Exist - Step 02: Input not existing email");
 		loginPage.inputToEmailTextbox(notExistEmail);
 		System.out.println("Login_03_Email_Not_Exist - Step 03: Click to Login button");
@@ -116,10 +116,10 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 	@Test
 	public void Login_04_Existing_Email_Empty_Password() {
 		System.out.println("Login_04_Existing_Email_Empty_Password - Step 01: Click to Login link");
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 		// từ trang Home - Click Login link -> qua trang Login
 		// 7
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		System.out.println("Login_04_Existing_Email_Empty_Password - Step 02: Input existing email");
 		loginPage.inputToEmailTextbox(existingEmail);
 		loginPage.inputToPasswordTextbox("");
@@ -132,10 +132,10 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 	@Test
 	public void Login_05_Existing_Email_Incorrect_Password() {
 		System.out.println("Login_05_Existing_Email_Incorrect_Password - Step 01: Click to Login link");
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 		// từ trang Home - Click Login link -> qua trang Login
 		// 8
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		System.out.println("Login_05_Existing_Email_Incorrect_Password - Step 02: Input existing email with incorrect password");
 		loginPage.inputToEmailTextbox(existingEmail);
 		loginPage.inputToPasswordTextbox(incorrectPassword);
@@ -148,10 +148,10 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 	@Test
 	public void Login_06_Valid_Email_Valid_Password() {
 		System.out.println("Login_06_Valid_Email_Valid_Password - Step 01: Click to Login link");
-		homePage.clickToLoginLink();
+		homePage.openLoginPage();
 		// từ trang Home - Click Login link -> qua trang Login
 		// 9
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		System.out.println("Login_06_Valid_Email_Valid_Password - Step 02: Input existing email with valid password");
 		loginPage.inputToEmailTextbox(existingEmail);
 		loginPage.inputToPasswordTextbox(validPassword);
@@ -160,7 +160,7 @@ public class Level_06_Page_Generator_Manager_I extends BaseTest {
 
 		// login thành công -> Homepage
 		// 10
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		System.out.println("Login_06_Valid_Email_Valid_Password - Step 04: Verify My Account Link displayed");
 		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 	}

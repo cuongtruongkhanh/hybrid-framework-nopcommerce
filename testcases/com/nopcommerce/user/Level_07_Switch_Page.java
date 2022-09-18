@@ -1,7 +1,5 @@
 package com.nopcommerce.user;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -10,14 +8,14 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import pageObjects.AddressPageObject;
-import pageObjects.CustomerInfoPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.MyProductReviewPageObject;
-import pageObjects.PageGeneratorManager;
-import pageObjects.RegisterPageObject;
-import pageObjects.RewardPointPageObject;
+import common.PageGeneratorManager;
+import pageObjects.user.UserAddressPageObject;
+import pageObjects.user.UserCustomerInfoPageObject;
+import pageObjects.user.UserHomePageObject;
+import pageObjects.user.UserLoginPageObject;
+import pageObjects.user.UserMyProductReviewPageObject;
+import pageObjects.user.UserRegisterPageObject;
+import pageObjects.user.UserRewardPointPageObject;
 
 public class Level_07_Switch_Page extends BaseTest {
 
@@ -26,9 +24,6 @@ public class Level_07_Switch_Page extends BaseTest {
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
 		homePage = PageGeneratorManager.getHomePage(driver);
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		driver.get("https://demo.nopcommerce.com/");
 		firstName = "Automation";
 		lastName = "FC";
 		emailAdress = "afc" + generateRandomNumber() + "@gmail.com";
@@ -38,7 +33,7 @@ public class Level_07_Switch_Page extends BaseTest {
 
 	@Test
 	public void User_01_Register() {
-		registerPage = homePage.clickToRegisterLink();
+		registerPage = homePage.openRegisterPage();
 		registerPage.inputToFirstnameTextbox(firstName);
 		registerPage.inputToLastnameTextbox(lastName);
 		registerPage.inputToEmailTextbox(emailAdress);
@@ -52,7 +47,7 @@ public class Level_07_Switch_Page extends BaseTest {
 
 	@Test
 	public void User_02_Login() {
-		loginPage = homePage.clickToLoginLink();
+		loginPage = homePage.openLoginPage();
 
 		loginPage.inputToEmailTextbox(emailAdress);
 		loginPage.inputToPasswordTextbox(validPassword);
@@ -63,8 +58,8 @@ public class Level_07_Switch_Page extends BaseTest {
 
 	@Test
 	public void User_03_Customer_Info() {
-		CustomerInfoPage = homePage.clickToMyAccountLink();
-		Assert.assertTrue(CustomerInfoPage.isCustomerInfoPageDisplayed());
+		customerInfoPage = homePage.openMyAccountPage();
+		Assert.assertTrue(customerInfoPage.isCustomerInfoPageDisplayed());
 
 	}
 
@@ -74,20 +69,22 @@ public class Level_07_Switch_Page extends BaseTest {
 		// Page A khi chuyen qua Page B thi phai viet ham de mo qua page B (action: open/click/ ...)
 
 		// Customer info -> address
-		addressPage = CustomerInfoPage.openAddressPage(driver);
+		addressPage = customerInfoPage.openAddressPage(driver);
 		// Address -> My Product review
-		myProductReviewPage = addressPage.openMyProductReviewPage();
+		myProductReviewPage = addressPage.openMyProductReviewPage(driver);
 		// My product review -> Reward point
-		rewardPointPage = myProductReviewPage.openRewardPointPage();
+		rewardPointPage = myProductReviewPage.openRewardPointPage(driver);
 		// Reward Point -> Address
 		addressPage = rewardPointPage.openAddressPage(driver);
 
 		// Address -> Reward Point
-		rewardPointPage = addressPage.openRewardPointPage();
+		rewardPointPage = addressPage.openRewardPointPage(driver);
 		// Reward Point -> My product review
-		myProductReviewPage = rewardPointPage.openMyProductReviewPage();
+		myProductReviewPage = rewardPointPage.openMyProductReviewPage(driver);
 		// My product review -> Address
 		addressPage = myProductReviewPage.openAddressPage(driver);
+
+		customerInfoPage = addressPage.openCustomerInfo(driver);
 	}
 
 	@Test
@@ -103,13 +100,13 @@ public class Level_07_Switch_Page extends BaseTest {
 	}
 
 	private WebDriver driver;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
-	private CustomerInfoPageObject CustomerInfoPage;
-	private AddressPageObject addressPage;
-	private RewardPointPageObject rewardPointPage;
-	private MyProductReviewPageObject myProductReviewPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
+	private UserCustomerInfoPageObject customerInfoPage;
+	private UserAddressPageObject addressPage;
+	private UserRewardPointPageObject rewardPointPage;
+	private UserMyProductReviewPageObject myProductReviewPage;
 	private String firstName, lastName, validPassword, emailAdress;
 
 }

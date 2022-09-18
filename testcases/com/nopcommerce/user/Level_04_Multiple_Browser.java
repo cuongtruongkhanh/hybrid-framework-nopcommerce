@@ -10,20 +10,20 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.user.UserHomePageObject;
+import pageObjects.user.UserRegisterPageObject;
 
 public class Level_04_Multiple_Browser extends BaseTest {
 	private WebDriver driver;
 	private String firstName, lastName, password, emailAddress;
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
 
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		firstName = "Automation";
 		lastName = "FC";
 		emailAddress = "afc" + generateRandomNumber() + "@gmail.com";
@@ -34,9 +34,9 @@ public class Level_04_Multiple_Browser extends BaseTest {
 	@Test
 	public void Register_01_Empty_Data() {
 		System.out.println("Register_01 - Step 01: Click to Register link");
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		// Click Register link -> qua trang register -> phai khoi tao register
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		System.out.println("Register_01 - Step 02: Click to Register button");
 		registerPage.clickToRegisterButton();
@@ -53,9 +53,9 @@ public class Level_04_Multiple_Browser extends BaseTest {
 	@Test
 	public void Register_02_Invalid_Email() {
 		System.out.println("Register_02 - Step 01: Click to Register link");
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		// Click Register link -> qua trang register -> phai khoi tao register
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		System.out.println("Register_02 - Step 02: Input to require fields");
 		registerPage.inputToFirstnameTextbox(firstName);
@@ -73,9 +73,9 @@ public class Level_04_Multiple_Browser extends BaseTest {
 	@Test
 	public void Register_03_Success() {
 		System.out.println("Register_03 - Step 01: Click to Register link");
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		// Click Register link -> qua trang register -> phai khoi tao register
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		System.out.println("Register_03 - Step 02: Input to require fields");
 		registerPage.inputToFirstnameTextbox(firstName);
@@ -95,9 +95,9 @@ public class Level_04_Multiple_Browser extends BaseTest {
 	@Test
 	public void Register_04_Existing_Email() {
 		System.out.println("Register_04 - Step 01: Click to Register link");
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		// Click Register link -> qua trang register -> phai khoi tao register
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		System.out.println("Register_04 - Step 02: Input to require fields");
 		registerPage.inputToFirstnameTextbox(firstName);
@@ -116,9 +116,9 @@ public class Level_04_Multiple_Browser extends BaseTest {
 	@Test
 	public void Register_05_Password_Less_Than_6_Chars() {
 		System.out.println("Register_05 - Step 01: Click to Register link");
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		// Click Register link -> qua trang register -> phai khoi tao register
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		System.out.println("Register_05 - Step 02: Input to require fields");
 		registerPage.inputToFirstnameTextbox(firstName);
@@ -137,9 +137,9 @@ public class Level_04_Multiple_Browser extends BaseTest {
 	@Test
 	public void Register_06_Invalid_Confirm_Password() {
 		System.out.println("Register_06 - Step 01: Click to Register link");
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		// Click Register link -> qua trang register -> phai khoi tao register
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		System.out.println("Register_06 - Step 02: Input to require fields");
 		registerPage.inputToFirstnameTextbox(firstName);
