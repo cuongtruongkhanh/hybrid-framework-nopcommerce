@@ -15,8 +15,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObjects.admin.AdminLoginPageObject;
 import pageObjects.user.UserAddressPageObject;
 import pageObjects.user.UserCustomerInfoPageObject;
+import pageObjects.user.UserHomePageObject;
 import pageObjects.user.UserMyProductReviewPageObject;
 import pageObjects.user.UserRewardPointPageObject;
 import pageUIs.user.BasePageUI;
@@ -348,6 +350,18 @@ public class BasePage {
 		waitForElementClickable(driver, BasePageUI.REWARD_POINT_LINK);
 		clickToElement(driver, BasePageUI.REWARD_POINT_LINK);
 		return PageGeneratorManager.getUserRewardPointPage(driver);
+	}
+
+	public UserHomePageObject clickToLogoutLinkAtUserPage(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.LOGOUT_LINK_AS_USER);
+		clickToElement(driver, BasePageUI.LOGOUT_LINK_AS_USER);
+		return PageGeneratorManager.getUserHomePage(driver);
+	}
+
+	public AdminLoginPageObject clickToLogoutLinkAtAdminPage(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.LOGOUT_LINK_AS_ADMIN);
+		clickToElement(driver, BasePageUI.LOGOUT_LINK_AS_ADMIN);
+		return PageGeneratorManager.getAdminLoginPage(driver);
 	}
 
 	private long longTimeout = 30;
