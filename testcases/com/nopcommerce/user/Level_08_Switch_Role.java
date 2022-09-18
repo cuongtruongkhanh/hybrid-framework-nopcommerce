@@ -12,6 +12,7 @@ import common.GlobalConstants;
 import common.PageGeneratorManager;
 import pageObjects.admin.AdminDashboardPageObject;
 import pageObjects.admin.AdminLoginPageObject;
+import pageObjects.user.UserCustomerInfoPageObject;
 import pageObjects.user.UserHomePageObject;
 import pageObjects.user.UserLoginPageObject;
 import pageObjects.user.UserRegisterPageObject;
@@ -34,12 +35,13 @@ public class Level_08_Switch_Role extends BaseTest {
 	@Test
 	public void Role_01_User_To_Admin() {
 		registerPage = userHomePage.openRegisterPage();
-		registerPage.inputToFirstnameTextbox(firstName);
-		registerPage.inputToLastnameTextbox(lastName);
-		registerPage.inputToEmailTextbox(userEmailAddress);
-		registerPage.inputToPasswordTextbox(userPassword);
-		registerPage.inputToConfirmPasswordTextbox(userPassword);
-		registerPage.clickToRegisterButton();
+		registerPage.registerAnAccount(firstName, lastName, userEmailAddress, userPassword);
+//		registerPage.inputToFirstnameTextbox(firstName);
+//		registerPage.inputToLastnameTextbox(lastName);
+//		registerPage.inputToEmailTextbox(userEmailAddress);
+//		registerPage.inputToPasswordTextbox(userPassword);
+//		registerPage.inputToConfirmPasswordTextbox(userPassword);
+//		registerPage.clickToRegisterButton();
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 		userHomePage = registerPage.clickToLogoutLink();
 
@@ -48,16 +50,35 @@ public class Level_08_Switch_Role extends BaseTest {
 		userHomePage = userLoginPage.loginAsUser(userEmailAddress, userPassword);
 		Assert.assertTrue(userHomePage.isMyAccountLinkDisplayed());
 
+		// Home Page -> Customer Info
+		userCustomerInfoPage = userHomePage.openMyAccountPage();
+
+		// Customer Infor click log out -> Home Page
+		userHomePage = userCustomerInfoPage.clickToLogoutLinkAtUserPage(driver);
+
+		// User HomePage -> open Admin Page -> Login Page (Admin)
 		userHomePage.openPageUrl(driver, GlobalConstants.ADMIN_PAGE_URL);
 		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
 
 		// login as Admin Role
 		adminDashboardPage = adminLoginPage.loginAsAdmin(adminEmailAddress, adminPassword);
 		Assert.assertTrue(adminDashboardPage.isDashboardHeaderDisplayed());
+
+		// Dashboard page click logout -> Login Paeg (Admin)
+		adminLoginPage = adminDashboardPage.clickToLogoutLinkAtAdminPage(driver);
 	}
 
 	@Test
 	public void Role_02_Admin_To_User() {
+		// Login Page (Admin) -> Open User URL -> Home Page (User)
+		adminLoginPage.openPageUrl(driver, GlobalConstants.PORTAL_PAGE_URL);
+		userHomePage = PageGeneratorManager.getUserHomePage(driver);
+
+		// Home Page -> Login Page (user)
+		userLoginPage = userHomePage.openLoginPage();
+		// Login as User role
+		userHomePage = userLoginPage.loginAsUser(userEmailAddress, userPassword);
+		Assert.assertTrue(userHomePage.isMyAccountLinkDisplayed());
 
 	}
 
@@ -72,6 +93,7 @@ public class Level_08_Switch_Role extends BaseTest {
 	private UserLoginPageObject userLoginPage;
 	private AdminLoginPageObject adminLoginPage;
 	private AdminDashboardPageObject adminDashboardPage;
+	private UserCustomerInfoPageObject userCustomerInfoPage;
 	private String firstName, lastName, userPassword, userEmailAddress, adminEmailAddress, adminPassword;
 
 }

@@ -359,6 +359,7 @@ public class BasePage {
 	}
 
 	public AdminLoginPageObject clickToLogoutLinkAtAdminPage(WebDriver driver) {
+		sleepSecond(2);
 		waitForElementClickable(driver, BasePageUI.LOGOUT_LINK_AS_ADMIN);
 		clickToElement(driver, BasePageUI.LOGOUT_LINK_AS_ADMIN);
 		return PageGeneratorManager.getAdminLoginPage(driver);
