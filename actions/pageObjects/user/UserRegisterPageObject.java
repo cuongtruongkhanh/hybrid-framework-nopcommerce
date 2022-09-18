@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import common.BasePage;
 import common.PageGeneratorManager;
-import pageUIs.RegisterPageUI;
+import pageUIs.user.RegisterPageUI;
 
 public class UserRegisterPageObject extends BasePage {
 	private WebDriver driver;
@@ -83,7 +83,7 @@ public class UserRegisterPageObject extends BasePage {
 		waitForElementClickable(driver, RegisterPageUI.LOGOUT_LINK);
 		clickToElement(driver, RegisterPageUI.LOGOUT_LINK);
 		// return new HomePageObject(driver);
-		return PageGeneratorManager.getHomePage(driver);
+		return PageGeneratorManager.getUserHomePage(driver);
 
 	}
 

@@ -3,7 +3,7 @@ package pageObjects.user;
 import org.openqa.selenium.WebDriver;
 
 import common.BasePage;
-import pageUIs.CustomerInfoPageUI;
+import pageUIs.user.CustomerInfoPageUI;
 
 public class UserCustomerInfoPageObject extends BasePage {
 	private WebDriver driver;

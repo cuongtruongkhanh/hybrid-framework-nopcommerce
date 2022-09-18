@@ -5,7 +5,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import common.BasePage;
 import common.PageGeneratorManager;
-import pageUIs.LoginPageUI;
+import pageUIs.user.LoginPageUI;
 
 public class UserLoginPageObject extends BasePage {
 	private WebDriver driver;
@@ -23,8 +23,7 @@ public class UserLoginPageObject extends BasePage {
 	public UserHomePageObject clickToLoginButton() {
 		waitForElementClickable(driver, LoginPageUI.LOGIN_BUTTON);
 		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
-		// return new HomePageObject(driver);
-		return PageGeneratorManager.getHomePage(driver);
+		return PageGeneratorManager.getUserHomePage(driver);
 
 	}
 

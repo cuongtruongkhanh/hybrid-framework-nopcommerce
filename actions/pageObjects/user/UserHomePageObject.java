@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import common.BasePage;
 import common.PageGeneratorManager;
-import pageUIs.HomePageUI;
+import pageUIs.user.HomePageUI;
 
 public class UserHomePageObject extends BasePage {
 	private WebDriver driver;
@@ -17,14 +17,14 @@ public class UserHomePageObject extends BasePage {
 		waitForElementClickable(driver, HomePageUI.REGISTER_LINK);
 		clickToElement(driver, HomePageUI.REGISTER_LINK);
 		// return new RegisterPageObject(driver);
-		return PageGeneratorManager.getRegisterPage(driver);
+		return PageGeneratorManager.getUserRegisterPage(driver);
 	}
 
 	public UserLoginPageObject openLoginPage() {
 		waitForElementClickable(driver, HomePageUI.LOGIN_LINK);
 		clickToElement(driver, HomePageUI.LOGIN_LINK);
 		// return new LoginPageObject(driver);
-		return PageGeneratorManager.getLoginPage(driver);
+		return PageGeneratorManager.getUserLoginPage(driver);
 
 	}
 
@@ -36,7 +36,7 @@ public class UserHomePageObject extends BasePage {
 	public UserCustomerInfoPageObject openMyAccountPage() {
 		waitForElementClickable(driver, HomePageUI.MY_ACCOUNT_LINK);
 		clickToElement(driver, HomePageUI.MY_ACCOUNT_LINK);
-		return PageGeneratorManager.getCustomerInFoPage(driver);
+		return PageGeneratorManager.getUserCustomerInFoPage(driver);
 	}
 
 }

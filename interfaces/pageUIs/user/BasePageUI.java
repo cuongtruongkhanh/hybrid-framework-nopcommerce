@@ -1,4 +1,4 @@
-package pageUIs;
+package pageUIs.user;
 
 public class BasePageUI {
 	public static final String CUSTOMER_INFO_LINK = "//div[contains(@class,'account-navigation')]//a[text()='Customer info']";

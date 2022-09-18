@@ -2,6 +2,8 @@ package common;
 
 import org.openqa.selenium.WebDriver;
 
+import pageObjects.admin.AdminDashboardPageObject;
+import pageObjects.admin.AdminLoginPageObject;
 import pageObjects.user.UserAddressPageObject;
 import pageObjects.user.UserCustomerInfoPageObject;
 import pageObjects.user.UserHomePageObject;
@@ -12,32 +14,39 @@ import pageObjects.user.UserRewardPointPageObject;
 
 public class PageGeneratorManager {
 
-	public static UserHomePageObject getHomePage(WebDriver driver) {
+	public static UserHomePageObject getUserHomePage(WebDriver driver) {
 		return new UserHomePageObject(driver);
 	}
 
-	public static UserLoginPageObject getLoginPage(WebDriver driver) {
+	public static UserLoginPageObject getUserLoginPage(WebDriver driver) {
 		return new UserLoginPageObject(driver);
 	}
 
-	public static UserRegisterPageObject getRegisterPage(WebDriver driver) {
+	public static UserRegisterPageObject getUserRegisterPage(WebDriver driver) {
 		return new UserRegisterPageObject(driver);
 	}
 
-	public static UserCustomerInfoPageObject getCustomerInFoPage(WebDriver driver) {
+	public static UserCustomerInfoPageObject getUserCustomerInFoPage(WebDriver driver) {
 		return new UserCustomerInfoPageObject(driver);
 	}
 
-	public static UserAddressPageObject getAddressPage(WebDriver driver) {
+	public static UserAddressPageObject getUserAddressPage(WebDriver driver) {
 		return new UserAddressPageObject(driver);
 	}
 
-	public static UserRewardPointPageObject getRewardPointPage(WebDriver driver) {
+	public static UserRewardPointPageObject getUserRewardPointPage(WebDriver driver) {
 		return new UserRewardPointPageObject(driver);
 	}
 
-	public static UserMyProductReviewPageObject getMyProductReviewPage(WebDriver driver) {
+	public static UserMyProductReviewPageObject getUserMyProductReviewPage(WebDriver driver) {
 		return new UserMyProductReviewPageObject(driver);
 	}
 
+	public static AdminLoginPageObject getAdminLoginPage(WebDriver driver) {
+		return new AdminLoginPageObject(driver);
+	}
+
+	public static AdminDashboardPageObject getAdminDashboardPage(WebDriver driver) {
+		return new AdminDashboardPageObject(driver);
+	}
 }

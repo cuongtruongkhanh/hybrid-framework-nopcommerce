@@ -19,7 +19,7 @@ import pageObjects.user.UserAddressPageObject;
 import pageObjects.user.UserCustomerInfoPageObject;
 import pageObjects.user.UserMyProductReviewPageObject;
 import pageObjects.user.UserRewardPointPageObject;
-import pageUIs.BasePageUI;
+import pageUIs.user.BasePageUI;
 
 public class BasePage {
 
@@ -329,25 +329,25 @@ public class BasePage {
 	public UserCustomerInfoPageObject openCustomerInfo(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUI.CUSTOMER_INFO_LINK);
 		clickToElement(driver, BasePageUI.CUSTOMER_INFO_LINK);
-		return PageGeneratorManager.getCustomerInFoPage(driver);
+		return PageGeneratorManager.getUserCustomerInFoPage(driver);
 	}
 
 	public UserAddressPageObject openAddressPage(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUI.ADDRESS_LINK);
 		clickToElement(driver, BasePageUI.ADDRESS_LINK);
-		return PageGeneratorManager.getAddressPage(driver);
+		return PageGeneratorManager.getUserAddressPage(driver);
 	}
 
 	public UserMyProductReviewPageObject openMyProductReviewPage(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUI.MY_PRODUCT_REVIEW_LINK);
 		clickToElement(driver, BasePageUI.MY_PRODUCT_REVIEW_LINK);
-		return PageGeneratorManager.getMyProductReviewPage(driver);
+		return PageGeneratorManager.getUserMyProductReviewPage(driver);
 	}
 
 	public UserRewardPointPageObject openRewardPointPage(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUI.REWARD_POINT_LINK);
 		clickToElement(driver, BasePageUI.REWARD_POINT_LINK);
-		return PageGeneratorManager.getRewardPointPage(driver);
+		return PageGeneratorManager.getUserRewardPointPage(driver);
 	}
 
 	private long longTimeout = 30;
