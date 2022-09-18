@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-17T09:10:03Z" name="NopCommerce" finished-at="2022-09-17T09:10:16Z" duration-ms="12810">
+  <suite started-at="2022-09-18T09:50:27Z" name="NopCommerce" finished-at="2022-09-18T09:50:40Z" duration-ms="12773">
     <groups>
     </groups>
-    <test started-at="2022-09-17T09:10:03Z" name="Run on Firefox" finished-at="2022-09-17T09:10:16Z" duration-ms="12810">
-      <class name="com.nopcommerce.user.Level_07_Switch_Page">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_07_Switch_Page@20d525]" started-at="2022-09-17T09:10:03Z" name="beforeClass" finished-at="2022-09-17T09:10:07Z" duration-ms="4163" status="PASS">
+    <test started-at="2022-09-18T09:50:27Z" name="Run on Firefox" finished-at="2022-09-18T09:50:40Z" duration-ms="12773">
+      <class name="com.nopcommerce.user.Level_08_Switch_Role">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_08_Switch_Role@70325e14]" started-at="2022-09-18T09:50:27Z" name="beforeClass" finished-at="2022-09-18T09:50:32Z" duration-ms="4554" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,31 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_07_Switch_Page@20d525]" started-at="2022-09-17T09:10:07Z" name="User_01_Register" finished-at="2022-09-17T09:10:10Z" duration-ms="3011" status="PASS">
+        <test-method signature="Role_01_User()[pri:0, instance:com.nopcommerce.user.Level_08_Switch_Role@70325e14]" started-at="2022-09-18T09:50:32Z" name="Role_01_User" finished-at="2022-09-18T09:50:36Z" duration-ms="4215" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User_01_Register -->
-        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_07_Switch_Page@20d525]" started-at="2022-09-17T09:10:10Z" name="User_02_Login" finished-at="2022-09-17T09:10:11Z" duration-ms="1311" status="PASS">
+        </test-method> <!-- Role_01_User -->
+        <test-method signature="Role_02_Admin()[pri:0, instance:com.nopcommerce.user.Level_08_Switch_Role@70325e14]" started-at="2022-09-18T09:50:36Z" name="Role_02_Admin" finished-at="2022-09-18T09:50:39Z" duration-ms="3532" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User_02_Login -->
-        <test-method signature="User_03_Customer_Info()[pri:0, instance:com.nopcommerce.user.Level_07_Switch_Page@20d525]" started-at="2022-09-17T09:10:11Z" name="User_03_Customer_Info" finished-at="2022-09-17T09:10:12Z" duration-ms="543" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- User_03_Customer_Info -->
-        <test-method signature="User_04_Switch_Page()[pri:0, instance:com.nopcommerce.user.Level_07_Switch_Page@20d525]" started-at="2022-09-17T09:10:12Z" name="User_04_Switch_Page" finished-at="2022-09-17T09:10:15Z" duration-ms="3305" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- User_04_Switch_Page -->
-        <test-method signature="User_05_Switch_Role()[pri:0, instance:com.nopcommerce.user.Level_07_Switch_Page@20d525]" started-at="2022-09-17T09:10:15Z" name="User_05_Switch_Role" finished-at="2022-09-17T09:10:15Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- User_05_Switch_Role -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_07_Switch_Page@20d525]" started-at="2022-09-17T09:10:15Z" name="afterClass" finished-at="2022-09-17T09:10:16Z" duration-ms="468" status="PASS">
+        </test-method> <!-- Role_02_Admin -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_08_Switch_Role@70325e14]" started-at="2022-09-18T09:50:39Z" name="afterClass" finished-at="2022-09-18T09:50:40Z" duration-ms="465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.nopcommerce.user.Level_07_Switch_Page -->
+      </class> <!-- com.nopcommerce.user.Level_08_Switch_Role -->
     </test> <!-- Run on Firefox -->
   </suite> <!-- NopCommerce -->
 </testng-results>
