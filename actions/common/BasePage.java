@@ -439,8 +439,21 @@ public class BasePage {
 	}
 
 	// Tối ưu ở bài Level_09_Dynamic_Locator
-	public void openPagesAtMyAccountPageByName(WebDriver driver) {
-
+	public BasePage openPagesAtMyAccountPageByName(WebDriver driver, String pageName) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
+		clickToElement(driver, BasePageUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
+		switch (pageName) {
+		case "Customer info":
+			return PageGeneratorManager.getUserCustomerInFoPage(driver);
+		case "Addresses":
+			return PageGeneratorManager.getUserAddressPage(driver);
+		case "My product reviews":
+			return PageGeneratorManager.getUserMyProductReviewPage(driver);
+		case "Reward points":
+			return PageGeneratorManager.getUserRewardPointPage(driver);
+		default:
+			throw new RuntimeException("Invalid page name at My Account Area.");
+		}
 	}
 
 	// Level_08_Switch_Role
