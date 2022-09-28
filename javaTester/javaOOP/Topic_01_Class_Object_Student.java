@@ -55,6 +55,7 @@ public class Topic_01_Class_Object_Student {
 
 	public static void main(String[] args) {
 		Topic_01_Class_Object_Student firstStudent = new Topic_01_Class_Object_Student();
+		// instance variable
 		firstStudent.setStudentID(1501);
 		firstStudent.setStudentName("Khanh Cuong");
 		firstStudent.setKnowledgePoint(8.5f);
