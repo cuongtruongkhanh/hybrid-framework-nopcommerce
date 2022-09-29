@@ -1,6 +1,6 @@
 package javaOOP;
 
-public class Topic_02_Variable_Property_Method {
+public class Topic_02_Variable_Property {
 	// Access Modifier
 	// Data type
 	// Variable name
@@ -40,7 +40,7 @@ public class Topic_02_Variable_Property_Method {
 	}
 
 	// Constructor
-	public Topic_02_Variable_Property_Method() {
+	public Topic_02_Variable_Property() {
 		// Biến cục bộ - local variable: constructor
 		String studentName = "Automation FC";
 	}
