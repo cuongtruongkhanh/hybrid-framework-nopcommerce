@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-27T16:48:53Z" name="NopCommerce" finished-at="2022-09-27T16:49:08Z" duration-ms="15261">
+  <suite started-at="2022-09-29T13:45:18Z" name="NopCommerce" finished-at="2022-09-29T13:46:05Z" duration-ms="47093">
     <groups>
     </groups>
-    <test started-at="2022-09-27T16:48:53Z" name="Run on Firefox" finished-at="2022-09-27T16:49:08Z" duration-ms="15261">
+    <test started-at="2022-09-29T13:45:18Z" name="Run on Firefox" finished-at="2022-09-29T13:46:05Z" duration-ms="47093">
       <class name="com.nopcommerce.user.Level_09_Dynamic_Locator">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@37ceb1df]" started-at="2022-09-27T16:48:53Z" name="beforeClass" finished-at="2022-09-27T16:48:58Z" duration-ms="4702" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@7c9d8e2]" started-at="2022-09-29T13:45:18Z" name="beforeClass" finished-at="2022-09-29T13:45:35Z" duration-ms="17349" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="User_01_Register_Login()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@37ceb1df]" started-at="2022-09-27T16:48:58Z" name="User_01_Register_Login" finished-at="2022-09-27T16:49:02Z" duration-ms="4716" status="PASS">
+        <test-method signature="User_01_Register_Login()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@7c9d8e2]" started-at="2022-09-29T13:45:35Z" name="User_01_Register_Login" finished-at="2022-09-29T13:45:47Z" duration-ms="11776" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- User_01_Register_Login -->
-        <test-method signature="User_02_Dynamic_Page()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@37ceb1df]" started-at="2022-09-27T16:49:02Z" name="User_02_Dynamic_Page" finished-at="2022-09-27T16:49:06Z" duration-ms="3526" status="PASS">
+        <test-method signature="User_02_Dynamic_Page()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@7c9d8e2]" started-at="2022-09-29T13:45:47Z" name="User_02_Dynamic_Page" finished-at="2022-09-29T13:45:58Z" duration-ms="10892" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- User_02_Dynamic_Page -->
-        <test-method signature="User_03_Dynamic_Page_01()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@37ceb1df]" started-at="2022-09-27T16:49:06Z" name="User_03_Dynamic_Page_01" finished-at="2022-09-27T16:49:08Z" duration-ms="1844" status="PASS">
+        <test-method signature="User_03_Dynamic_Page_01()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@7c9d8e2]" started-at="2022-09-29T13:45:58Z" name="User_03_Dynamic_Page_01" finished-at="2022-09-29T13:46:01Z" duration-ms="2891" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- User_03_Dynamic_Page_01 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@37ceb1df]" started-at="2022-09-27T16:49:08Z" name="afterClass" finished-at="2022-09-27T16:49:08Z" duration-ms="465" status="PASS">
+        <test-method signature="User_03_Dynamic_Page_02()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@7c9d8e2]" started-at="2022-09-29T13:46:01Z" name="User_03_Dynamic_Page_02" finished-at="2022-09-29T13:46:04Z" duration-ms="3157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_03_Dynamic_Page_02 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@7c9d8e2]" started-at="2022-09-29T13:46:04Z" name="afterClass" finished-at="2022-09-29T13:46:05Z" duration-ms="1010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
