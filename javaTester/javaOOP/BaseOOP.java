@@ -9,6 +9,10 @@ public class BaseOOP {
 	protected long longTimeout = 45;
 	private WebDriver driver;
 
+	public BaseOOP() {
+		System.out.println("Constructor của class cha");
+	}
+
 	public void setImplicitWait() {
 		driver.manage().timeouts().implicitlyWait(longTimeout, TimeUnit.SECONDS);
 	}

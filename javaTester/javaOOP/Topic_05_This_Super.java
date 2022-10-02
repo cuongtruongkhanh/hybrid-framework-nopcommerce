@@ -23,13 +23,7 @@ public class Topic_05_This_Super extends BaseOOP {
 	}
 
 	public Topic_05_This_Super() {
-		// Luôn đứng đầu
-		this(10, 15);
-	}
-
-	public Topic_05_This_Super(int firstNumber, int secondNumber) {
-		this.firstNumber = firstNumber;
-		this.secondNumber = secondNumber;
+		System.out.println("Constuctor của Class con");
 	}
 
 	public void sumNumber() {
@@ -41,8 +35,7 @@ public class Topic_05_This_Super extends BaseOOP {
 	}
 
 	public static void main(String[] args) {
-		Topic_05_This_Super topic = new Topic_05_This_Super(15, 7);
-		topic.sumNumber();
+		Topic_05_This_Super topic = new Topic_05_This_Super();
 	}
 
 }
