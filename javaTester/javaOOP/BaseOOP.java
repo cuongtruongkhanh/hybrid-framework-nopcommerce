@@ -13,6 +13,14 @@ public class BaseOOP {
 		System.out.println("Constructor của class cha");
 	}
 
+	public BaseOOP(String name) {
+		System.out.println("Constructor của class cha: " + name);
+	}
+
+	public BaseOOP(int number) {
+		System.out.println("Constructor của class cha: " + number);
+	}
+
 	public void setImplicitWait() {
 		driver.manage().timeouts().implicitlyWait(longTimeout, TimeUnit.SECONDS);
 	}

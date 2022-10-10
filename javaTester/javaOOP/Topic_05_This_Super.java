@@ -8,7 +8,7 @@ public class Topic_05_This_Super extends BaseOOP {
 
 	private int firstNumber;
 	private int secondNumber;
-	private long longTimeout = 45;
+	// private long longTimeout = 45;
 
 	private WebDriver driver;
 
@@ -23,6 +23,7 @@ public class Topic_05_This_Super extends BaseOOP {
 	}
 
 	public Topic_05_This_Super() {
+		super("Chrome");
 		System.out.println("Constuctor của Class con");
 	}
 
