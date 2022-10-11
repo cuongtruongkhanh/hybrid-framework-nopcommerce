@@ -1,15 +1,12 @@
 package javaOOP;
 
-public class Testing extends Animal {
+public class Testing {
 
 	public static void main(String[] args) {
 
-	}
+		Topic_06_Getter_Setter topic = new Topic_06_Getter_Setter();
 
-	@Override
-	void setAnnimalName() {
-		// TODO Auto-generated method stub
-
+		topic.setPersonAge(25);
 	}
 
 }
