@@ -1,9 +1,8 @@
 package javaOOP.inheritance;
 
-public class Dog extends Animal {
+public class Dog implements Runnable {
 
 	public Dog() {
-		super("Tom", "5");
 		System.out.println("Child's constructor");
 	}
 }
