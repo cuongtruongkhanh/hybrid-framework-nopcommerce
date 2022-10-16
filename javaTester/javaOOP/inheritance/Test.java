@@ -10,5 +10,8 @@ public class Test {
 		dog.setAge(15);
 		System.out.println(dog.getAge());
 
+		dog.setAge(30);
+		System.out.println(dog.getAge());
+
 	}
 }
