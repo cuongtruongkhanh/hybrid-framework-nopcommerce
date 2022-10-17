@@ -5,4 +5,10 @@ public class Bird extends Animal {
 	public void eat() {
 		System.out.println("Bird eating...");
 	}
+
+	public Bird born() {
+		System.out.println("was born...");
+		return new Bird();
+	}
+
 }
