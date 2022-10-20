@@ -34,7 +34,10 @@ public class TryCatchException {
 			System.out.println("Khong chia dc cho 0");
 		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("Index vuot ngoai do dai cua mang");
+		} finally {
+			System.out.println("Close connection");
 		}
 
 	}
+
 }
