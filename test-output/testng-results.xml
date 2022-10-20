@@ -2,21 +2,21 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-20T05:23:14Z" name="Default suite" finished-at="2022-10-20T05:23:40Z" duration-ms="25062">
+  <suite started-at="2022-10-20T08:44:41Z" name="Default suite" finished-at="2022-10-20T08:45:06Z" duration-ms="24982">
     <groups>
     </groups>
-    <test started-at="2022-10-20T05:23:14Z" name="Default test" finished-at="2022-10-20T05:23:40Z" duration-ms="25062">
+    <test started-at="2022-10-20T08:44:41Z" name="Default test" finished-at="2022-10-20T08:45:06Z" duration-ms="24982">
       <class name="javaException.HandleException">
-        <test-method signature="TC_01()[pri:0, instance:javaException.HandleException@7d20d0b]" started-at="2022-10-20T05:23:14Z" name="TC_01" finished-at="2022-10-20T05:23:40Z" duration-ms="25040" status="FAIL">
+        <test-method signature="TC_01()[pri:0, instance:javaException.HandleException@7dc0f706]" started-at="2022-10-20T08:44:41Z" name="TC_01" finished-at="2022-10-20T08:45:06Z" duration-ms="24958" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:46881
+              <![CDATA[java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:12939
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'VN-MF10-NC100S7', ip: '10.218.147.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
 Driver info: driver.version: FirefoxDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:46881
+              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:12939
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'VN-MF10-NC100S7', ip: '10.218.147.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
 Driver info: driver.version: FirefoxDriver
@@ -52,7 +52,7 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:46881
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:12939
 at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
 at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
 at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
@@ -94,11 +94,11 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:javaException.HandleException@7d20d0b]" started-at="2022-10-20T05:23:40Z" name="closeBrowser" finished-at="2022-10-20T05:23:40Z" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:javaException.HandleException@7dc0f706]" started-at="2022-10-20T08:45:06Z" name="closeBrowser" finished-at="2022-10-20T08:45:06Z" duration-ms="1" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at javaException.HandleException.closeBrowser(HandleException.java:32)
+at javaException.HandleException.closeBrowser(HandleException.java:33)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

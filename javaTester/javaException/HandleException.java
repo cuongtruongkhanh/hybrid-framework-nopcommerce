@@ -16,15 +16,14 @@ public class HandleException {
 
 	@Test
 	public void TC_01() throws IOException {
-		String projectPath = System.getProperty("user.dir");
-		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+		// String projectPath = System.getProperty("user.dir");
+		// System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
 		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
-
 		driver.get("http://live.techpanda.org/index.php");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
 		driver.findElement(By.xpath("//a[text()='automation']")).click();
+
 	}
 
 	@AfterClass
