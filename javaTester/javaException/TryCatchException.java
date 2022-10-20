@@ -1,43 +1,32 @@
 package javaException;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 public class TryCatchException {
 	public static void main(String[] args) {
-		int number = 10;
+		FileOutputStream outputStream = null;
 
 		try {
-			// Đúng: chạy hết đoạn code trong try và không catch
-			number = number / 0;
-		} catch (ArithmeticException e) {
-			e.printStackTrace();
-		}
-
-		System.out.println(number);
-
-		String[] browserName = { "Chrome", "Firefox", "Safari" };
-
-		try {
-			browserName[0] = "Edge Chromnium";
-			browserName[3] = "IE";
-
-		} catch (ArrayIndexOutOfBoundsException e) {
-			e.printStackTrace();
-		}
-
-		for (String browser : browserName) {
-			System.out.println(browser);
-		}
-
-		try {
-			int array[] = new int[10];
-			array[9] = 30 / 0;
-		} catch (ArithmeticException e) {
-			System.out.println("Khong chia dc cho 0");
-		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("Index vuot ngoai do dai cua mang");
+			outputStream = new FileOutputStream("C://automationfc.jpg");
+			outputStream.write(65);
+		} catch (FileNotFoundException e) {
+			System.out.println(e.getMessage());
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
 		} finally {
-			System.out.println("Close connection");
+			try {
+				outputStream.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 
+	}
+
+	public static void SleepSecond(long timeout) throws InterruptedException {
+		Thread.sleep(timeout * 1000);
 	}
 
 }
