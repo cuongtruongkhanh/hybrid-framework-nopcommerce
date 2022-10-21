@@ -56,7 +56,7 @@ public class BaseTest {
 		} else {
 			throw new RuntimeException("Browser name invalid");
 		}
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(GlobalConstants.PORTAL_DEV_URL);
 		return driver;
@@ -102,7 +102,7 @@ public class BaseTest {
 		} else {
 			throw new RuntimeException("Browser name invalid");
 		}
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(getEnvironmentUrl(environmentName));
 		return driver;
