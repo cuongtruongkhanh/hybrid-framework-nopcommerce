@@ -476,6 +476,14 @@ public class BasePage {
 		return PageGeneratorManager.getAdminLoginPage(driver);
 	}
 
+	public void SleepInSecond(long timeSleep) {
+		try {
+			Thread.sleep(timeSleep * 1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
 	private long longTimeout = GlobalConstants.LONG_TIMEOUT;
 
 }
