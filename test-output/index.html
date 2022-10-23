@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-NopCommerce" class="navigator-link ">
-                    <span>D:\_Project Test\03 - Java Hybrid Framework\hybrid-framework-nopcommerce\resouces\runNopCommerceTest.xml</span>
+                    <span>D:\_Project Test\03 - Java Hybrid Framework\hybrid-framework-nopcommerce\resouces\runJqueryTest.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,22 +102,7 @@
                     <div class="method-list-content passed suite-NopCommerce">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce" title="com.nopcommerce.user.Level_09_Dynamic_Locator" class="method navigator-link" hash-for-method="User_01_Register_Login">User_01_Register_Login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce" title="com.nopcommerce.user.Level_09_Dynamic_Locator" class="method navigator-link" hash-for-method="User_02_Dynamic_Page">User_02_Dynamic_Page</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce" title="com.nopcommerce.user.Level_09_Dynamic_Locator" class="method navigator-link" hash-for-method="User_03_Dynamic_Page_01">User_03_Dynamic_Page_01</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce" title="com.nopcommerce.user.Level_09_Dynamic_Locator" class="method navigator-link" hash-for-method="User_03_Dynamic_Page_02">User_03_Dynamic_Page_02</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-NopCommerce" title="com.jquery.datatable.Level_10_DataTable_DataGrid" class="method navigator-link" hash-for-method="Table_01">Table_01</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-NopCommerce -->
@@ -135,35 +120,14 @@
           <div class="suite-NopCommerce-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.nopcommerce.user.Level_09_Dynamic_Locator</span>
+              <span class="class-name">com.jquery.datatable.Level_10_DataTable_DataGrid</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="User_01_Register_Login">
-                  </a> <!-- User_01_Register_Login -->
-                  <span class="method-name">User_01_Register_Login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="User_02_Dynamic_Page">
-                  </a> <!-- User_02_Dynamic_Page -->
-                  <span class="method-name">User_02_Dynamic_Page</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="User_03_Dynamic_Page_01">
-                  </a> <!-- User_03_Dynamic_Page_01 -->
-                  <span class="method-name">User_03_Dynamic_Page_01</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="User_03_Dynamic_Page_02">
-                  </a> <!-- User_03_Dynamic_Page_02 -->
-                  <span class="method-name">User_03_Dynamic_Page_02</span>
+                  <a name="Table_01">
+                  </a> <!-- Table_01 -->
+                  <span class="method-name">Table_01</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,19 +135,20 @@
         </div> <!-- panel NopCommerce -->
         <div panel-name="test-xml-NopCommerce" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\_Project Test\03 - Java Hybrid Framework\hybrid-framework-nopcommerce\resouces\runNopCommerceTest.xml</span>
+            <span class="header-content">D:\_Project Test\03 - Java Hybrid Framework\hybrid-framework-nopcommerce\resouces\runJqueryTest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;NopCommerce&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Run on Firefox&quot;&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;https://www.jqueryscript.net/demo/CRUD-Data-Grid-Plugin-jQuery-Quickgrid/&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Run on Chrome&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.nopcommerce.user.Level_09_Dynamic_Locator&quot;/&gt;
+      &lt;class name=&quot;com.jquery.datatable.Level_10_DataTable_DataGrid&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Run on Firefox --&gt;
+  &lt;/test&gt; &lt;!-- Run on Chrome --&gt;
 &lt;/suite&gt; &lt;!-- NopCommerce --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,7 +160,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Run on Firefox (1 class)</span>
+                <span class="test-name">Run on Chrome (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -221,28 +186,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'User_01_Register_Login')
-data.setCell(0, 2, 'com.nopcommerce.user.Level_09_Dynamic_Locator')
-data.setCell(0, 3, 5064);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'User_02_Dynamic_Page')
-data.setCell(1, 2, 'com.nopcommerce.user.Level_09_Dynamic_Locator')
-data.setCell(1, 3, 3598);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'User_03_Dynamic_Page_02')
-data.setCell(2, 2, 'com.nopcommerce.user.Level_09_Dynamic_Locator')
-data.setCell(2, 3, 2158);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'User_03_Dynamic_Page_01')
-data.setCell(3, 2, 'com.nopcommerce.user.Level_09_Dynamic_Locator')
-data.setCell(3, 3, 1802);
+data.setCell(0, 1, 'Table_01')
+data.setCell(0, 2, 'com.jquery.datatable.Level_10_DataTable_DataGrid')
+data.setCell(0, 3, 3);
 window.suiteTableData['NopCommerce']= { tableData: data, tableDiv: 'times-div-NopCommerce'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 3 ms</span>
               <div id="times-div-NopCommerce">
               </div> <!-- times-div-NopCommerce -->
             </div> <!-- times-div -->
@@ -268,30 +221,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.nopcommerce.user.Level_09_Dynamic_Locator</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.jquery.datatable.Level_10_DataTable_DataGrid</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">beforeClass(chrome)</span>
+                <span class="method-name">beforeClass(chrome, https://www.jqueryscript.net/demo/CRUD-Data-Grid-Plugin-jQuery-Quickgrid/)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">User_01_Register_Login</span>
-                <span class="method-start">2651 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">User_02_Dynamic_Page</span>
-                <span class="method-start">7717 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">User_03_Dynamic_Page_01</span>
-                <span class="method-start">11316 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">User_03_Dynamic_Page_02</span>
-                <span class="method-start">13120 ms</span>
+                <span class="method-name">Table_01</span>
+                <span class="method-start">3195 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">15279 ms</span>
+                <span class="method-start">3200 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
