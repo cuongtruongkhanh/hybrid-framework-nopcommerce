@@ -1,4 +1,4 @@
-package pageUIs.user;
+package pageUIs.nopCommerce.user;
 
 public class BasePageUI {
 	public static final String CUSTOMER_INFO_LINK = "Xpath=//div[contains(@class,'account-navigation')]//a[text()='Customer info']";

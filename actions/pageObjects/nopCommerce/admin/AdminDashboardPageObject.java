@@ -1,9 +1,9 @@
-package pageObjects.admin;
+package pageObjects.nopCommerce.admin;
 
 import org.openqa.selenium.WebDriver;
 
 import common.BasePage;
-import pageUIs.admin.AdminDashboardPageUI;
+import pageUIs.nopCommerce.admin.AdminDashboardPageUI;
 
 public class AdminDashboardPageObject extends BasePage {
 	private WebDriver driver;
