@@ -1,5 +1,7 @@
 package com.jquery.datatable;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -13,6 +15,8 @@ import pageObjects.jQuerry.PageGeneratorManager;
 
 public class Level_10_DataTable_DataGrid extends BaseTest {
 	HomePageObject homePage;
+	List<String> actualAllCountryValues;
+	List<String> expectedAllCountryValues;
 
 	@Parameters({ "browser", "url" })
 	@BeforeClass
@@ -21,22 +25,22 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 		homePage = PageGeneratorManager.getHomePage(driver);
 	}
 
-	@Test
+	// @Test
 	public void Table_01_Paging() {
 		homePage.openPagingByPageNumber("10");
-		homePage.SleepInSecond(3);
+		homePage.SleepInSecond(2);
 		Assert.assertTrue(homePage.isPageNumberActived("10"));
 
 		homePage.openPagingByPageNumber("20");
-		homePage.SleepInSecond(3);
+		homePage.SleepInSecond(2);
 		Assert.assertTrue(homePage.isPageNumberActived("20"));
 
 		homePage.openPagingByPageNumber("7");
-		homePage.SleepInSecond(3);
+		homePage.SleepInSecond(2);
 		Assert.assertTrue(homePage.isPageNumberActived("7"));
 
 		homePage.openPagingByPageNumber("8");
-		homePage.SleepInSecond(3);
+		homePage.SleepInSecond(2);
 		Assert.assertTrue(homePage.isPageNumberActived("8"));
 	}
 
@@ -47,18 +51,20 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 		homePage.enterToHeaderTextboxByLabel("Females", "338282");
 		homePage.enterToHeaderTextboxByLabel("Males", "349238");
 		homePage.enterToHeaderTextboxByLabel("Total", "687522");
-		homePage.SleepInSecond(3);
+		homePage.SleepInSecond(2);
 
 		homePage.enterToHeaderTextboxByLabel("Country", "Angola");
 		homePage.enterToHeaderTextboxByLabel("Females", "276880");
 		homePage.enterToHeaderTextboxByLabel("Males", "276472");
 		homePage.enterToHeaderTextboxByLabel("Total", "553353");
-		homePage.SleepInSecond(3);
+		homePage.SleepInSecond(2);
 	}
 
-	// @Test
+	@Test
 	public void Table_03_Enter_To_Header() {
-
+		// Đọc dữ liệu từ file contry.txt ra
+		// Lưu vào 1 List<String> = Expected Value
+		actualAllCountryValues = homePage.getValueEachRowAtAllPage();
 	}
 
 	@AfterClass
