@@ -1,6 +1,7 @@
 package com.jquery.datatable;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -20,19 +21,28 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 		homePage = PageGeneratorManager.getHomePage(driver);
 	}
 
+	@Test
 	public void Table_01_Paging() {
 		homePage.openPagingByPageNumber("10");
 		homePage.SleepInSecond(3);
+		Assert.assertTrue(homePage.isPageNumberActived("10"));
+
 		homePage.openPagingByPageNumber("20");
 		homePage.SleepInSecond(3);
+		Assert.assertTrue(homePage.isPageNumberActived("20"));
+
 		homePage.openPagingByPageNumber("7");
 		homePage.SleepInSecond(3);
+		Assert.assertTrue(homePage.isPageNumberActived("7"));
+
 		homePage.openPagingByPageNumber("8");
 		homePage.SleepInSecond(3);
+		Assert.assertTrue(homePage.isPageNumberActived("8"));
 	}
 
-	@Test
+	// @Test
 	public void Table_02_Enter_To_Header() {
+		homePage.refreshCurrentPage(driver);
 		homePage.enterToHeaderTextboxByLabel("Country", "Argentina");
 		homePage.enterToHeaderTextboxByLabel("Females", "338282");
 		homePage.enterToHeaderTextboxByLabel("Males", "349238");
@@ -44,6 +54,10 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 		homePage.enterToHeaderTextboxByLabel("Males", "276472");
 		homePage.enterToHeaderTextboxByLabel("Total", "553353");
 		homePage.SleepInSecond(3);
+	}
+
+	// @Test
+	public void Table_03_Enter_To_Header() {
 
 	}
 
