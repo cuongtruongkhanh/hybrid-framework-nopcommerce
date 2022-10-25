@@ -14,6 +14,7 @@ import pageObjects.jQuerry.HomePageObject;
 import pageObjects.jQuerry.PageGeneratorManager;
 
 public class Level_10_DataTable_DataGrid extends BaseTest {
+	private WebDriver driver;
 	HomePageObject homePage;
 	List<String> actualAllCountryValues;
 	List<String> expectedAllCountryValues;
@@ -60,18 +61,36 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 		homePage.SleepInSecond(2);
 	}
 
-	@Test
+	// @Test
 	public void Table_03_Enter_To_Header() {
 		// Đọc dữ liệu từ file contry.txt ra
 		// Lưu vào 1 List<String> = Expected Value
-		actualAllCountryValues = homePage.getValueEachRowAtAllPage();
+		actualAllCountryValues = homePage.getValueCoutryEachRowAtAllPage();
+	}
+
+	@Test
+	public void Table_04_Enter_To_Textbox_At_Any_Row() {
+		// Value de nhap lieu - tham so 1
+		// Row number: tai row nao
+		// Ex: nhap vao textbox tai dong so 3/5/2
+		// Column name: Album/ Artist / Year / Price
+		homePage.enterToTextboxAtRowNumberByColumnName("Album", "1", "Titanic");
+		homePage.enterToTextboxAtRowNumberByColumnName("Artist", "1", "Michael Jackson");
+		homePage.enterToTextboxAtRowNumberByColumnName("Year", "1", "1997");
+		homePage.enterToTextboxAtRowNumberByColumnName("Price", "1", "5000");
+		homePage.SleepInSecond(2);
+
+		homePage.selectDropdownByColumnNameAtRowNumber("Origin", "1", "Hong Kong");
+		homePage.SleepInSecond(2);
+		homePage.selectDropdownByColumnNameAtRowNumber("Origin", "1", "Korea");
+		homePage.SleepInSecond(2);
+		homePage.selectDropdownByColumnNameAtRowNumber("Origin", "1", "Others");
+		homePage.SleepInSecond(2);
 	}
 
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
 	}
-
-	private WebDriver driver;
 
 }
