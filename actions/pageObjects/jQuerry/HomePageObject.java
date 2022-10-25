@@ -94,4 +94,47 @@ public class HomePageObject extends BasePage {
 		selectItemInDefaultDropdown(driver, HomePageUI.DROPDOWN_BY_COLUMN_INDEX_AND_ROW_INDEX, valueToSelect, rowNumber, String.valueOf(columnIndex));
 	}
 
+	public void clicktoLoadButton() {
+		waitForElementClickable(driver, HomePageUI.LOAD_BUTTON);
+		clickToElement(driver, HomePageUI.LOAD_BUTTON);
+
+	}
+
+	public void checkToCheckboxByColumnNameAtRowNumber(String columnName, String rowNumber) {
+		int columnIndex = getElementSize(driver, HomePageUI.COLUMN_INDEX_BY_NAME, columnName) + 1;
+		waitForElementClickable(driver, HomePageUI.CHECKBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(columnIndex));
+		checkToDefaultCheckboxRadio(driver, HomePageUI.CHECKBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(columnIndex));
+	}
+
+	public void uncheckToCheckboxByColumnNameAtRowNumber(String columnName, String rowNumber) {
+		int columnIndex = getElementSize(driver, HomePageUI.COLUMN_INDEX_BY_NAME, columnName) + 1;
+		waitForElementClickable(driver, HomePageUI.CHECKBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(columnIndex));
+		unCheckToDefaultCheckboxRadio(driver, HomePageUI.CHECKBOX_BY_COLUMN_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(columnIndex));
+	}
+
+	public void insertRowByRowNumber(String rowNumber) {
+		waitForElementClickable(driver, HomePageUI.INSERT_BY_ROW_INDEX, rowNumber);
+		clickToElement(driver, HomePageUI.INSERT_BY_ROW_INDEX, rowNumber);
+	}
+
+	public void deleteRowByRowNumber(String rowNumber) {
+		waitForElementClickable(driver, HomePageUI.DELETE_BY_ROW_INDEX, rowNumber);
+		clickToElement(driver, HomePageUI.DELETE_BY_ROW_INDEX, rowNumber);
+	}
+
+	public void moveupRowByRowNumber(String rowNumber) {
+		waitForElementClickable(driver, HomePageUI.MOVEUP_BY_ROW_INDEX, rowNumber);
+		clickToElement(driver, HomePageUI.MOVEUP_BY_ROW_INDEX, rowNumber);
+	}
+
+	public void movedownRowByRowNumber(String rowNumber) {
+		waitForElementClickable(driver, HomePageUI.MOVEDOWN_BY_ROW_INDEX, rowNumber);
+		clickToElement(driver, HomePageUI.MOVEDOWN_BY_ROW_INDEX, rowNumber);
+	}
+
+	public void clickToIconByRowNumber(String rowNumber, String action) {
+		waitForElementClickable(driver, HomePageUI.ICON_BY_ROW_INDEX, rowNumber, action);
+		clickToElement(driver, HomePageUI.ICON_BY_ROW_INDEX, rowNumber, action);
+	}
+
 }

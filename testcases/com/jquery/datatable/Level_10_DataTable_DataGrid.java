@@ -70,22 +70,57 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 
 	@Test
 	public void Table_04_Enter_To_Textbox_At_Any_Row() {
+		homePage.SleepInSecond(2);
+		homePage.clicktoLoadButton();
+		homePage.SleepInSecond(1);
+
 		// Value de nhap lieu - tham so 1
 		// Row number: tai row nao
 		// Ex: nhap vao textbox tai dong so 3/5/2
 		// Column name: Album/ Artist / Year / Price
-		homePage.enterToTextboxAtRowNumberByColumnName("Album", "1", "Titanic");
-		homePage.enterToTextboxAtRowNumberByColumnName("Artist", "1", "Michael Jackson");
-		homePage.enterToTextboxAtRowNumberByColumnName("Year", "1", "1997");
-		homePage.enterToTextboxAtRowNumberByColumnName("Price", "1", "5000");
+//		homePage.enterToTextboxAtRowNumberByColumnName("Album", "1", "Titanic");
+//		homePage.enterToTextboxAtRowNumberByColumnName("Artist", "1", "Michael Jackson");
+//		homePage.enterToTextboxAtRowNumberByColumnName("Year", "1", "1997");
+//		homePage.enterToTextboxAtRowNumberByColumnName("Price", "1", "5000");
+//		homePage.SleepInSecond(2);
+//
+//		homePage.selectDropdownByColumnNameAtRowNumber("Origin", "1", "Hong Kong");
+//		homePage.SleepInSecond(2);
+//		homePage.selectDropdownByColumnNameAtRowNumber("Origin", "2", "Korea");
+//		homePage.SleepInSecond(2);
+//		homePage.selectDropdownByColumnNameAtRowNumber("Origin", "3", "Others");
+//		homePage.SleepInSecond(2);
+
+//		homePage.checkToCheckboxByColumnNameAtRowNumber("With Poster?", "1");
+//		homePage.checkToCheckboxByColumnNameAtRowNumber("With Poster?", "2");
+//		homePage.checkToCheckboxByColumnNameAtRowNumber("With Poster?", "3");
+//		homePage.checkToCheckboxByColumnNameAtRowNumber("With Poster?", "4");
+//		homePage.checkToCheckboxByColumnNameAtRowNumber("With Poster?", "5");
+//
+//		homePage.uncheckToCheckboxByColumnNameAtRowNumber("With Poster?", "1");
+//		homePage.uncheckToCheckboxByColumnNameAtRowNumber("With Poster?", "2");
+//		homePage.uncheckToCheckboxByColumnNameAtRowNumber("With Poster?", "3");
+//		homePage.uncheckToCheckboxByColumnNameAtRowNumber("With Poster?", "4");
+//		homePage.uncheckToCheckboxByColumnNameAtRowNumber("With Poster?", "5");
+
+//		homePage.insertRowByRowNumber("2");
+//		homePage.SleepInSecond(2);
+//		homePage.deleteRowByRowNumber("2");
+//		homePage.SleepInSecond(2);
+//		homePage.moveupRowByRowNumber("4");
+//		homePage.SleepInSecond(2);
+//		homePage.movedownRowByRowNumber("4");
+//		homePage.SleepInSecond(2);
+
+		homePage.clickToIconByRowNumber("2", "Insert Row Above");
+		homePage.SleepInSecond(2);
+		homePage.clickToIconByRowNumber("2", "Remove Current Row");
+		homePage.SleepInSecond(2);
+		homePage.clickToIconByRowNumber("4", "Move Up");
+		homePage.SleepInSecond(2);
+		homePage.clickToIconByRowNumber("4", "Move Down");
 		homePage.SleepInSecond(2);
 
-		homePage.selectDropdownByColumnNameAtRowNumber("Origin", "1", "Hong Kong");
-		homePage.SleepInSecond(2);
-		homePage.selectDropdownByColumnNameAtRowNumber("Origin", "1", "Korea");
-		homePage.SleepInSecond(2);
-		homePage.selectDropdownByColumnNameAtRowNumber("Origin", "1", "Others");
-		homePage.SleepInSecond(2);
 	}
 
 	@AfterClass
