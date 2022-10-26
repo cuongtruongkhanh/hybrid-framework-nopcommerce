@@ -1,4 +1,4 @@
-package pageObjects.jQuerry;
+package pageObjects.jQuerry.datatable;
 
 import org.openqa.selenium.WebDriver;
 

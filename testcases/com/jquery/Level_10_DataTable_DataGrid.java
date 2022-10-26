@@ -10,8 +10,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
-import pageObjects.jQuerry.HomePageObject;
-import pageObjects.jQuerry.PageGeneratorManager;
+import pageObjects.jQuerry.datatable.HomePageObject;
+import pageObjects.jQuerry.datatable.PageGeneratorManager;
 
 public class Level_10_DataTable_DataGrid extends BaseTest {
 	private WebDriver driver;
