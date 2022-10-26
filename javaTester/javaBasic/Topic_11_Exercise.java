@@ -1,5 +1,7 @@
 package javaBasic;
 
+import common.GlobalConstants;
+
 public class Topic_11_Exercise {
 	int ID, Age, Score;
 	String Name;
@@ -19,16 +21,8 @@ public class Topic_11_Exercise {
 	}
 
 	public static void main(String[] args) {
-		Topic_11_Exercise[] topic11 = new Topic_11_Exercise[4];
+		Ex07();
 
-		topic11[0] = new Topic_11_Exercise(1, "Cuong", 30, 10);
-		topic11[1] = new Topic_11_Exercise(2, "Nam", 31, 9);
-		topic11[2] = new Topic_11_Exercise(3, "Hai", 32, 8);
-		topic11[3] = new Topic_11_Exercise(4, "Tuan", 33, 7);
-
-		for (int i = 0; i < topic11.length; i++) {
-			topic11[i].display();
-		}
 	}
 
 	public static void Ex01() {
@@ -69,6 +63,21 @@ public class Topic_11_Exercise {
 		}
 		System.out.println("Sum = " + sum);
 		System.out.println("Avg = " + (sum / arr.length));
+	}
+
+	public static void Ex07() {
+		String[] fileNames = { "Vietnam.jpg", "Indonesia.jpg", "Thailand.jpg" };
+		String filePath = GlobalConstants.UPLOAD_FILE;
+
+		// Đường dẫn của các file
+		// Vietnam.jpg
+		String fullFileName = "";
+		for (String file : fileNames) {
+			fullFileName = fullFileName + filePath + file + "\n";
+		}
+		fullFileName = fullFileName.trim(); // trim: xoa ky tu trang/ tab/ xuong dong o dau hoac cuoi cua chuoi
+
+		System.out.println(fullFileName);
 	}
 
 }

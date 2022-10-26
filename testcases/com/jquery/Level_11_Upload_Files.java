@@ -7,9 +7,16 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import common.BaseTest;
+import pageObjects.jQuerry.uploadfiles.HomePageObject;
 
 public class Level_11_Upload_Files extends BaseTest {
 	private WebDriver driver;
+	private HomePageObject homePage;
+
+	String vietnamFileName = "Vietnam.jpg";
+	String indonesiaFileName = "Indonesia.jpg";
+	String thailandFileName = "Thailan.jpg";
+	String[] multipleFiles = { "Vietnam.jpg", "Indonesia.jpg", "Thailand.jpg" };
 
 	@Parameters({ "browser", "url" })
 	@BeforeClass
@@ -18,11 +25,13 @@ public class Level_11_Upload_Files extends BaseTest {
 	}
 
 	@Test
-	public void Table_01_One_File_Per_Time() {
+	public void Upload_01_One_File_Per_Time() {
+		homePage.uploadMultipleFiles(driver, vietnamFileName);
 	}
 
 	@Test
-	public void Table_02_Multiple_File_Per_Time() {
+	public void Upload_02_Multiple_File_Per_Time() {
+		homePage.uploadMultipleFiles(driver, multipleFiles);
 	}
 
 	@AfterClass
