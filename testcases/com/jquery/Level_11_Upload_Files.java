@@ -1,6 +1,7 @@
 package com.jquery;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -27,6 +28,9 @@ public class Level_11_Upload_Files extends BaseTest {
 	@Test
 	public void Upload_01_One_File_Per_Time() {
 		homePage.uploadMultipleFiles(driver, vietnamFileName);
+		Assert.assertTrue(homePage.isFileLoadedByName(vietnamFileName));
+
+		homePage.clickToStartButton();
 	}
 
 	@Test
