@@ -10,5 +10,12 @@
       <class name="com.jquery.Level_11_Upload_Files"/>
     </classes>
   </test>
+  
+    <test name="Run on Headless Chrome">
+  <parameter name="browser" value="h_chrome"/>
+    <classes>
+      <class name="com.jquery.Level_11_Upload_Files"/>
+    </classes>
+  </test>
 
 </suite>

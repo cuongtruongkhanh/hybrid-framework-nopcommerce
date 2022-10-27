@@ -29,4 +29,14 @@ public class HomePageObject extends BasePage {
 		}
 	}
 
+	public boolean isFileLinkUploadedByName(String fileName) {
+		waitForElementVisible(driver, HomePageUI.FILE_NAME_UPLOADED_LINK, fileName);
+		return isElementDisplayed(driver, HomePageUI.FILE_NAME_UPLOADED_LINK, fileName);
+	}
+
+	public boolean isFileImgUploadedByName(String fileName) {
+		waitForElementVisible(driver, HomePageUI.FILE_NAME_UPLOADED_IMG, fileName);
+		return isImageLoaded(driver, HomePageUI.FILE_NAME_UPLOADED_IMG, fileName);
+	}
+
 }
