@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-26T07:04:03Z" name="NopCommerce" finished-at="2022-10-26T07:04:09Z" duration-ms="5643">
+  <suite started-at="2022-10-27T13:17:55Z" name="Jquery Upload" finished-at="2022-10-27T13:18:18Z" duration-ms="22424">
     <groups>
     </groups>
-    <test started-at="2022-10-26T07:04:03Z" name="Run on Chrome" finished-at="2022-10-26T07:04:09Z" duration-ms="5643">
+    <test started-at="2022-10-27T13:17:55Z" name="Run on Chrome" finished-at="2022-10-27T13:18:06Z" duration-ms="10933">
       <class name="com.jquery.Level_11_Upload_Files">
-        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.jquery.Level_11_Upload_Files@70325e14]" started-at="2022-10-26T07:04:03Z" name="beforeClass" finished-at="2022-10-26T07:04:08Z" duration-ms="4967" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.jquery.Level_11_Upload_Files@70325e14]" started-at="2022-10-27T13:17:55Z" name="beforeClass" finished-at="2022-10-27T13:17:59Z" duration-ms="3490" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,19 +23,51 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Table_01_One_File_Per_Time()[pri:0, instance:com.jquery.Level_11_Upload_Files@70325e14]" started-at="2022-10-26T07:04:08Z" name="Table_01_One_File_Per_Time" finished-at="2022-10-26T07:04:08Z" duration-ms="6" status="PASS">
+        <test-method signature="Upload_01_One_File_Per_Time()[pri:0, instance:com.jquery.Level_11_Upload_Files@70325e14]" started-at="2022-10-27T13:17:59Z" name="Upload_01_One_File_Per_Time" finished-at="2022-10-27T13:18:01Z" duration-ms="1904" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Table_01_One_File_Per_Time -->
-        <test-method signature="Table_02_Multiple_File_Per_Time()[pri:0, instance:com.jquery.Level_11_Upload_Files@70325e14]" started-at="2022-10-26T07:04:08Z" name="Table_02_Multiple_File_Per_Time" finished-at="2022-10-26T07:04:08Z" duration-ms="1" status="PASS">
+        </test-method> <!-- Upload_01_One_File_Per_Time -->
+        <test-method signature="Upload_02_Multiple_File_Per_Time()[pri:0, instance:com.jquery.Level_11_Upload_Files@70325e14]" started-at="2022-10-27T13:18:01Z" name="Upload_02_Multiple_File_Per_Time" finished-at="2022-10-27T13:18:06Z" duration-ms="4912" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Table_02_Multiple_File_Per_Time -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.jquery.Level_11_Upload_Files@70325e14]" started-at="2022-10-26T07:04:08Z" name="afterClass" finished-at="2022-10-26T07:04:09Z" duration-ms="652" status="PASS">
+        </test-method> <!-- Upload_02_Multiple_File_Per_Time -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.jquery.Level_11_Upload_Files@70325e14]" started-at="2022-10-27T13:18:06Z" name="afterClass" finished-at="2022-10-27T13:18:06Z" duration-ms="618" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.jquery.Level_11_Upload_Files -->
     </test> <!-- Run on Chrome -->
-  </suite> <!-- NopCommerce -->
+    <test started-at="2022-10-27T13:18:06Z" name="Run on Headless Chrome" finished-at="2022-10-27T13:18:18Z" duration-ms="11484">
+      <class name="com.jquery.Level_11_Upload_Files">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.jquery.Level_11_Upload_Files@4c39bec8]" started-at="2022-10-27T13:18:06Z" name="beforeClass" finished-at="2022-10-27T13:18:11Z" duration-ms="5270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[h_chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://blueimp.github.io/jQuery-File-Upload/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="Upload_01_One_File_Per_Time()[pri:0, instance:com.jquery.Level_11_Upload_Files@4c39bec8]" started-at="2022-10-27T13:18:11Z" name="Upload_01_One_File_Per_Time" finished-at="2022-10-27T13:18:13Z" duration-ms="1283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Upload_01_One_File_Per_Time -->
+        <test-method signature="Upload_02_Multiple_File_Per_Time()[pri:0, instance:com.jquery.Level_11_Upload_Files@4c39bec8]" started-at="2022-10-27T13:18:13Z" name="Upload_02_Multiple_File_Per_Time" finished-at="2022-10-27T13:18:17Z" duration-ms="4340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Upload_02_Multiple_File_Per_Time -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.jquery.Level_11_Upload_Files@4c39bec8]" started-at="2022-10-27T13:18:17Z" name="afterClass" finished-at="2022-10-27T13:18:18Z" duration-ms="588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.jquery.Level_11_Upload_Files -->
+    </test> <!-- Run on Headless Chrome -->
+  </suite> <!-- Jquery Upload -->
 </testng-results>
