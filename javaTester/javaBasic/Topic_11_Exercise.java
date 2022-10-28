@@ -1,6 +1,6 @@
 package javaBasic;
 
-import common.GlobalConstants;
+import commons.GlobalConstants;
 
 public class Topic_11_Exercise {
 	int ID, Age, Score;

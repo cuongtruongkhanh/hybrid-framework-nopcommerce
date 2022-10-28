@@ -3,8 +3,8 @@ package pageObjects.nopCommerce.user;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import common.BasePage;
-import common.PageGeneratorManager;
+import commons.BasePage;
+import commons.PageGeneratorManager;
 import pageUIs.nopCommerce.user.LoginPageUI;
 
 public class UserLoginPageObject extends BasePage {
