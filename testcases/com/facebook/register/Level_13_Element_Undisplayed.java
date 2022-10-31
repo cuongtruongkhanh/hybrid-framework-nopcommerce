@@ -30,7 +30,13 @@ public class Level_13_Element_Undisplayed extends BaseTest {
 
 	@Test
 	public void TC_02_Verify_Element_Undisplayed_In_DOM() {
+		loginPage.enterToEmailAddressTextbox("automationfc@gmail.com");
+		loginPage.SleepInSecond(2);
+		verifyTrue(loginPage.isConfirmEmailAddressTextboxDisplayed());
 
+		loginPage.enterToEmailAddressTextbox("");
+		loginPage.SleepInSecond(2);
+		verifyFalse(loginPage.isConfirmEmailAddressTextboxDisplayed());
 	}
 
 	@Test
