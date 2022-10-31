@@ -36,12 +36,19 @@ public class Level_13_Element_Undisplayed extends BaseTest {
 
 		loginPage.enterToEmailAddressTextbox("");
 		loginPage.SleepInSecond(2);
-		verifyFalse(loginPage.isConfirmEmailAddressTextboxDisplayed());
+		// verifyFalse(loginPage.isConfirmEmailAddressTextboxDisplayed());
+		verifyTrue(loginPage.isConfirmEmailAddressTextboxUndisplayed());
 	}
 
 	@Test
 	public void TC_03_Verify_Element_Undisplayed_Not_In_DOM() {
-		loginPage.clickToCloseIconAtRegisterForm();
+		loginPage.clickCloseIconAtRegisterForm();
+		loginPage.SleepInSecond(2);
+
+		// Verify False - Mong doi confirm Email undisplayed (false) -> mat rat nhieu thoi gian do phai doi den het timeout thi moi tra ve ket qua
+		// verifyFalse(loginPage.isConfirmEmailAddressTextboxDisplayed());
+
+		verifyTrue(loginPage.isConfirmEmailAddressTextboxUndisplayed());
 
 	}
 
