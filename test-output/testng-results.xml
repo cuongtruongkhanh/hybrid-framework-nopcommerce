@@ -1,89 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:11,031] Register - Step 01: Navigate to Register page
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:37,063] Register - Step 01: Navigate to Register page
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:11,629] Register - Step 02: Enter to Firstname textbox with value is Automation
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:37,679] Register - Step 02: Enter to Firstname textbox with value is Automation
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:11,851] Register - Step 03: Enter to Lastname textbox with value is FC
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:37,903] Register - Step 03: Enter to Lastname textbox with value is FC
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:12,033] Register - Step 04: Enter to Email Adrress textbox with value is FC
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:38,071] Register - Step 04: Enter to Email Adrress textbox with value is FC
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:12,277] Register - Step 05: Enter to Password textbox with value is 123456
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:38,304] Register - Step 05: Enter to Password textbox with value is 123456
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:12,502] Register - Step 06: Enter to ConfirmPassword textbox with value is 123456
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:38,511] Register - Step 06: Enter to ConfirmPassword textbox with value is 123456
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:12,694] Register - Step 07: Click to Register button
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:38,690] Register - Step 07: Click to Register button
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:13,600] Register - Step 08: Verify Register Success Message is displayed
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:40,218] Register - Step 08: Verify Register Success Message is displayed
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:13,688]  -------------------------- FAILED -------------------------- 
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:40,294]  -------------------------- FAILED -------------------------- 
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:13,689] Register - Step 09: Click to Logout link
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:40,295] Register - Step 09: Click to Logout link
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:14,377] Login - Step 01: Navigate to Login page
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:41,061] Login - Step 01: Navigate to Login page
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:14,930] Login - Step 02: Enter to email textbox with value is afc5729@gmail.com
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:41,620] Login - Step 02: Enter to email textbox with value is afc382@gmail.com
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:15,140] Login - Step 03: Enter to password textbox with value is 123456
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:41,825] Login - Step 03: Enter to password textbox with value is 123456
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:15,313] Login - Step 04: Click to login button
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:41,997] Login - Step 04: Click to login button
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:16,040] Login - Step 05: Verify My Account Link is displayed
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:42,702] Login - Step 05: Verify My Account Link is displayed
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:16,122]  -------------------------- FAILED -------------------------- 
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:42,792]  -------------------------- FAILED -------------------------- 
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:16,122] Login - Step 06: Navigate to My Account Page
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:42,792] Login - Step 06: Navigate to My Account Page
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:16,726] Login - Step 07: Verify Customer Info page is displayed
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:43,319] Login - Step 07: Verify Customer Info page is displayed
+]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-01 15:41:16,801]  -------------------------- FAILED -------------------------- 
-<br>]]>
+      <![CDATA[[INFO ] [2022-11-01 17:01:43,402]  -------------------------- FAILED -------------------------- 
+]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-11-01T08:41:07Z" name="NopCommerce" finished-at="2022-11-01T08:41:17Z" duration-ms="9701">
+  <suite started-at="2022-11-01T10:01:44Z" name="NopCommerce" finished-at="2022-11-01T10:01:44Z" duration-ms="0">
     <groups>
     </groups>
-    <test started-at="2022-11-01T08:41:07Z" name="Run on Chrome" finished-at="2022-11-01T08:41:17Z" duration-ms="9701">
-      <class name="com.nopcommerce.user.Level_14_Log_ReportNG">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@6253c26]" started-at="2022-11-01T08:41:07Z" name="beforeClass" finished-at="2022-11-01T08:41:11Z" duration-ms="3214" status="PASS">
+  </suite> <!-- NopCommerce -->
+  <suite started-at="2022-11-01T10:01:11Z" name="NopCommerce (0)" finished-at="2022-11-01T10:01:34Z" duration-ms="22763">
+    <groups>
+    </groups>
+    <test started-at="2022-11-01T10:01:11Z" name="Run on Chrome" finished-at="2022-11-01T10:01:34Z" duration-ms="22763">
+      <class name="com.nopcommerce.user.Level_09_Dynamic_Locator">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@5b799640]" started-at="2022-11-01T10:01:11Z" name="beforeClass" finished-at="2022-11-01T10:01:15Z" duration-ms="3226" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,7 +98,46 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@6253c26]" started-at="2022-11-01T08:41:11Z" name="User_01_Register" finished-at="2022-11-01T08:41:14Z" duration-ms="3349" status="FAIL">
+        <test-method signature="User_01_Register_Login()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@5b799640]" started-at="2022-11-01T10:01:15Z" name="User_01_Register_Login" finished-at="2022-11-01T10:01:21Z" duration-ms="6069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_01_Register_Login -->
+        <test-method signature="User_02_Dynamic_Page()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@5b799640]" started-at="2022-11-01T10:01:21Z" name="User_02_Dynamic_Page" finished-at="2022-11-01T10:01:29Z" duration-ms="7942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_02_Dynamic_Page -->
+        <test-method signature="User_03_Dynamic_Page_01()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@5b799640]" started-at="2022-11-01T10:01:29Z" name="User_03_Dynamic_Page_01" finished-at="2022-11-01T10:01:31Z" duration-ms="2305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_03_Dynamic_Page_01 -->
+        <test-method signature="User_03_Dynamic_Page_02()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@5b799640]" started-at="2022-11-01T10:01:31Z" name="User_03_Dynamic_Page_02" finished-at="2022-11-01T10:01:34Z" duration-ms="2556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_03_Dynamic_Page_02 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_09_Dynamic_Locator@5b799640]" started-at="2022-11-01T10:01:34Z" name="afterClass" finished-at="2022-11-01T10:01:34Z" duration-ms="646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.user.Level_09_Dynamic_Locator -->
+    </test> <!-- Run on Chrome -->
+  </suite> <!-- NopCommerce (0) -->
+  <suite started-at="2022-11-01T10:01:34Z" name="NopCommerce (1)" finished-at="2022-11-01T10:01:44Z" duration-ms="9274">
+    <groups>
+    </groups>
+    <test started-at="2022-11-01T10:01:34Z" name="Run on Chrome" finished-at="2022-11-01T10:01:44Z" duration-ms="9274">
+      <class name="com.nopcommerce.user.Level_14_Log_ReportNG">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@dc7df28]" started-at="2022-11-01T10:01:34Z" name="beforeClass" finished-at="2022-11-01T10:01:37Z" duration-ms="2293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@dc7df28]" started-at="2022-11-01T10:01:37Z" name="User_01_Register" finished-at="2022-11-01T10:01:41Z" duration-ms="3996" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Your registration completed...] but found [Your registration completed]]]>
@@ -127,6 +170,7 @@ at org.testng.SuiteRunner.run(SuiteRunner.java:364)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
 at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 at org.testng.TestNG.runSuites(TestNG.java:1049)
 at org.testng.TestNG.run(TestNG.java:1017)
@@ -138,48 +182,48 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:11,031] Register - Step 01: Navigate to Register page
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:37,063] Register - Step 01: Navigate to Register page
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:11,629] Register - Step 02: Enter to Firstname textbox with value is Automation
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:37,679] Register - Step 02: Enter to Firstname textbox with value is Automation
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:11,851] Register - Step 03: Enter to Lastname textbox with value is FC
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:37,903] Register - Step 03: Enter to Lastname textbox with value is FC
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:12,033] Register - Step 04: Enter to Email Adrress textbox with value is FC
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:38,071] Register - Step 04: Enter to Email Adrress textbox with value is FC
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:12,277] Register - Step 05: Enter to Password textbox with value is 123456
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:38,304] Register - Step 05: Enter to Password textbox with value is 123456
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:12,502] Register - Step 06: Enter to ConfirmPassword textbox with value is 123456
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:38,511] Register - Step 06: Enter to ConfirmPassword textbox with value is 123456
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:12,694] Register - Step 07: Click to Register button
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:38,690] Register - Step 07: Click to Register button
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:13,600] Register - Step 08: Verify Register Success Message is displayed
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:40,218] Register - Step 08: Verify Register Success Message is displayed
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:13,688]  -------------------------- FAILED -------------------------- 
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:40,294]  -------------------------- FAILED -------------------------- 
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:13,689] Register - Step 09: Click to Logout link
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:40,295] Register - Step 09: Click to Logout link
+]]>
             </line>
           </reporter-output>
         </test-method> <!-- User_01_Register -->
-        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@6253c26]" started-at="2022-11-01T08:41:14Z" name="User_02_Login" finished-at="2022-11-01T08:41:16Z" duration-ms="2426" status="FAIL">
+        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@dc7df28]" started-at="2022-11-01T10:01:41Z" name="User_02_Login" finished-at="2022-11-01T10:01:43Z" duration-ms="2342" status="FAIL">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Multiple failures (2):
@@ -210,6 +254,7 @@ at org.testng.SuiteRunner.run(SuiteRunner.java:364)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
 at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 at org.testng.TestNG.runSuites(TestNG.java:1049)
 at org.testng.TestNG.run(TestNG.java:1017)
@@ -249,6 +294,7 @@ at org.testng.SuiteRunner.run(SuiteRunner.java:364)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
 at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 at org.testng.TestNG.runSuites(TestNG.java:1049)
 at org.testng.TestNG.run(TestNG.java:1017)
@@ -283,6 +329,7 @@ at org.testng.SuiteRunner.run(SuiteRunner.java:364)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
 at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 at org.testng.TestNG.runSuites(TestNG.java:1049)
 at org.testng.TestNG.run(TestNG.java:1017)
@@ -294,48 +341,48 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.Throwable -->
           <reporter-output>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:14,377] Login - Step 01: Navigate to Login page
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:41,061] Login - Step 01: Navigate to Login page
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:14,930] Login - Step 02: Enter to email textbox with value is afc5729@gmail.com
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:41,620] Login - Step 02: Enter to email textbox with value is afc382@gmail.com
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:15,140] Login - Step 03: Enter to password textbox with value is 123456
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:41,825] Login - Step 03: Enter to password textbox with value is 123456
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:15,313] Login - Step 04: Click to login button
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:41,997] Login - Step 04: Click to login button
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:16,040] Login - Step 05: Verify My Account Link is displayed
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:42,702] Login - Step 05: Verify My Account Link is displayed
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:16,122]  -------------------------- FAILED -------------------------- 
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:42,792]  -------------------------- FAILED -------------------------- 
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:16,122] Login - Step 06: Navigate to My Account Page
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:42,792] Login - Step 06: Navigate to My Account Page
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:16,726] Login - Step 07: Verify Customer Info page is displayed
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:43,319] Login - Step 07: Verify Customer Info page is displayed
+]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-01 15:41:16,801]  -------------------------- FAILED -------------------------- 
-<br>]]>
+              <![CDATA[[INFO ] [2022-11-01 17:01:43,402]  -------------------------- FAILED -------------------------- 
+]]>
             </line>
           </reporter-output>
         </test-method> <!-- User_02_Login -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@6253c26]" started-at="2022-11-01T08:41:16Z" name="afterClass" finished-at="2022-11-01T08:41:17Z" duration-ms="690" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_14_Log_ReportNG@dc7df28]" started-at="2022-11-01T10:01:43Z" name="afterClass" finished-at="2022-11-01T10:01:44Z" duration-ms="638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.nopcommerce.user.Level_14_Log_ReportNG -->
     </test> <!-- Run on Chrome -->
-  </suite> <!-- NopCommerce -->
+  </suite> <!-- NopCommerce (1) -->
 </testng-results>
