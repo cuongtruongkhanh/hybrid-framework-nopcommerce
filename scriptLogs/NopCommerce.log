@@ -1,0 +1,73 @@
+[2022-11-01 15:28:59,017] Register - Step 01: Navigate to Register page
+[2022-11-01 15:28:59,604] Register - Step 02: Enter to Firstname textbox with value is Automation
+[2022-11-01 15:28:59,844] Register - Step 03: Enter to Lastname textbox with value is FC
+[2022-11-01 15:29:00,048] Register - Step 04: Enter to Email Adrress textbox with value is FC
+[2022-11-01 15:29:00,284] Register - Step 05: Enter to Password textbox with value is 123456
+[2022-11-01 15:29:00,502] Register - Step 06: Enter to ConfirmPassword textbox with value is 123456
+[2022-11-01 15:29:00,715] Register - Step 07: Click to Register button
+[2022-11-01 15:29:01,570] Register - Step 08: Verify Register Success Message is displayed
+[2022-11-01 15:29:01,675] Register - Step 09: Click to Logout link
+[2022-11-01 15:29:02,424] Login - Step 01: Navigate to Login page
+[2022-11-01 15:29:02,990] Login - Step 02: Enter to email textbox with value is afc4624@gmail.com
+[2022-11-01 15:29:03,216] Login - Step 03: Enter to password textbox with value is 123456
+[2022-11-01 15:29:03,397] Login - Step 04: Click to login button
+[2022-11-01 15:29:04,145] Login - Step 05: Verify My Account Link is displayed
+[2022-11-01 15:29:04,253] Login - Step 06: Navigate to My Account Page
+[2022-11-01 15:29:04,841] Login - Step 07: Verify Customer Info page is displayed
+[2022-11-01 15:32:25,655] Register - Step 01: Navigate to Register page
+[2022-11-01 15:32:27,272] Register - Step 02: Enter to Firstname textbox with value is Automation
+[2022-11-01 15:32:27,509] Register - Step 03: Enter to Lastname textbox with value is FC
+[2022-11-01 15:32:27,690] Register - Step 04: Enter to Email Adrress textbox with value is FC
+[2022-11-01 15:32:27,929] Register - Step 05: Enter to Password textbox with value is 123456
+[2022-11-01 15:32:28,111] Register - Step 06: Enter to ConfirmPassword textbox with value is 123456
+[2022-11-01 15:32:28,296] Register - Step 07: Click to Register button
+[2022-11-01 15:32:30,488] Register - Step 08: Verify Register Success Message is displayed
+[2022-11-01 15:32:30,589]  -------------------------- FAILED -------------------------- 
+[2022-11-01 15:32:30,590] Register - Step 09: Click to Logout link
+[2022-11-01 15:32:31,329] Login - Step 01: Navigate to Login page
+[2022-11-01 15:32:32,875] Login - Step 02: Enter to email textbox with value is afc5075@gmail.com
+[2022-11-01 15:32:33,075] Login - Step 03: Enter to password textbox with value is 123456
+[2022-11-01 15:32:33,246] Login - Step 04: Click to login button
+[2022-11-01 15:32:33,981] Login - Step 05: Verify My Account Link is displayed
+[2022-11-01 15:32:34,102]  -------------------------- FAILED -------------------------- 
+[2022-11-01 15:32:34,102] Login - Step 06: Navigate to My Account Page
+[2022-11-01 15:32:35,209] Login - Step 07: Verify Customer Info page is displayed
+[2022-11-01 15:32:35,299]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-11-01 15:36:05,784] Register - Step 01: Navigate to Register page
+[INFO ] [2022-11-01 15:36:06,413] Register - Step 02: Enter to Firstname textbox with value is Automation
+[INFO ] [2022-11-01 15:36:06,647] Register - Step 03: Enter to Lastname textbox with value is FC
+[INFO ] [2022-11-01 15:36:06,839] Register - Step 04: Enter to Email Adrress textbox with value is FC
+[INFO ] [2022-11-01 15:36:07,090] Register - Step 05: Enter to Password textbox with value is 123456
+[INFO ] [2022-11-01 15:36:07,294] Register - Step 06: Enter to ConfirmPassword textbox with value is 123456
+[INFO ] [2022-11-01 15:36:07,485] Register - Step 07: Click to Register button
+[INFO ] [2022-11-01 15:36:08,345] Register - Step 08: Verify Register Success Message is displayed
+[INFO ] [2022-11-01 15:36:08,429]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-11-01 15:36:08,429] Register - Step 09: Click to Logout link
+[INFO ] [2022-11-01 15:36:09,166] Login - Step 01: Navigate to Login page
+[INFO ] [2022-11-01 15:36:09,730] Login - Step 02: Enter to email textbox with value is afc2955@gmail.com
+[INFO ] [2022-11-01 15:36:09,971] Login - Step 03: Enter to password textbox with value is 123456
+[INFO ] [2022-11-01 15:36:10,160] Login - Step 04: Click to login button
+[INFO ] [2022-11-01 15:36:10,891] Login - Step 05: Verify My Account Link is displayed
+[INFO ] [2022-11-01 15:36:10,975]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-11-01 15:36:10,975] Login - Step 06: Navigate to My Account Page
+[INFO ] [2022-11-01 15:36:11,686] Login - Step 07: Verify Customer Info page is displayed
+[INFO ] [2022-11-01 15:36:11,763]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-11-01 15:41:11,031] Register - Step 01: Navigate to Register page
+[INFO ] [2022-11-01 15:41:11,629] Register - Step 02: Enter to Firstname textbox with value is Automation
+[INFO ] [2022-11-01 15:41:11,851] Register - Step 03: Enter to Lastname textbox with value is FC
+[INFO ] [2022-11-01 15:41:12,033] Register - Step 04: Enter to Email Adrress textbox with value is FC
+[INFO ] [2022-11-01 15:41:12,277] Register - Step 05: Enter to Password textbox with value is 123456
+[INFO ] [2022-11-01 15:41:12,502] Register - Step 06: Enter to ConfirmPassword textbox with value is 123456
+[INFO ] [2022-11-01 15:41:12,694] Register - Step 07: Click to Register button
+[INFO ] [2022-11-01 15:41:13,600] Register - Step 08: Verify Register Success Message is displayed
+[INFO ] [2022-11-01 15:41:13,688]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-11-01 15:41:13,689] Register - Step 09: Click to Logout link
+[INFO ] [2022-11-01 15:41:14,377] Login - Step 01: Navigate to Login page
+[INFO ] [2022-11-01 15:41:14,930] Login - Step 02: Enter to email textbox with value is afc5729@gmail.com
+[INFO ] [2022-11-01 15:41:15,140] Login - Step 03: Enter to password textbox with value is 123456
+[INFO ] [2022-11-01 15:41:15,313] Login - Step 04: Click to login button
+[INFO ] [2022-11-01 15:41:16,040] Login - Step 05: Verify My Account Link is displayed
+[INFO ] [2022-11-01 15:41:16,122]  -------------------------- FAILED -------------------------- 
+[INFO ] [2022-11-01 15:41:16,122] Login - Step 06: Navigate to My Account Page
+[INFO ] [2022-11-01 15:41:16,726] Login - Step 07: Verify Customer Info page is displayed
+[INFO ] [2022-11-01 15:41:16,801]  -------------------------- FAILED -------------------------- 
