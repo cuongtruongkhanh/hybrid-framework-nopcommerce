@@ -29,6 +29,7 @@ public class Level_14_Log_ReportNG extends BaseTest {
 
 	@Test
 	public void User_01_Register() {
+
 		log.info("Register - Step 01: Navigate to Register page");
 		registerPage = homePage.openRegisterPage();
 

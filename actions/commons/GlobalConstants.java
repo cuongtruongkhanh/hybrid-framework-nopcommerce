@@ -26,6 +26,7 @@ public class GlobalConstants {
 	public static final String BROWSER_LOG = PROJECT_PATH + File.separator + "browserLogs";
 	public static final String DRAG_DROP_HTML5 = PROJECT_PATH + File.separator + "dragDropHTML5";
 	public static final String AUTO_IT_SCRIPT = PROJECT_PATH + File.separator + "autoIT";
+	public static final String REPORTING_SCREENSHOT = PROJECT_PATH + File.separator + "reportNGImages" + File.separator;
 
 	// Popup lên mới upload
 	// Headless browser
