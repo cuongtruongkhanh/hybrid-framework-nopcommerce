@@ -61,14 +61,14 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 		homePage.SleepInSecond(2);
 	}
 
-	// @Test
+	@Test
 	public void Table_03_Enter_To_Header() {
 		// Đọc dữ liệu từ file contry.txt ra
 		// Lưu vào 1 List<String> = Expected Value
 		actualAllCountryValues = homePage.getValueCoutryEachRowAtAllPage();
 	}
 
-	@Test
+	// @Test
 	public void Table_04_Enter_To_Textbox_At_Any_Row() {
 		homePage.SleepInSecond(2);
 		homePage.clicktoLoadButton();
