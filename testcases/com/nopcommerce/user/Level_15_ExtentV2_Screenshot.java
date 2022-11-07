@@ -14,7 +14,7 @@ import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
-import reportConfig.ExtentManager;
+//import reportConfig.ExtentManager;
 
 public class Level_15_ExtentV2_Screenshot extends BaseTest {
 
@@ -32,7 +32,7 @@ public class Level_15_ExtentV2_Screenshot extends BaseTest {
 
 	@Test
 	public void User_01_Register(Method method) {
-		ExtentManager.startTest(method.getName(), "TC_01");
+//		ExtentManager.startTest(method.getName(), "TC_01");
 		log.info("Register - Step 01: Navigate to Register page");
 		registerPage = homePage.openRegisterPage();
 
