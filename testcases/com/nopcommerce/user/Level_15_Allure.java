@@ -3,6 +3,7 @@ package com.nopcommerce.user;
 import java.lang.reflect.Method;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -10,6 +11,9 @@ import org.testng.annotations.Test;
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
@@ -30,6 +34,8 @@ public class Level_15_Allure extends BaseTest {
 
 	}
 
+	@Description("Register to system")
+	@Severity(SeverityLevel.NORMAL)
 	@Test
 	public void User_01_Register(Method method) {
 		registerPage = homePage.openRegisterPage();
@@ -46,10 +52,12 @@ public class Level_15_Allure extends BaseTest {
 
 		registerPage.clickToRegisterButton();
 
-		verifyEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
+		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 
 	}
 
+	@Description("Login to system")
+	@Severity(SeverityLevel.NORMAL)
 	@Test
 	public void User_02_Login(Method method) {
 		homePage = registerPage.clickToLogoutLink();
@@ -60,11 +68,11 @@ public class Level_15_Allure extends BaseTest {
 
 		homePage = loginPage.clickToLoginButton();
 
-		verifyFalse(homePage.isMyAccountLinkDisplayed());
+		Assert.assertFalse(homePage.isMyAccountLinkDisplayed());
 
 		customerInfoPage = homePage.openMyAccountPage();
 
-		verifyFalse(customerInfoPage.isCustomerInfoPageDisplayed());
+		Assert.assertFalse(customerInfoPage.isCustomerInfoPageDisplayed());
 	}
 
 	@AfterClass

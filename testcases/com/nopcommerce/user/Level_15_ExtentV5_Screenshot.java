@@ -3,6 +3,7 @@ package com.nopcommerce.user;
 import java.lang.reflect.Method;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -59,7 +60,7 @@ public class Level_15_ExtentV5_Screenshot extends BaseTest {
 		registerPage.clickToRegisterButton();
 
 		ExtentTestManager.getTest().log(Status.INFO, "Register - Step 08: Verify Register Success Message is displayed");
-		verifyEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
+		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 
 	}
 
@@ -80,13 +81,13 @@ public class Level_15_ExtentV5_Screenshot extends BaseTest {
 		homePage = loginPage.clickToLoginButton();
 
 		ExtentTestManager.getTest().log(Status.INFO, "Login - Step 05: Verify My Account Link is displayed");
-		verifyFalse(homePage.isMyAccountLinkDisplayed());
+		Assert.assertFalse(homePage.isMyAccountLinkDisplayed());
 
 		ExtentTestManager.getTest().log(Status.INFO, "Login - Step 06: Navigate to My Account Page");
 		customerInfoPage = homePage.openMyAccountPage();
 
 		ExtentTestManager.getTest().log(Status.INFO, "Login - Step 07: Verify Customer Info page is displayed");
-		verifyFalse(customerInfoPage.isCustomerInfoPageDisplayed());
+		Assert.assertFalse(customerInfoPage.isCustomerInfoPageDisplayed());
 	}
 
 	@AfterClass
