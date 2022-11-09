@@ -18,7 +18,6 @@ import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
-//import reportConfig.ExtentManager;
 
 public class Level_15_Allure extends BaseTest {
 
