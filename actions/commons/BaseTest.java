@@ -25,7 +25,9 @@ public class BaseTest {
 
 	@BeforeSuite
 	public void initBeforeSuite() {
-		deleteAllFileInFolder();
+		System.out.println("---------START delete file in folder---------");
+		deleteAllureReport();
+		System.out.println("---------END delete file in folder---------");
 	}
 
 	protected BaseTest() {
@@ -191,15 +193,15 @@ public class BaseTest {
 		return pass;
 	}
 
-	public void deleteAllFileInFolder() {
+	public void deleteAllureReport() {
 		try {
-			String pathFolderDownload = GlobalConstants.PROJECT_PATH + "/allure-json";
+			String pathFolderDownload = GlobalConstants.PROJECT_PATH + "/allure-results";
 			File file = new File(pathFolderDownload);
 			File[] listOfFiles = file.listFiles();
 			for (int i = 0; i < listOfFiles.length; i++) {
 				if (listOfFiles[i].isFile()) {
 					System.out.println(listOfFiles[i].getName());
-					new File(listOfFiles.toString()).delete();
+					new File(listOfFiles[i].toString()).delete();
 				}
 			}
 		} catch (Exception e) {

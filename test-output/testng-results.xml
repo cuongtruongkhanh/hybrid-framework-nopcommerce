@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-09T09:05:36Z" name="NopCommerce - User" finished-at="2022-11-09T09:05:48Z" duration-ms="12055">
+  <suite started-at="2022-11-09T10:30:20Z" name="NopCommerce - User" finished-at="2022-11-09T10:30:34Z" duration-ms="13678">
     <groups>
     </groups>
-    <test started-at="2022-11-09T09:05:36Z" name="Run on Chrome" finished-at="2022-11-09T09:05:48Z" duration-ms="12055">
+    <test started-at="2022-11-09T10:30:20Z" name="Run on Chrome" finished-at="2022-11-09T10:30:34Z" duration-ms="13678">
       <class name="com.nopcommerce.user.Level_15_Allure">
-        <test-method is-config="true" signature="initBeforeSuite()[pri:0, instance:com.nopcommerce.user.Level_15_Allure@c2e3264]" started-at="2022-11-09T09:05:36Z" name="initBeforeSuite" finished-at="2022-11-09T09:05:36Z" duration-ms="53" status="PASS">
+        <test-method is-config="true" signature="initBeforeSuite()[pri:0, instance:com.nopcommerce.user.Level_15_Allure@52d6cd34]" started-at="2022-11-09T10:30:20Z" name="initBeforeSuite" finished-at="2022-11-09T10:30:20Z" duration-ms="77" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBeforeSuite -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_15_Allure@c2e3264]" started-at="2022-11-09T09:05:36Z" name="beforeClass" finished-at="2022-11-09T09:05:40Z" duration-ms="4589" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_15_Allure@52d6cd34]" started-at="2022-11-09T10:30:20Z" name="beforeClass" finished-at="2022-11-09T10:30:26Z" duration-ms="6309" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="User_01_Register(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.Level_15_Allure@c2e3264]" started-at="2022-11-09T09:05:40Z" name="User_01_Register" finished-at="2022-11-09T09:05:44Z" duration-ms="3623" status="PASS">
+        <test-method signature="User_01_Register(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.Level_15_Allure@52d6cd34]" started-at="2022-11-09T10:30:26Z" name="User_01_Register" finished-at="2022-11-09T10:30:29Z" duration-ms="3105" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- User_01_Register -->
-        <test-method signature="User_02_Login(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.Level_15_Allure@c2e3264]" started-at="2022-11-09T09:05:44Z" name="User_02_Login" finished-at="2022-11-09T09:05:47Z" duration-ms="2707" status="FAIL">
+        <test-method signature="User_02_Login(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.Level_15_Allure@52d6cd34]" started-at="2022-11-09T10:30:30Z" name="User_02_Login" finished-at="2022-11-09T10:30:32Z" duration-ms="2942" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -83,7 +83,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- User_02_Login -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_15_Allure@c2e3264]" started-at="2022-11-09T09:05:47Z" name="afterClass" finished-at="2022-11-09T09:05:48Z" duration-ms="668" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_15_Allure@52d6cd34]" started-at="2022-11-09T10:30:33Z" name="afterClass" finished-at="2022-11-09T10:30:34Z" duration-ms="782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
