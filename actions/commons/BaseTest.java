@@ -1,6 +1,7 @@
 package commons;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -15,7 +16,10 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+
+import com.google.common.io.Files;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -28,6 +32,13 @@ public class BaseTest {
 		System.out.println("---------START delete file in folder---------");
 		deleteAllureReport();
 		System.out.println("---------END delete file in folder---------");
+	}
+
+	@AfterSuite
+	public void copyFileEnvironmentAfterExecute() {
+		System.out.println("---------START copy file in folder---------");
+		copyFileEnvironment();
+		System.out.println("---------END copy file in folder---------");
 	}
 
 	protected BaseTest() {
@@ -206,6 +217,16 @@ public class BaseTest {
 			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
+		}
+	}
+
+	public void copyFileEnvironment() {
+		File source = new File(GlobalConstants.PROJECT_PATH + "/resouces/environment.xml");
+		File dest = new File(GlobalConstants.PROJECT_PATH + "/allure-results/environment.xml");
+		try {
+			Files.copy(source, dest);
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 }
