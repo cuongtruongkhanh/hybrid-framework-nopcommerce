@@ -1,0 +1,4 @@
+[INFO ] [2022-11-15 16:09:30,227] Login - Step 01: Navigate to Login page
+[INFO ] [2022-11-15 16:09:32,100] Login - Step 02: Enter to email textbox with value is afc1350@gmail.com
+[INFO ] [2022-11-15 16:09:32,350] Login - Step 03: Enter to password textbox with value is 123456
+[INFO ] [2022-11-15 16:09:32,565] Login - Step 04: Click to login button
