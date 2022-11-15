@@ -13,7 +13,7 @@ import commons.PageGeneratorManager;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
 
-public class Level_16_Share_Data extends BaseTest {
+public class Level_16_Share_Data_A extends BaseTest {
 
 	@Parameters("browser")
 	@BeforeClass
