@@ -10,7 +10,7 @@ import commons.PageGeneratorManager;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
-public class Common_01_Register extends BaseTest {
+public class Common_01_Register_Cookies extends BaseTest {
 
 	@Parameters("browser")
 	@BeforeTest(description = "Create new Common User for all Classes Test")

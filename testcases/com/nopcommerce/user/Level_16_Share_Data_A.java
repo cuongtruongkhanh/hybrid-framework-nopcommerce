@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.nopcommerce.common.Common_01_Register;
+import com.nopcommerce.common.Common_01_Register_End_User;
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;
@@ -20,8 +20,8 @@ public class Level_16_Share_Data_A extends BaseTest {
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
 		homePage = PageGeneratorManager.getUserHomePage(driver);
-		emailAdress = Common_01_Register.emailAdress;
-		validPassword = Common_01_Register.validPassword;
+		emailAdress = Common_01_Register_End_User.emailAdress;
+		validPassword = Common_01_Register_End_User.validPassword;
 
 		log.info("Login - Step 01: Navigate to Login page");
 		loginPage = homePage.openLoginPage();
