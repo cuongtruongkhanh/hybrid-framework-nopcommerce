@@ -98,7 +98,7 @@ public class Level_17_Close_Browser extends BaseTest {
 
 	@AfterClass(alwaysRun = true)
 	public void afterClass() {
-		driver.quit();
+		closeBrowserAndDriver();
 	}
 
 	private WebDriver driver;
