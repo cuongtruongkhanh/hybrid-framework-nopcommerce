@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -59,6 +60,17 @@ public class BasePage {
 
 	public void refreshCurrentPage(WebDriver driver) {
 		driver.navigate().refresh();
+	}
+
+	public Set<Cookie> getAllCookies(WebDriver driver) {
+		return driver.manage().getCookies();
+	}
+
+	public void setCookies(WebDriver driver, Set<Cookie> cookies) {
+		for (Cookie cookie : cookies) {
+			driver.manage().addCookie(cookie);
+		}
+		sleepInSecond(3);
 	}
 
 	public Alert waitForAlertPresence(WebDriver driver) {
@@ -116,9 +128,6 @@ public class BasePage {
 		}
 	}
 
-	// locatorType: id=/ css=/ xpath=/ name=/ class=/
-	// locatorType: ID=/ CSS=/ XPATH=/ NAME=/ CLASS=/
-	// locatorType: Id=/ Css=/ Xpath=/ Name=/ Class=/
 	private By getByLocator(String locatorType) {
 		By by = null;
 		if (locatorType.startsWith("id=") || locatorType.startsWith("ID=") || locatorType.startsWith("Id=")) {
@@ -137,7 +146,6 @@ public class BasePage {
 		return by;
 	}
 
-	// nếu truyền vào locator type là xpath thì đúng
 	public String getDynamicXpath(String locatorType, String... dynamicValues) {
 		if (locatorType.startsWith("xpath=") || locatorType.startsWith("XPATH=") || locatorType.startsWith("Xpath=") || locatorType.startsWith("XPath=")) {
 			locatorType = String.format(locatorType, (Object[]) dynamicValues);
@@ -195,7 +203,7 @@ public class BasePage {
 
 	public void selectItemInCustomDropdown(WebDriver driver, String parentXpath, String childXpath, String expectedTextItem) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
-		sleepSecond(1);
+		sleepInSecond(1);
 		getWebElement(driver, parentXpath).click();
 		List<WebElement> allDropdownItems = explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByLocator(childXpath)));
 		for (WebElement item : allDropdownItems) {
@@ -203,19 +211,11 @@ public class BasePage {
 			if (actualTextItem.equals(expectedTextItem)) {
 				JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", item);
-				sleepSecond(1);
+				sleepInSecond(1);
 				item.click();
-				sleepSecond(1);
+				sleepInSecond(1);
 				break;
 			}
-		}
-	}
-
-	public void sleepSecond(long timeSleep) {
-		try {
-			Thread.sleep(timeSleep * 1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
 		}
 	}
 
@@ -354,7 +354,7 @@ public class BasePage {
 		WebElement element = getWebElement(driver, locatorType);
 		String originalStyle = element.getAttribute("style");
 		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style", "border: 2px solid red; border-style: dashed;");
-		sleepSecond(1);
+		sleepInSecond(1);
 		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style", originalStyle);
 	}
 
@@ -411,7 +411,8 @@ public class BasePage {
 
 	public boolean isImageLoaded(WebDriver driver, String locatorType, String... dynamicValues) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0", getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)));
+		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0",
+				getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)));
 		return status;
 	}
 
@@ -551,7 +552,7 @@ public class BasePage {
 		return PageGeneratorManager.getAdminLoginPage(driver);
 	}
 
-	public void SleepInSecond(long timeSleep) {
+	public void sleepInSecond(long timeSleep) {
 		try {
 			Thread.sleep(timeSleep * 1000);
 		} catch (InterruptedException e) {

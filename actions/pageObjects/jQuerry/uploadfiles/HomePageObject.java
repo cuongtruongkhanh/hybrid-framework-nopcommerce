@@ -25,7 +25,7 @@ public class HomePageObject extends BasePage {
 
 		for (WebElement startButton : startButtons) {
 			startButton.click();
-			SleepInSecond(1);
+			sleepInSecond(1);
 		}
 	}
 

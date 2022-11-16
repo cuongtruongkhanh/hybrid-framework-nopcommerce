@@ -29,19 +29,19 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 	// @Test
 	public void Table_01_Paging() {
 		homePage.openPagingByPageNumber("10");
-		homePage.SleepInSecond(2);
+		homePage.sleepInSecond(2);
 		Assert.assertTrue(homePage.isPageNumberActived("10"));
 
 		homePage.openPagingByPageNumber("20");
-		homePage.SleepInSecond(2);
+		homePage.sleepInSecond(2);
 		Assert.assertTrue(homePage.isPageNumberActived("20"));
 
 		homePage.openPagingByPageNumber("7");
-		homePage.SleepInSecond(2);
+		homePage.sleepInSecond(2);
 		Assert.assertTrue(homePage.isPageNumberActived("7"));
 
 		homePage.openPagingByPageNumber("8");
-		homePage.SleepInSecond(2);
+		homePage.sleepInSecond(2);
 		Assert.assertTrue(homePage.isPageNumberActived("8"));
 	}
 
@@ -52,13 +52,13 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 		homePage.enterToHeaderTextboxByLabel("Females", "338282");
 		homePage.enterToHeaderTextboxByLabel("Males", "349238");
 		homePage.enterToHeaderTextboxByLabel("Total", "687522");
-		homePage.SleepInSecond(2);
+		homePage.sleepInSecond(2);
 
 		homePage.enterToHeaderTextboxByLabel("Country", "Angola");
 		homePage.enterToHeaderTextboxByLabel("Females", "276880");
 		homePage.enterToHeaderTextboxByLabel("Males", "276472");
 		homePage.enterToHeaderTextboxByLabel("Total", "553353");
-		homePage.SleepInSecond(2);
+		homePage.sleepInSecond(2);
 	}
 
 	@Test
@@ -70,9 +70,9 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 
 	// @Test
 	public void Table_04_Enter_To_Textbox_At_Any_Row() {
-		homePage.SleepInSecond(2);
+		homePage.sleepInSecond(2);
 		homePage.clicktoLoadButton();
-		homePage.SleepInSecond(1);
+		homePage.sleepInSecond(1);
 
 		// Value de nhap lieu - tham so 1
 		// Row number: tai row nao
@@ -113,13 +113,13 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 //		homePage.SleepInSecond(2);
 
 		homePage.clickToIconByRowNumber("2", "Insert Row Above");
-		homePage.SleepInSecond(2);
+		homePage.sleepInSecond(2);
 		homePage.clickToIconByRowNumber("2", "Remove Current Row");
-		homePage.SleepInSecond(2);
+		homePage.sleepInSecond(2);
 		homePage.clickToIconByRowNumber("4", "Move Up");
-		homePage.SleepInSecond(2);
+		homePage.sleepInSecond(2);
 		homePage.clickToIconByRowNumber("4", "Move Down");
-		homePage.SleepInSecond(2);
+		homePage.sleepInSecond(2);
 
 	}
 

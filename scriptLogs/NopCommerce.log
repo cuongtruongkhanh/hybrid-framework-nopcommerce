@@ -225,3 +225,51 @@
 [INFO ] [2022-11-15 16:09:32,100] Login - Step 02: Enter to email textbox with value is afc1350@gmail.com
 [INFO ] [2022-11-15 16:09:32,350] Login - Step 03: Enter to password textbox with value is 123456
 [INFO ] [2022-11-15 16:09:32,565] Login - Step 04: Click to login button
+[INFO ] [2022-11-16 09:53:49,875] Login - Step 01: Navigate to Login page
+[INFO ] [2022-11-16 09:53:50,875] Login - Step 02: Enter to email textbox with value is afc2963@gmail.com
+[INFO ] [2022-11-16 09:53:51,218] Login - Step 03: Enter to password textbox with value is 123456
+[INFO ] [2022-11-16 09:53:51,445] Login - Step 04: Click to login button
+[INFO ] [2022-11-16 11:28:39,238] Pre-Condition - Step 01: Navigate to Login page
+[INFO ] [2022-11-16 11:28:39,942] Pre-Condition - Step 02: Set cookies and reload page
+[INFO ] [2022-11-16 11:28:43,426] Pre-Condition - Step 03: Verify My Account Link is displayed
+[INFO ] [2022-11-16 11:28:43,557]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-16 16:13:06,182] Pre-condition - Step 01: Navigate to Register page
+[INFO ] [2022-11-16 16:13:06,868] Pre-condition - Step 02: Enter to Firstname textbox with value is Automation
+[INFO ] [2022-11-16 16:13:07,152] Pre-condition - Step 03: Enter to Lastname textbox with value is FC
+[INFO ] [2022-11-16 16:13:07,384] Pre-condition - Step 04: Enter to Email Adrress textbox with value is FC
+[INFO ] [2022-11-16 16:13:07,654] Pre-condition - Step 05: Enter to Password textbox with value is 123456
+[INFO ] [2022-11-16 16:13:07,872] Pre-condition - Step 06: Enter to ConfirmPassword textbox with value is 123456
+[INFO ] [2022-11-16 16:13:08,090] Pre-condition - Step 07: Click to Register button
+[INFO ] [2022-11-16 16:13:08,969] Pre-condition - Step 08: Verify Register Success Message is displayed
+[INFO ] [2022-11-16 16:15:17,020] Pre-condition - Step 01: Navigate to Register page
+[INFO ] [2022-11-16 16:15:17,886] Pre-condition - Step 02: Enter to Firstname textbox with value is Automation
+[INFO ] [2022-11-16 16:15:18,171] Pre-condition - Step 03: Enter to Lastname textbox with value is FC
+[INFO ] [2022-11-16 16:15:18,392] Pre-condition - Step 04: Enter to Email Adrress textbox with value is FC
+[INFO ] [2022-11-16 16:15:18,679] Pre-condition - Step 05: Enter to Password textbox with value is 123456
+[INFO ] [2022-11-16 16:15:18,910] Pre-condition - Step 06: Enter to ConfirmPassword textbox with value is 123456
+[INFO ] [2022-11-16 16:15:19,128] Pre-condition - Step 07: Click to Register button
+[INFO ] [2022-11-16 16:15:20,057] Pre-condition - Step 08: Verify Register Success Message is displayed
+[INFO ] [2022-11-16 16:16:06,890] Pre-condition - Step 01: Navigate to Register page
+[INFO ] [2022-11-16 16:16:07,632] Pre-condition - Step 02: Enter to Firstname textbox with value is Automation
+[INFO ] [2022-11-16 16:16:07,929] Pre-condition - Step 03: Enter to Lastname textbox with value is FC
+[INFO ] [2022-11-16 16:16:08,174] Pre-condition - Step 04: Enter to Email Adrress textbox with value is FC
+[INFO ] [2022-11-16 16:16:08,479] Pre-condition - Step 05: Enter to Password textbox with value is 123456
+[INFO ] [2022-11-16 16:16:08,714] Pre-condition - Step 06: Enter to ConfirmPassword textbox with value is 123456
+[INFO ] [2022-11-16 16:16:08,940] Pre-condition - Step 07: Click to Register button
+[INFO ] [2022-11-16 16:16:09,895] Pre-condition - Step 08: Verify Register Success Message is displayed
+[INFO ] [2022-11-16 16:28:49,846] Pre-condition - Step 01: Navigate to Register page
+[INFO ] [2022-11-16 16:28:50,585] Pre-condition - Step 02: Enter to Firstname textbox with value is Automation
+[INFO ] [2022-11-16 16:28:50,856] Pre-condition - Step 03: Enter to Lastname textbox with value is FC
+[INFO ] [2022-11-16 16:28:51,080] Pre-condition - Step 04: Enter to Email Adrress textbox with value is FC
+[INFO ] [2022-11-16 16:28:51,382] Pre-condition - Step 05: Enter to Password textbox with value is 123456
+[INFO ] [2022-11-16 16:28:51,613] Pre-condition - Step 06: Enter to ConfirmPassword textbox with value is 123456
+[INFO ] [2022-11-16 16:28:51,845] Pre-condition - Step 07: Click to Register button
+[INFO ] [2022-11-16 16:28:52,784] Pre-condition - Step 08: Verify Register Success Message is displayed
+[INFO ] [2022-11-16 16:29:27,971] Pre-condition - Step 01: Navigate to Register page
+[INFO ] [2022-11-16 16:29:28,597] Pre-condition - Step 02: Enter to Firstname textbox with value is Automation
+[INFO ] [2022-11-16 16:29:28,818] Pre-condition - Step 03: Enter to Lastname textbox with value is FC
+[INFO ] [2022-11-16 16:29:28,997] Pre-condition - Step 04: Enter to Email Adrress textbox with value is FC
+[INFO ] [2022-11-16 16:29:29,244] Pre-condition - Step 05: Enter to Password textbox with value is 123456
+[INFO ] [2022-11-16 16:29:29,451] Pre-condition - Step 06: Enter to ConfirmPassword textbox with value is 123456
+[INFO ] [2022-11-16 16:29:29,649] Pre-condition - Step 07: Click to Register button
+[INFO ] [2022-11-16 16:29:30,492] Pre-condition - Step 08: Verify Register Success Message is displayed

@@ -23,31 +23,31 @@ public class Common_01_Register_End_User extends BaseTest {
 		emailAdress = "afc" + generateRandomNumber() + "@gmail.com";
 		validPassword = "123456";
 
-		log.info("Register - Step 01: Navigate to Register page");
+		log.info("Pre-condition - Step 01: Navigate to Register page");
 		registerPage = homePage.openRegisterPage();
 
-		log.info("Register - Step 02: Enter to Firstname textbox with value is " + firstName);
+		log.info("Pre-condition - Step 02: Enter to Firstname textbox with value is " + firstName);
 		registerPage.inputToFirstnameTextbox(firstName);
 
-		log.info("Register - Step 03: Enter to Lastname textbox with value is " + lastName);
+		log.info("Pre-condition - Step 03: Enter to Lastname textbox with value is " + lastName);
 		registerPage.inputToLastnameTextbox(lastName);
 
-		log.info("Register - Step 04: Enter to Email Adrress textbox with value is " + lastName);
+		log.info("Pre-condition - Step 04: Enter to Email Adrress textbox with value is " + lastName);
 		registerPage.inputToEmailTextbox(emailAdress);
 
-		log.info("Register - Step 05: Enter to Password textbox with value is " + validPassword);
+		log.info("Pre-condition - Step 05: Enter to Password textbox with value is " + validPassword);
 		registerPage.inputToPasswordTextbox(validPassword);
 
-		log.info("Register - Step 06: Enter to ConfirmPassword textbox with value is " + validPassword);
+		log.info("Pre-condition - Step 06: Enter to ConfirmPassword textbox with value is " + validPassword);
 		registerPage.inputToConfirmPasswordTextbox(validPassword);
 
-		log.info("Register - Step 07: Click to Register button");
+		log.info("Pre-condition - Step 07: Click to Register button");
 		registerPage.clickToRegisterButton();
 
-		log.info("Register - Step 08: Verify Register Success Message is displayed");
+		log.info("Pre-condition - Step 08: Verify Register Success Message is displayed");
 		verifyEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 
-		log.info("Register - Step 09: Click to Logout link");
+		log.info("Pre-condition - Step 09: Click to Logout link");
 		homePage = registerPage.clickToLogoutLink();
 
 	}

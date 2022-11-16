@@ -31,11 +31,11 @@ public class Level_13_Element_Undisplayed extends BaseTest {
 	@Test
 	public void TC_02_Verify_Element_Undisplayed_In_DOM() {
 		loginPage.enterToEmailAddressTextbox("automationfc@gmail.com");
-		loginPage.SleepInSecond(2);
+		loginPage.sleepInSecond(2);
 		verifyTrue(loginPage.isConfirmEmailAddressTextboxDisplayed());
 
 		loginPage.enterToEmailAddressTextbox("");
-		loginPage.SleepInSecond(2);
+		loginPage.sleepInSecond(2);
 		// verifyFalse(loginPage.isConfirmEmailAddressTextboxDisplayed());
 		verifyTrue(loginPage.isConfirmEmailAddressTextboxUndisplayed());
 	}
@@ -43,7 +43,7 @@ public class Level_13_Element_Undisplayed extends BaseTest {
 	@Test
 	public void TC_03_Verify_Element_Undisplayed_Not_In_DOM() {
 		loginPage.clickCloseIconAtRegisterForm();
-		loginPage.SleepInSecond(2);
+		loginPage.sleepInSecond(2);
 
 		// Verify False - Mong doi confirm Email undisplayed (false) -> mat rat nhieu thoi gian do phai doi den het timeout thi moi tra ve ket qua
 		// verifyFalse(loginPage.isConfirmEmailAddressTextboxDisplayed());

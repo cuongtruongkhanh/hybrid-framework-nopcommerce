@@ -1,5 +1,8 @@
 package com.nopcommerce.common;
 
+import java.util.Set;
+
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -8,6 +11,7 @@ import org.testng.annotations.Parameters;
 import commons.BaseTest;
 import commons.PageGeneratorManager;
 import pageObjects.nopCommerce.user.UserHomePageObject;
+import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
 
 public class Common_01_Register_Cookies extends BaseTest {
@@ -50,6 +54,19 @@ public class Common_01_Register_Cookies extends BaseTest {
 		log.info("Register - Step 09: Click to Logout link");
 		homePage = registerPage.clickToLogoutLink();
 
+		log.info("Pre-condition - Step 10: Navigate to Login page");
+		loginPage = homePage.openLoginPage();
+
+		log.info("Pre-condition - Step 11: Enter to email textbox with value is " + emailAdress);
+		loginPage.inputToEmailTextbox(emailAdress);
+		log.info("Pre-condition - Step 12: Enter to password textbox with value is " + validPassword);
+		loginPage.inputToPasswordTextbox(validPassword);
+
+		log.info("Pre-condition - Step 13: Click to login button");
+		homePage = loginPage.clickToLoginButton();
+
+		LoggedCookies = homePage.getAllCookies(driver);
+
 	}
 
 	@AfterTest
@@ -60,7 +77,8 @@ public class Common_01_Register_Cookies extends BaseTest {
 	private WebDriver driver;
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;
-	private String firstName, lastName;
-	public static String validPassword, emailAdress;
+	private UserLoginPageObject loginPage;
+	private String firstName, lastName, validPassword, emailAdress;
+	public static Set<Cookie> LoggedCookies;
 
 }

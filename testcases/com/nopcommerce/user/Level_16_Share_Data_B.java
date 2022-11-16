@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;
-import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
@@ -55,15 +54,15 @@ public class Level_16_Share_Data_B extends BaseTest {
 		log.info("Pre-condition - Step 09: Click to Logout link");
 		homePage = registerPage.clickToLogoutLink();
 
-		log.info("Pre-condition - Step 01: Navigate to Login page");
+		log.info("Pre-condition - Step 10: Navigate to Login page");
 		loginPage = homePage.openLoginPage();
 
-		log.info("Pre-condition - Step 02: Enter to email textbox with value is " + emailAdress);
+		log.info("Pre-condition - Step 11: Enter to email textbox with value is " + emailAdress);
 		loginPage.inputToEmailTextbox(emailAdress);
-		log.info("Pre-condition - Step 03: Enter to password textbox with value is " + validPassword);
+		log.info("Pre-condition - Step 12: Enter to password textbox with value is " + validPassword);
 		loginPage.inputToPasswordTextbox(validPassword);
 
-		log.info("Pre-condition - Step 04: Click to login button");
+		log.info("Pre-condition - Step 13: Click to login button");
 		homePage = loginPage.clickToLoginButton();
 
 	}
@@ -107,7 +106,6 @@ public class Level_16_Share_Data_B extends BaseTest {
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;
 	private UserLoginPageObject loginPage;
-	private UserCustomerInfoPageObject customerInfoPage;
 	private String firstName, lastName, validPassword, emailAdress;
 
 }
