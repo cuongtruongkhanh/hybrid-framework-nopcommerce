@@ -10,7 +10,7 @@ import pageUIs.nopCommerce.user.LoginPageUI;
 
 public class UserLoginPageObject extends BasePage {
 	private WebDriver driver;
-	private WebDriverWait explicitWait;
+	WebDriverWait explicitWait;
 
 	public UserLoginPageObject(WebDriver driver) {
 		this.driver = driver;

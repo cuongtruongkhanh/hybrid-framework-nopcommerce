@@ -26,7 +26,7 @@ import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserMyProductReviewPageObject;
 import pageObjects.nopCommerce.user.UserRewardPointPageObject;
 import pageUIs.jQuerry.uploadfiles.BasePageJQueryUI;
-import pageUIs.nopCommerce.user.BasePageNoCommerceUI;
+import pageUIs.nopCommerce.user.BasePageNopCommerceUI;
 
 public class BasePage {
 
@@ -411,8 +411,7 @@ public class BasePage {
 
 	public boolean isImageLoaded(WebDriver driver, String locatorType, String... dynamicValues) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0",
-				getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)));
+		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0", getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)));
 		return status;
 	}
 
@@ -491,33 +490,33 @@ public class BasePage {
 
 	// Tối ưu ở bài Level_07_Switch_Page
 	public UserCustomerInfoPageObject openCustomerInfo(WebDriver driver) {
-		waitForElementClickable(driver, BasePageNoCommerceUI.CUSTOMER_INFO_LINK);
-		clickToElement(driver, BasePageNoCommerceUI.CUSTOMER_INFO_LINK);
+		waitForElementClickable(driver, BasePageNopCommerceUI.CUSTOMER_INFO_LINK);
+		clickToElement(driver, BasePageNopCommerceUI.CUSTOMER_INFO_LINK);
 		return PageGeneratorManager.getUserCustomerInFoPage(driver);
 	}
 
 	public UserAddressPageObject openAddressPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageNoCommerceUI.ADDRESS_LINK);
-		clickToElement(driver, BasePageNoCommerceUI.ADDRESS_LINK);
+		waitForElementClickable(driver, BasePageNopCommerceUI.ADDRESS_LINK);
+		clickToElement(driver, BasePageNopCommerceUI.ADDRESS_LINK);
 		return PageGeneratorManager.getUserAddressPage(driver);
 	}
 
 	public UserMyProductReviewPageObject openMyProductReviewPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageNoCommerceUI.MY_PRODUCT_REVIEW_LINK);
-		clickToElement(driver, BasePageNoCommerceUI.MY_PRODUCT_REVIEW_LINK);
+		waitForElementClickable(driver, BasePageNopCommerceUI.MY_PRODUCT_REVIEW_LINK);
+		clickToElement(driver, BasePageNopCommerceUI.MY_PRODUCT_REVIEW_LINK);
 		return PageGeneratorManager.getUserMyProductReviewPage(driver);
 	}
 
 	public UserRewardPointPageObject openRewardPointPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageNoCommerceUI.REWARD_POINT_LINK);
-		clickToElement(driver, BasePageNoCommerceUI.REWARD_POINT_LINK);
+		waitForElementClickable(driver, BasePageNopCommerceUI.REWARD_POINT_LINK);
+		clickToElement(driver, BasePageNopCommerceUI.REWARD_POINT_LINK);
 		return PageGeneratorManager.getUserRewardPointPage(driver);
 	}
 
 	// Tối ưu ở bài Level_09_Dynamic_Locator
 	public BasePage openPagesAtMyAccountPageByName(WebDriver driver, String pageName) {
-		waitForElementClickable(driver, BasePageNoCommerceUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
-		clickToElement(driver, BasePageNoCommerceUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
+		clickToElement(driver, BasePageNopCommerceUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
 		switch (pageName) {
 		case "Customer info":
 			return PageGeneratorManager.getUserCustomerInFoPage(driver);
@@ -533,23 +532,57 @@ public class BasePage {
 	}
 
 	public void openPagesAtMyAccountByPageName(WebDriver driver, String pageName) {
-		waitForElementClickable(driver, BasePageNoCommerceUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
-		clickToElement(driver, BasePageNoCommerceUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
+		clickToElement(driver, BasePageNopCommerceUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
 
+	}
+
+	// Pattern Object
+	/**
+	 * Enter to dynamic Textbox by ID
+	 * <ul>
+	 * <li>Rest Parameter</li>
+	 * <li>Textbox by ID</li>
+	 * </ul>
+	 * 
+	 * @author cuongtk
+	 * @param driver
+	 * @param textboxID
+	 * @param value
+	 */
+	public void inputToTextboxByID(WebDriver driver, String textboxID, String value) {
+		waitForElementVisible(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
+		sendKeyToElement(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, value, textboxID);
 	}
 
 	// Level_08_Switch_Role
 	public UserHomePageObject clickToLogoutLinkAtUserPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageNoCommerceUI.LOGOUT_LINK_AS_USER);
-		clickToElement(driver, BasePageNoCommerceUI.LOGOUT_LINK_AS_USER);
+		waitForElementClickable(driver, BasePageNopCommerceUI.LOGOUT_LINK_AS_USER);
+		clickToElement(driver, BasePageNopCommerceUI.LOGOUT_LINK_AS_USER);
 		return PageGeneratorManager.getUserHomePage(driver);
 	}
 
 	public AdminLoginPageObject clickToLogoutLinkAtAdminPage(WebDriver driver) {
-		waitForElementInvisible(driver, BasePageNoCommerceUI.AJAX_BUSY_BANNER);
-		waitForElementClickable(driver, BasePageNoCommerceUI.LOGOUT_LINK_AS_ADMIN);
-		clickToElement(driver, BasePageNoCommerceUI.LOGOUT_LINK_AS_ADMIN);
+		waitForElementInvisible(driver, BasePageNopCommerceUI.AJAX_BUSY_BANNER);
+		waitForElementClickable(driver, BasePageNopCommerceUI.LOGOUT_LINK_AS_ADMIN);
+		clickToElement(driver, BasePageNopCommerceUI.LOGOUT_LINK_AS_ADMIN);
 		return PageGeneratorManager.getAdminLoginPage(driver);
+	}
+
+	/**
+	 * Enter to dynamic button by Text
+	 * <ul>
+	 * <li>Rest Parameter</li>
+	 * <li>Button by Text</li>
+	 * </ul>
+	 * 
+	 * @author cuongtk
+	 * @param driver
+	 * @param buttonText
+	 */
+	public void clickToButtonByText(WebDriver driver, String buttonText) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
+		clickToElement(driver, BasePageNopCommerceUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
 	}
 
 	public void sleepInSecond(long timeSleep) {

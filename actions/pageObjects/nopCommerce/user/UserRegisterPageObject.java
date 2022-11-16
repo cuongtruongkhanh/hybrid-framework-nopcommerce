@@ -107,4 +107,5 @@ public class UserRegisterPageObject extends BasePage {
 		inputToConfirmPasswordTextbox(userPassword);
 		clickToRegisterButton();
 	}
+
 }
