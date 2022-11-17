@@ -1,109 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:08,644] Register - Step 01: Navigate to Register page
+      <![CDATA[[INFO ] [2022-11-17 23:41:27,697] Register - Step 01: Navigate to Register page
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:09,348] Register - Step 02: click to Radio button
+      <![CDATA[[INFO ] [2022-11-17 23:41:28,725] Register - Step 02: click to Radio button
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:09,491] Register - Step 03: Enter to Firstname textbox with value is Automation
+      <![CDATA[[INFO ] [2022-11-17 23:41:28,809] Register - Step 03: Enter to Firstname textbox with value is Automation
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:09,707] Register - Step 04: Enter to Lastname textbox with value is FC
+      <![CDATA[[INFO ] [2022-11-17 23:41:28,925] Register - Step 04: Enter to Lastname textbox with value is FC
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:09,904] Register - Step 05: Select DateOfBirthDay, DateOfBirthMonth, DateOfBirthYear
+      <![CDATA[[INFO ] [2022-11-17 23:41:29,037] Register - Step 05: Select DateOfBirthDay, DateOfBirthMonth, DateOfBirthYear
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:10,402] Register - Step 06: Enter to Email Adrress textbox with value is FC
+      <![CDATA[[INFO ] [2022-11-17 23:41:29,332] Register - Step 06: Enter to Email Adrress textbox with value is FC
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:10,621] Register - Step 07: Click to Checkbox Newsletter
+      <![CDATA[[INFO ] [2022-11-17 23:41:29,457] Register - Step 07: Click to Checkbox Newsletter
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:10,707] Register - Step 08: Enter to Company textbox with value is Electronics
+      <![CDATA[[INFO ] [2022-11-17 23:41:29,510] Register - Step 08: Enter to Company textbox with value is Electronics
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:10,926] Register - Step 09: Enter to Password textbox with value is 123456
+      <![CDATA[[INFO ] [2022-11-17 23:41:29,624] Register - Step 09: Enter to Password textbox with value is 123456
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:11,145] Register - Step 10: Enter to ConfirmPassword textbox with value is 123456
+      <![CDATA[[INFO ] [2022-11-17 23:41:29,737] Register - Step 10: Enter to ConfirmPassword textbox with value is 123456
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:11,407] Register - Step 11: Click to Register button
+      <![CDATA[[INFO ] [2022-11-17 23:41:29,842] Register - Step 11: Click to Register button
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:13,171] Register - Step 12: Verify Register Success Message is displayed
+      <![CDATA[[INFO ] [2022-11-17 23:41:30,565] Register - Step 12: Verify Register Success Message is displayed
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:13,277]  -------------------------- PASSED -------------------------- 
+      <![CDATA[[INFO ] [2022-11-17 23:41:30,626]  -------------------------- PASSED -------------------------- 
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:13,358] Login - Step 01: Navigate to Login page
+      <![CDATA[[INFO ] [2022-11-17 23:41:30,659] Login - Step 01: Navigate to Login page
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:14,799] Login - Step 02: Enter to email textbox with value is afc66@gmail.com
+      <![CDATA[[INFO ] [2022-11-17 23:41:31,690] Login - Step 02: Enter to email textbox with value is afc7582@gmail.com
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:15,057] Login - Step 03: Enter to password textbox with value is 123456
+      <![CDATA[[INFO ] [2022-11-17 23:41:31,795] Login - Step 03: Enter to password textbox with value is 123456
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:15,234] Login - Step 04: Click to login button
+      <![CDATA[[INFO ] [2022-11-17 23:41:31,905] Login - Step 04: Click to login button
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:16,017] Login - Step 05: Verify My Account Link is displayed
+      <![CDATA[[INFO ] [2022-11-17 23:41:32,544] Login - Step 05: Verify My Account Link is displayed
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:16,128]  -------------------------- PASSED -------------------------- 
+      <![CDATA[[INFO ] [2022-11-17 23:41:32,602]  -------------------------- PASSED -------------------------- 
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:16,128] Login - Step 06: Navigate to My Account Page
+      <![CDATA[[INFO ] [2022-11-17 23:41:32,606] MyAccount - Step 01: Navigate to My Account Page
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:17,405] Login - Step 07: Verify Customer Info page is displayed
+      <![CDATA[[INFO ] [2022-11-17 23:41:33,074] MyAccount - Step 02: Verify Customer Info page is displayed
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:17,521]  -------------------------- PASSED -------------------------- 
+      <![CDATA[[INFO ] [2022-11-17 23:41:33,132]  -------------------------- PASSED -------------------------- 
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:17,528] OS name = windows 10
+      <![CDATA[[INFO ] [2022-11-17 23:41:33,132] MyAccount - Step 03: Verify First Name value is correct
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-11-17 14:54:17,528] Driver instance name = chromedriver: chrome on windows (0cbc6fce194f3861bcf04c8a4dc3f464)
+      <![CDATA[[INFO ] [2022-11-17 23:41:43,208] MyAccount - Step 04: Verify Last Name value is correct
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-11-17 23:41:43,268] MyAccount - Step 05: Verify Email value is correct
 <br>]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-11-17T07:54:03Z" name="NopCommerce - User" finished-at="2022-11-17T07:54:18Z" duration-ms="14786">
+  <suite started-at="2022-11-17T16:41:25Z" name="NopCommerce - User" finished-at="2022-11-17T16:41:43Z" duration-ms="18207">
     <groups>
     </groups>
-    <test started-at="2022-11-17T07:54:03Z" name="Run on Chrome" finished-at="2022-11-17T07:54:18Z" duration-ms="14786">
+    <test started-at="2022-11-17T16:41:25Z" name="Run on Chrome" finished-at="2022-11-17T16:41:43Z" duration-ms="18207">
       <class name="com.nopcommerce.user.Level_18_Pattern_Object">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_18_Pattern_Object@6f19ac19]" started-at="2022-11-17T07:54:03Z" name="beforeClass" finished-at="2022-11-17T07:54:08Z" duration-ms="4930" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_18_Pattern_Object@119cbf96]" started-at="2022-11-17T16:41:25Z" name="beforeClass" finished-at="2022-11-17T16:41:27Z" duration-ms="2531" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,112 +118,120 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_18_Pattern_Object@6f19ac19]" started-at="2022-11-17T07:54:08Z" name="User_01_Register" finished-at="2022-11-17T07:54:13Z" duration-ms="4693" status="PASS">
+        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_18_Pattern_Object@119cbf96]" started-at="2022-11-17T16:41:27Z" name="User_01_Register" finished-at="2022-11-17T16:41:30Z" duration-ms="2962" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:08,644] Register - Step 01: Navigate to Register page
+              <![CDATA[[INFO ] [2022-11-17 23:41:27,697] Register - Step 01: Navigate to Register page
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:09,348] Register - Step 02: click to Radio button
+              <![CDATA[[INFO ] [2022-11-17 23:41:28,725] Register - Step 02: click to Radio button
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:09,491] Register - Step 03: Enter to Firstname textbox with value is Automation
+              <![CDATA[[INFO ] [2022-11-17 23:41:28,809] Register - Step 03: Enter to Firstname textbox with value is Automation
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:09,707] Register - Step 04: Enter to Lastname textbox with value is FC
+              <![CDATA[[INFO ] [2022-11-17 23:41:28,925] Register - Step 04: Enter to Lastname textbox with value is FC
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:09,904] Register - Step 05: Select DateOfBirthDay, DateOfBirthMonth, DateOfBirthYear
+              <![CDATA[[INFO ] [2022-11-17 23:41:29,037] Register - Step 05: Select DateOfBirthDay, DateOfBirthMonth, DateOfBirthYear
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:10,402] Register - Step 06: Enter to Email Adrress textbox with value is FC
+              <![CDATA[[INFO ] [2022-11-17 23:41:29,332] Register - Step 06: Enter to Email Adrress textbox with value is FC
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:10,621] Register - Step 07: Click to Checkbox Newsletter
+              <![CDATA[[INFO ] [2022-11-17 23:41:29,457] Register - Step 07: Click to Checkbox Newsletter
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:10,707] Register - Step 08: Enter to Company textbox with value is Electronics
+              <![CDATA[[INFO ] [2022-11-17 23:41:29,510] Register - Step 08: Enter to Company textbox with value is Electronics
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:10,926] Register - Step 09: Enter to Password textbox with value is 123456
+              <![CDATA[[INFO ] [2022-11-17 23:41:29,624] Register - Step 09: Enter to Password textbox with value is 123456
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:11,145] Register - Step 10: Enter to ConfirmPassword textbox with value is 123456
+              <![CDATA[[INFO ] [2022-11-17 23:41:29,737] Register - Step 10: Enter to ConfirmPassword textbox with value is 123456
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:11,407] Register - Step 11: Click to Register button
+              <![CDATA[[INFO ] [2022-11-17 23:41:29,842] Register - Step 11: Click to Register button
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:13,171] Register - Step 12: Verify Register Success Message is displayed
+              <![CDATA[[INFO ] [2022-11-17 23:41:30,565] Register - Step 12: Verify Register Success Message is displayed
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:13,277]  -------------------------- PASSED -------------------------- 
+              <![CDATA[[INFO ] [2022-11-17 23:41:30,626]  -------------------------- PASSED -------------------------- 
 <br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- User_01_Register -->
-        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_18_Pattern_Object@6f19ac19]" started-at="2022-11-17T07:54:13Z" name="User_02_Login" finished-at="2022-11-17T07:54:17Z" duration-ms="4166" status="PASS">
+        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_18_Pattern_Object@119cbf96]" started-at="2022-11-17T16:41:30Z" name="User_02_Login" finished-at="2022-11-17T16:41:32Z" duration-ms="1944" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:13,358] Login - Step 01: Navigate to Login page
+              <![CDATA[[INFO ] [2022-11-17 23:41:30,659] Login - Step 01: Navigate to Login page
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:14,799] Login - Step 02: Enter to email textbox with value is afc66@gmail.com
+              <![CDATA[[INFO ] [2022-11-17 23:41:31,690] Login - Step 02: Enter to email textbox with value is afc7582@gmail.com
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:15,057] Login - Step 03: Enter to password textbox with value is 123456
+              <![CDATA[[INFO ] [2022-11-17 23:41:31,795] Login - Step 03: Enter to password textbox with value is 123456
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:15,234] Login - Step 04: Click to login button
+              <![CDATA[[INFO ] [2022-11-17 23:41:31,905] Login - Step 04: Click to login button
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:16,017] Login - Step 05: Verify My Account Link is displayed
+              <![CDATA[[INFO ] [2022-11-17 23:41:32,544] Login - Step 05: Verify My Account Link is displayed
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:16,128]  -------------------------- PASSED -------------------------- 
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:16,128] Login - Step 06: Navigate to My Account Page
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:17,405] Login - Step 07: Verify Customer Info page is displayed
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:17,521]  -------------------------- PASSED -------------------------- 
+              <![CDATA[[INFO ] [2022-11-17 23:41:32,602]  -------------------------- PASSED -------------------------- 
 <br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- User_02_Login -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_18_Pattern_Object@6f19ac19]" started-at="2022-11-17T07:54:17Z" name="afterClass" finished-at="2022-11-17T07:54:18Z" duration-ms="892" status="PASS">
+        <test-method signature="User_03_My_Account()[pri:0, instance:com.nopcommerce.user.Level_18_Pattern_Object@119cbf96]" started-at="2022-11-17T16:41:32Z" name="User_03_My_Account" finished-at="2022-11-17T16:41:43Z" duration-ms="10724" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:17,528] OS name = windows 10
+              <![CDATA[[INFO ] [2022-11-17 23:41:32,606] MyAccount - Step 01: Navigate to My Account Page
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-11-17 14:54:17,528] Driver instance name = chromedriver: chrome on windows (0cbc6fce194f3861bcf04c8a4dc3f464)
+              <![CDATA[[INFO ] [2022-11-17 23:41:33,074] MyAccount - Step 02: Verify Customer Info page is displayed
 <br>]]>
             </line>
+            <line>
+              <![CDATA[[INFO ] [2022-11-17 23:41:33,132]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-11-17 23:41:33,132] MyAccount - Step 03: Verify First Name value is correct
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-11-17 23:41:43,208] MyAccount - Step 04: Verify Last Name value is correct
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-11-17 23:41:43,268] MyAccount - Step 05: Verify Email value is correct
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- User_03_My_Account -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_18_Pattern_Object@119cbf96]" started-at="2022-11-17T16:41:43Z" name="afterClass" finished-at="2022-11-17T16:41:43Z" duration-ms="0" status="PASS">
+          <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.nopcommerce.user.Level_18_Pattern_Object -->
