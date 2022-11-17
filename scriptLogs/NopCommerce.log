@@ -335,3 +335,87 @@
 [INFO ] [2022-11-17 01:07:09,101]  -------------------------- PASSED -------------------------- 
 [INFO ] [2022-11-17 01:07:09,103] OS name = windows 10
 [INFO ] [2022-11-17 01:07:09,103] Driver instance name = chromedriver: chrome on windows (25e8a7f69d03c88aa0c3a491538c4ce1)
+[INFO ] [2022-11-17 14:13:05,515] Register - Step 01: Navigate to Register page
+[INFO ] [2022-11-17 14:13:06,665] Register - Step 02: Enter to Firstname textbox with value is Automation
+[INFO ] [2022-11-17 14:13:06,885] Register - Step 03: Enter to Lastname textbox with value is FC
+[INFO ] [2022-11-17 14:13:07,737] Register - Step 04: Enter to Email Adrress textbox with value is FC
+[INFO ] [2022-11-17 14:13:07,982] Register - Step 05: Enter to Password textbox with value is 123456
+[INFO ] [2022-11-17 14:13:08,195] Register - Step 06: Enter to ConfirmPassword textbox with value is 123456
+[INFO ] [2022-11-17 14:13:08,419] Register - Step 07: Click to Register button
+[INFO ] [2022-11-17 14:13:09,610] Register - Step 08: Verify Register Success Message is displayed
+[INFO ] [2022-11-17 14:13:09,724]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-17 14:13:09,817] Login - Step 01: Navigate to Login page
+[INFO ] [2022-11-17 14:13:12,272] Login - Step 02: Enter to email textbox with value is afc5227@gmail.com
+[INFO ] [2022-11-17 14:13:12,548] Login - Step 03: Enter to password textbox with value is 123456
+[INFO ] [2022-11-17 14:13:12,757] Login - Step 04: Click to login button
+[INFO ] [2022-11-17 14:13:13,578] Login - Step 05: Verify My Account Link is displayed
+[INFO ] [2022-11-17 14:13:13,685]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-17 14:13:13,685] Login - Step 06: Navigate to My Account Page
+[INFO ] [2022-11-17 14:13:15,252] Login - Step 07: Verify Customer Info page is displayed
+[INFO ] [2022-11-17 14:13:15,363]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-17 14:13:15,369] OS name = windows 10
+[INFO ] [2022-11-17 14:13:15,369] Driver instance name = chromedriver: chrome on windows (8ada5472dee9b316412c3ea90a763be1)
+[INFO ] [2022-11-17 14:40:15,064] Register - Step 01: Navigate to Register page
+[INFO ] [2022-11-17 14:40:15,867] Register - Step 02: Enter to Firstname textbox with value is Automation
+[INFO ] [2022-11-17 14:40:16,082] Register - Step 03: Enter to Lastname textbox with value is FC
+[INFO ] [2022-11-17 14:40:16,795] Register - Step 04: Enter to Email Adrress textbox with value is FC
+[INFO ] [2022-11-17 14:40:17,351] Register - Step 05: Enter to Password textbox with value is 123456
+[INFO ] [2022-11-17 14:40:17,562] Register - Step 06: Enter to ConfirmPassword textbox with value is 123456
+[INFO ] [2022-11-17 14:40:17,760] Register - Step 07: Click to Register button
+[INFO ] [2022-11-17 14:40:18,653] Register - Step 08: Verify Register Success Message is displayed
+[INFO ] [2022-11-17 14:40:18,752]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-17 14:40:18,825] Login - Step 01: Navigate to Login page
+[INFO ] [2022-11-17 14:40:20,230] Login - Step 02: Enter to email textbox with value is afc8538@gmail.com
+[INFO ] [2022-11-17 14:40:20,492] Login - Step 03: Enter to password textbox with value is 123456
+[INFO ] [2022-11-17 14:40:20,701] Login - Step 04: Click to login button
+[INFO ] [2022-11-17 14:40:21,523] Login - Step 05: Verify My Account Link is displayed
+[INFO ] [2022-11-17 14:40:21,616]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-17 14:40:21,616] Login - Step 06: Navigate to My Account Page
+[INFO ] [2022-11-17 14:40:22,190] Login - Step 07: Verify Customer Info page is displayed
+[INFO ] [2022-11-17 14:40:22,267]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-17 14:40:22,273] OS name = windows 10
+[INFO ] [2022-11-17 14:40:22,273] Driver instance name = chromedriver: chrome on windows (4b804f2550873145b39974fe345f7f04)
+[INFO ] [2022-11-17 14:43:29,763] Register - Step 01: Navigate to Register page
+[INFO ] [2022-11-17 14:43:30,555] Register - Step 02: Enter to Firstname textbox with value is Automation
+[INFO ] [2022-11-17 14:43:30,776] Register - Step 03: Enter to Lastname textbox with value is FC
+[INFO ] [2022-11-17 14:43:31,481] Register - Step 04: Enter to Email Adrress textbox with value is FC
+[INFO ] [2022-11-17 14:43:32,070] Register - Step 05: Enter to Password textbox with value is 123456
+[INFO ] [2022-11-17 14:43:32,269] Register - Step 06: Enter to ConfirmPassword textbox with value is 123456
+[INFO ] [2022-11-17 14:43:32,498] Register - Step 07: Click to Register button
+[INFO ] [2022-11-17 14:43:33,399] Register - Step 08: Verify Register Success Message is displayed
+[INFO ] [2022-11-17 14:43:33,499]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-17 14:43:33,585] Login - Step 01: Navigate to Login page
+[INFO ] [2022-11-17 14:43:34,991] Login - Step 02: Enter to email textbox with value is afc230@gmail.com
+[INFO ] [2022-11-17 14:43:35,292] Login - Step 03: Enter to password textbox with value is 123456
+[INFO ] [2022-11-17 14:43:35,576] Login - Step 04: Click to login button
+[INFO ] [2022-11-17 14:43:36,456] Login - Step 05: Verify My Account Link is displayed
+[INFO ] [2022-11-17 14:43:36,548]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-17 14:43:36,548] Login - Step 06: Navigate to My Account Page
+[INFO ] [2022-11-17 14:43:37,083] Login - Step 07: Verify Customer Info page is displayed
+[INFO ] [2022-11-17 14:43:37,180]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-17 14:43:37,188] OS name = windows 10
+[INFO ] [2022-11-17 14:43:37,188] Driver instance name = chromedriver: chrome on windows (fab3e99f9c23563f90e705f57629c65f)
+[INFO ] [2022-11-17 14:54:08,644] Register - Step 01: Navigate to Register page
+[INFO ] [2022-11-17 14:54:09,348] Register - Step 02: click to Radio button
+[INFO ] [2022-11-17 14:54:09,491] Register - Step 03: Enter to Firstname textbox with value is Automation
+[INFO ] [2022-11-17 14:54:09,707] Register - Step 04: Enter to Lastname textbox with value is FC
+[INFO ] [2022-11-17 14:54:09,904] Register - Step 05: Select DateOfBirthDay, DateOfBirthMonth, DateOfBirthYear
+[INFO ] [2022-11-17 14:54:10,402] Register - Step 06: Enter to Email Adrress textbox with value is FC
+[INFO ] [2022-11-17 14:54:10,621] Register - Step 07: Click to Checkbox Newsletter
+[INFO ] [2022-11-17 14:54:10,707] Register - Step 08: Enter to Company textbox with value is Electronics
+[INFO ] [2022-11-17 14:54:10,926] Register - Step 09: Enter to Password textbox with value is 123456
+[INFO ] [2022-11-17 14:54:11,145] Register - Step 10: Enter to ConfirmPassword textbox with value is 123456
+[INFO ] [2022-11-17 14:54:11,407] Register - Step 11: Click to Register button
+[INFO ] [2022-11-17 14:54:13,171] Register - Step 12: Verify Register Success Message is displayed
+[INFO ] [2022-11-17 14:54:13,277]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-17 14:54:13,358] Login - Step 01: Navigate to Login page
+[INFO ] [2022-11-17 14:54:14,799] Login - Step 02: Enter to email textbox with value is afc66@gmail.com
+[INFO ] [2022-11-17 14:54:15,057] Login - Step 03: Enter to password textbox with value is 123456
+[INFO ] [2022-11-17 14:54:15,234] Login - Step 04: Click to login button
+[INFO ] [2022-11-17 14:54:16,017] Login - Step 05: Verify My Account Link is displayed
+[INFO ] [2022-11-17 14:54:16,128]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-17 14:54:16,128] Login - Step 06: Navigate to My Account Page
+[INFO ] [2022-11-17 14:54:17,405] Login - Step 07: Verify Customer Info page is displayed
+[INFO ] [2022-11-17 14:54:17,521]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-17 14:54:17,528] OS name = windows 10
+[INFO ] [2022-11-17 14:54:17,528] Driver instance name = chromedriver: chrome on windows (0cbc6fce194f3861bcf04c8a4dc3f464)
