@@ -24,6 +24,10 @@ public class Level_18_Pattern_Object extends BaseTest {
 		lastName = "FC";
 		emailAdress = "afc" + generateRandomNumber() + "@gmail.com";
 		validPassword = "123456";
+		date = "25";
+		month = "August";
+		year = "1999";
+		companyName = "Electronics";
 
 	}
 
@@ -33,31 +37,39 @@ public class Level_18_Pattern_Object extends BaseTest {
 		log.info("Register - Step 01: Navigate to Register page");
 		registerPage = homePage.openRegisterPage();
 
-		log.info("Register - Step 02: Enter to Firstname textbox with value is " + firstName);
-		// registerPage.inputToFirstnameTextbox(firstName);
+		log.info("Register - Step 02: click to Radio button");
+		registerPage.clickToRadioButton(driver, "Male");
+
+		log.info("Register - Step 03: Enter to Firstname textbox with value is " + firstName);
 		registerPage.inputToTextboxByID(driver, "FirstName", firstName);
 
-		log.info("Register - Step 03: Enter to Lastname textbox with value is " + lastName);
-		// registerPage.inputToLastnameTextbox(lastName);
+		log.info("Register - Step 04: Enter to Lastname textbox with value is " + lastName);
 		registerPage.inputToTextboxByID(driver, "LastName", lastName);
 
-		log.info("Register - Step 04: Enter to Email Adrress textbox with value is " + lastName);
-		// registerPage.inputToEmailTextbox(emailAdress);
+		log.info("Register - Step 05: Select DateOfBirthDay, DateOfBirthMonth, DateOfBirthYear");
+		registerPage.selecToDropdownByName(driver, "DateOfBirthDay", date);
+		registerPage.selecToDropdownByName(driver, "DateOfBirthMonth", month);
+		registerPage.selecToDropdownByName(driver, "DateOfBirthYear", year);
+
+		log.info("Register - Step 06: Enter to Email Adrress textbox with value is " + lastName);
 		registerPage.inputToTextboxByID(driver, "Email", emailAdress);
 
-		log.info("Register - Step 05: Enter to Password textbox with value is " + validPassword);
-		// registerPage.inputToPasswordTextbox(validPassword);
+		log.info("Register - Step 07: Click to Checkbox Newsletter");
+		registerPage.clickToCheckboxByLabel(driver, "Newsletter:");
+
+		log.info("Register - Step 08: Enter to Company textbox with value is " + companyName);
+		registerPage.inputToTextboxByID(driver, "Company", companyName);
+
+		log.info("Register - Step 09: Enter to Password textbox with value is " + validPassword);
 		registerPage.inputToTextboxByID(driver, "Password", validPassword);
 
-		log.info("Register - Step 06: Enter to ConfirmPassword textbox with value is " + validPassword);
-		// registerPage.inputToConfirmPasswordTextbox(validPassword);
+		log.info("Register - Step 10: Enter to ConfirmPassword textbox with value is " + validPassword);
 		registerPage.inputToTextboxByID(driver, "ConfirmPassword", validPassword);
 
-		log.info("Register - Step 07: Click to Register button");
-		// registerPage.clickToRegisterButton();
+		log.info("Register - Step 11: Click to Register button");
 		registerPage.clickToButtonByText(driver, "Register");
 
-		log.info("Register - Step 08: Verify Register Success Message is displayed");
+		log.info("Register - Step 12: Verify Register Success Message is displayed");
 		verifyEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 
 	}
@@ -99,5 +111,6 @@ public class Level_18_Pattern_Object extends BaseTest {
 	private UserLoginPageObject loginPage;
 	private UserCustomerInfoPageObject customerInfoPage;
 	private String firstName, lastName, validPassword, emailAdress;
+	private String date, month, year, companyName;
 
 }

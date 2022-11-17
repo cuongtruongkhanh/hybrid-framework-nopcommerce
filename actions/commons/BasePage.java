@@ -411,7 +411,8 @@ public class BasePage {
 
 	public boolean isImageLoaded(WebDriver driver, String locatorType, String... dynamicValues) {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0", getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)));
+		boolean status = (boolean) jsExecutor.executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != \"undefined\" && arguments[0].naturalWidth > 0",
+				getWebElement(driver, getDynamicXpath(locatorType, dynamicValues)));
 		return status;
 	}
 
@@ -553,6 +554,33 @@ public class BasePage {
 	public void inputToTextboxByID(WebDriver driver, String textboxID, String value) {
 		waitForElementVisible(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
 		sendKeyToElement(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, value, textboxID);
+	}
+
+	/**
+	 * Select item in dropdown by Name attribute
+	 * 
+	 * @param driver
+	 * @param dropdownAttributeName
+	 * @param itemValue
+	 */
+	public void selecToDropdownByName(WebDriver driver, String dropdownAttributeName, String itemValue) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownAttributeName);
+		selectItemInDefaultDropdown(driver, BasePageNopCommerceUI.DYNAMIC_DROPDOWN_BY_NAME, itemValue, dropdownAttributeName);
+	}
+
+	public void clickToRadioButton(WebDriver driver, String radioButton) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_RADIO_BY_LABEL, radioButton);
+		clickToElement(driver, BasePageNopCommerceUI.DYNAMIC_RADIO_BY_LABEL, radioButton);
+	}
+
+	public void clickToCheckboxByLabel(WebDriver driver, String checkboxButton) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_CHECKBOX_BY_LABEL, checkboxButton);
+		checkToDefaultCheckboxRadio(driver, BasePageNopCommerceUI.DYNAMIC_CHECKBOX_BY_LABEL, checkboxButton);
+	}
+
+	public void unClickToCheckboxByLabel(WebDriver driver, String checkboxButton) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_CHECKBOX_BY_LABEL, checkboxButton);
+		unCheckToDefaultCheckboxRadio(driver, BasePageNopCommerceUI.DYNAMIC_CHECKBOX_BY_LABEL, checkboxButton);
 	}
 
 	// Level_08_Switch_Role
