@@ -1,6 +1,7 @@
 package com.nopcommerce.user;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -93,11 +94,24 @@ public class Level_18_Pattern_Object extends BaseTest {
 		log.info("Login - Step 05: Verify My Account Link is displayed");
 		verifyTrue(homePage.isMyAccountLinkDisplayed());
 
-		log.info("Login - Step 06: Navigate to My Account Page");
+	}
+
+	@Test
+	public void User_03_My_Account() {
+		log.info("MyAccount - Step 01: Navigate to My Account Page");
 		customerInfoPage = homePage.openMyAccountPage();
 
-		log.info("Login - Step 07: Verify Customer Info page is displayed");
+		log.info("MyAccount - Step 02: Verify Customer Info page is displayed");
 		verifyTrue(customerInfoPage.isCustomerInfoPageDisplayed());
+
+		log.info("MyAccount - Step 03: Verify First Name value is correct");
+		customerInfoPage.sleepInSecond(10);
+		Assert.assertEquals(customerInfoPage.getTextAttributeValueByID(driver, "FirstName"), firstName);
+
+		log.info("MyAccount - Step 04: Verify Last Name value is correct");
+		Assert.assertEquals(customerInfoPage.getTextAttributeValueByID(driver, "LastName"), lastName);
+		log.info("MyAccount - Step 05: Verify Email value is correct");
+		Assert.assertEquals(customerInfoPage.getTextAttributeValueByID(driver, "Email"), emailAdress);
 	}
 
 	@AfterClass(alwaysRun = true)
