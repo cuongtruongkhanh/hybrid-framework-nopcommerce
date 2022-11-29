@@ -550,3 +550,86 @@
 [INFO ] [2022-11-21 18:36:25,698] MyAccount - Step 05: Verify Email value is correct
 [INFO ] [2022-11-21 18:36:25,789] OS name = windows 10
 [INFO ] [2022-11-21 18:36:25,789] Driver instance name = chromedriver: chrome on windows (590d4116dd409bdc2ffb03d38f97fcb5)
+[INFO ] [2022-11-29 15:16:32,860] Register - Step 01: Navigate to Register page
+[INFO ] [2022-11-29 15:16:34,603] Register - Step 02: click to Radio button
+[INFO ] [2022-11-29 15:16:34,754] Register - Step 03: Enter to Firstname textbox with value is Automation
+[INFO ] [2022-11-29 15:16:34,981] Register - Step 04: Enter to Lastname textbox with value is FC
+[INFO ] [2022-11-29 15:16:35,167] Register - Step 05: Select DateOfBirthDay, DateOfBirthMonth, DateOfBirthYear
+[INFO ] [2022-11-29 15:16:35,815] Register - Step 06: Enter to Email Adrress textbox with value is FC
+[INFO ] [2022-11-29 15:16:36,048] Register - Step 07: Click to Checkbox Newsletter
+[INFO ] [2022-11-29 15:16:36,162] Register - Step 08: Enter to Company textbox with value is Electronics
+[INFO ] [2022-11-29 15:16:36,421] Register - Step 09: Enter to Password textbox with value is 123456
+[INFO ] [2022-11-29 15:16:36,669] Register - Step 10: Enter to ConfirmPassword textbox with value is 123456
+[INFO ] [2022-11-29 15:16:36,907] Register - Step 11: Click to Register button
+[INFO ] [2022-11-29 15:16:39,053] Register - Step 12: Verify Register Success Message is displayed
+[INFO ] [2022-11-29 15:16:39,167]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-29 15:16:39,291] Login - Step 01: Navigate to Login page
+[INFO ] [2022-11-29 15:16:41,881] Login - Step 02: Enter to email textbox with value is afc6639@gmail.com
+[INFO ] [2022-11-29 15:16:42,089] Login - Step 03: Enter to password textbox with value is 123456
+[INFO ] [2022-11-29 15:16:42,260] Login - Step 04: Click to login button
+[INFO ] [2022-11-29 15:16:43,028] Login - Step 05: Verify My Account Link is displayed
+[INFO ] [2022-11-29 15:16:43,135]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-29 15:16:43,143] MyAccount - Step 01: Navigate to My Account Page
+[INFO ] [2022-11-29 15:16:44,149] MyAccount - Step 02: Verify Customer Info page is displayed
+[INFO ] [2022-11-29 15:16:44,267]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-29 15:16:44,267] MyAccount - Step 03: Verify First Name value is correct
+[INFO ] [2022-11-29 15:16:54,419] MyAccount - Step 04: Verify Last Name value is correct
+[INFO ] [2022-11-29 15:16:54,527] MyAccount - Step 05: Verify Email value is correct
+[INFO ] [2022-11-29 15:20:15,042] Register - Step 01: Navigate to Register page
+[INFO ] [2022-11-29 15:20:17,012] Register - Step 02: click to Radio button
+[INFO ] [2022-11-29 15:20:17,165] Register - Step 03: Enter to Firstname textbox with value is Automation
+[INFO ] [2022-11-29 15:20:17,409] Register - Step 04: Enter to Lastname textbox with value is FC
+[INFO ] [2022-11-29 15:20:17,613] Register - Step 05: Select DateOfBirthDay, DateOfBirthMonth, DateOfBirthYear
+[INFO ] [2022-11-29 15:20:18,148] Register - Step 06: Enter to Email Adrress textbox with value is FC
+[INFO ] [2022-11-29 15:20:18,379] Register - Step 07: Click to Checkbox Newsletter
+[INFO ] [2022-11-29 15:20:18,477] Register - Step 08: Enter to Company textbox with value is Electronics
+[INFO ] [2022-11-29 15:20:18,736] Register - Step 09: Enter to Password textbox with value is 123456
+[INFO ] [2022-11-29 15:20:18,961] Register - Step 10: Enter to ConfirmPassword textbox with value is 123456
+[INFO ] [2022-11-29 15:20:19,190] Register - Step 11: Click to Register button
+[INFO ] [2022-11-29 15:20:21,208] Register - Step 12: Verify Register Success Message is displayed
+[INFO ] [2022-11-29 15:20:21,292]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-29 15:20:21,355] Login - Step 01: Navigate to Login page
+[INFO ] [2022-11-29 15:20:23,790] Login - Step 02: Enter to email textbox with value is afc5735@gmail.com
+[INFO ] [2022-11-29 15:20:24,049] Login - Step 03: Enter to password textbox with value is 123456
+[INFO ] [2022-11-29 15:20:24,249] Login - Step 04: Click to login button
+[INFO ] [2022-11-29 15:20:25,038] Login - Step 05: Verify My Account Link is displayed
+[INFO ] [2022-11-29 15:20:25,159]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-29 15:20:25,171] MyAccount - Step 01: Navigate to My Account Page
+[INFO ] [2022-11-29 15:20:26,786] MyAccount - Step 02: Verify Customer Info page is displayed
+[INFO ] [2022-11-29 15:20:26,865]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-29 15:20:26,865] MyAccount - Step 03: Verify First Name value is correct
+[INFO ] [2022-11-29 17:25:23,412] Register - Step 01: Navigate to Register page
+[INFO ] [2022-11-29 17:25:24,108] Register - Step 02: click to Radio button
+[INFO ] [2022-11-29 17:25:24,285] Register - Step 03: Enter to Firstname textbox with value is Automation
+[INFO ] [2022-11-29 17:25:24,542] Register - Step 04: Enter to Lastname textbox with value is FC
+[INFO ] [2022-11-29 17:25:24,764] Register - Step 05: Select DateOfBirthDay, DateOfBirthMonth, DateOfBirthYear
+[INFO ] [2022-11-29 17:25:25,398] Register - Step 06: Enter to Email Adrress textbox with value is FC
+[INFO ] [2022-11-29 17:25:25,700] Register - Step 07: Click to Checkbox Newsletter
+[INFO ] [2022-11-29 17:25:25,821] Register - Step 08: Enter to Company textbox with value is Electronics
+[INFO ] [2022-11-29 17:25:26,112] Register - Step 09: Enter to Password textbox with value is 123456
+[INFO ] [2022-11-29 17:25:26,423] Register - Step 10: Enter to ConfirmPassword textbox with value is 123456
+[INFO ] [2022-11-29 17:25:26,668] Register - Step 11: Click to Register button
+[INFO ] [2022-11-29 17:25:27,602] Register - Step 12: Verify Register Success Message is displayed
+[INFO ] [2022-11-29 17:25:27,700]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-29 17:25:27,771] Login - Step 01: Navigate to Login page
+[INFO ] [2022-11-29 17:25:29,179] Login - Step 02: Enter to email textbox with value is afc2914@gmail.com
+[INFO ] [2022-11-29 17:25:29,426] Login - Step 03: Enter to password textbox with value is 123456
+[INFO ] [2022-11-29 17:25:29,619] Login - Step 04: Click to login button
+[INFO ] [2022-11-29 17:25:48,406] Register - Step 01: Navigate to Register page
+[INFO ] [2022-11-29 17:25:49,055] Register - Step 02: click to Radio button
+[INFO ] [2022-11-29 17:25:49,283] Register - Step 03: Enter to Firstname textbox with value is Automation
+[INFO ] [2022-11-29 17:25:49,609] Register - Step 04: Enter to Lastname textbox with value is FC
+[INFO ] [2022-11-29 17:25:49,830] Register - Step 05: Select DateOfBirthDay, DateOfBirthMonth, DateOfBirthYear
+[INFO ] [2022-11-29 17:25:50,502] Register - Step 06: Enter to Email Adrress textbox with value is FC
+[INFO ] [2022-11-29 17:25:50,802] Register - Step 07: Click to Checkbox Newsletter
+[INFO ] [2022-11-29 17:25:50,921] Register - Step 08: Enter to Company textbox with value is Electronics
+[INFO ] [2022-11-29 17:25:51,198] Register - Step 09: Enter to Password textbox with value is 123456
+[INFO ] [2022-11-29 17:25:51,425] Register - Step 10: Enter to ConfirmPassword textbox with value is 123456
+[INFO ] [2022-11-29 17:25:51,659] Register - Step 11: Click to Register button
+[INFO ] [2022-11-29 17:25:52,633] Register - Step 12: Verify Register Success Message is displayed
+[INFO ] [2022-11-29 17:25:52,753]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-11-29 17:25:52,873] Login - Step 01: Navigate to Login page
+[INFO ] [2022-11-29 17:25:54,224] Login - Step 02: Enter to email textbox with value is afc2741@gmail.com
+[INFO ] [2022-11-29 17:25:54,500] Login - Step 03: Enter to password textbox with value is 123456
+[INFO ] [2022-11-29 17:25:54,695] Login - Step 04: Click to login button
+[INFO ] [2022-11-29 17:25:55,079] Login - Step 05: Verify My Account Link is displayed

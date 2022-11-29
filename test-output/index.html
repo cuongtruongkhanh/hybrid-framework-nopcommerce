@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-NopCommerce_-_User" class="navigator-link">
-              <span class="suite-name border-passed">NopCommerce - User</span>
+              <span class="suite-name border-failed">NopCommerce - User</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-NopCommerce_-_User" class="hide-methods failed suite-NopCommerce_-_User"> (hide)</a> <!-- hide-methods failed suite-NopCommerce_-_User -->
+                      <a href="#" panel-name="suite-NopCommerce_-_User" class="show-methods failed suite-NopCommerce_-_User"> (show)</a> <!-- show-methods failed suite-NopCommerce_-_User -->
+                    </span>
+                    <div class="method-list-content failed suite-NopCommerce_-_User">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NopCommerce_-_User" title="com.nopcommerce.user.Level_18_Pattern_Object" class="method navigator-link" hash-for-method="User_03_My_Account">User_03_My_Account</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-NopCommerce_-_User -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -110,11 +124,6 @@
                         <a href="#" panel-name="suite-NopCommerce_-_User" title="com.nopcommerce.user.Level_18_Pattern_Object" class="method navigator-link" hash-for-method="User_02_Login">User_02_Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce_-_User" title="com.nopcommerce.user.Level_18_Pattern_Object" class="method navigator-link" hash-for-method="User_03_My_Account">User_03_My_Account</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-NopCommerce_-_User -->
                   </li>
                 </ul>
@@ -127,6 +136,52 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-NopCommerce_-_User" class="panel NopCommerce_-_User">
+          <div class="suite-NopCommerce_-_User-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.nopcommerce.user.Level_18_Pattern_Object</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_03_My_Account">
+                  </a> <!-- User_03_My_Account -->
+                  <span class="method-name">User_03_My_Account</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;FirstName&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.BasePage.waitForElementVisible(BasePage.java:429)
+	at commons.BasePage.getTextAttributeValueByID(BasePage.java:613)
+	at com.nopcommerce.user.Level_18_Pattern_Object.User_03_My_Account(Level_18_Pattern_Object.java:109)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.108)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;VN-MF10-NC100S7&apos;, ip: &apos;10.218.147.186&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.108, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\CUONG~1.TRU\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bbb7891442333b1c736b0399575325ed
+*** Element info: {Using=xpath, value=//input[@id=&apos;FirstName&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NopCommerce_-_User-class-failed -->
           <div class="suite-NopCommerce_-_User-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -145,13 +200,6 @@
                   <a name="User_02_Login">
                   </a> <!-- User_02_Login -->
                   <span class="method-name">User_02_Login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="User_03_My_Account">
-                  </a> <!-- User_03_My_Account -->
-                  <span class="method-name">User_03_My_Account</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -216,20 +264,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'User_03_My_Account')
 data.setCell(0, 2, 'com.nopcommerce.user.Level_18_Pattern_Object')
-data.setCell(0, 3, 10966);
+data.setCell(0, 3, 31754);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'User_01_Register')
 data.setCell(1, 2, 'com.nopcommerce.user.Level_18_Pattern_Object')
-data.setCell(1, 3, 3608);
+data.setCell(1, 3, 6339);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'User_02_Login')
 data.setCell(2, 2, 'com.nopcommerce.user.Level_18_Pattern_Object')
-data.setCell(2, 3, 2714);
+data.setCell(2, 3, 3808);
 window.suiteTableData['NopCommerce_-_User']= { tableData: data, tableDiv: 'times-div-NopCommerce_-_User'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 41 seconds</span>
               <div id="times-div-NopCommerce_-_User">
               </div> <!-- times-div-NopCommerce_-_User -->
             </div> <!-- times-div -->
@@ -241,67 +289,63 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">User_03_My_Account</span>
+              <span class="reporter-method-name">User_01_Register</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:14,814] MyAccount - Step 01: Navigate to My Account Page
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:15,042] Register - Step 01: Navigate to Register page
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:15,386] MyAccount - Step 02: Verify Customer Info page is displayed
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:17,012] Register - Step 02: click to Radio button
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:15,490]  -------------------------- PASSED -------------------------- 
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:17,165] Register - Step 03: Enter to Firstname textbox with value is Automation
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:15,491] MyAccount - Step 03: Verify First Name value is correct
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:17,409] Register - Step 04: Enter to Lastname textbox with value is FC
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:25,624] MyAccount - Step 04: Verify Last Name value is correct
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:17,613] Register - Step 05: Select DateOfBirthDay, DateOfBirthMonth, DateOfBirthYear
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:25,698] MyAccount - Step 05: Verify Email value is correct
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:18,148] Register - Step 06: Enter to Email Adrress textbox with value is FC
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:18,379] Register - Step 07: Click to Checkbox Newsletter
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:18,477] Register - Step 08: Enter to Company textbox with value is Electronics
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:18,736] Register - Step 09: Enter to Password textbox with value is 123456
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:18,961] Register - Step 10: Enter to ConfirmPassword textbox with value is 123456
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:19,190] Register - Step 11: Click to Register button
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:21,208] Register - Step 12: Verify Register Success Message is displayed
+<br></span>
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:21,292]  -------------------------- PASSED -------------------------- 
 <br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">User_02_Login</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:12,094] Login - Step 01: Navigate to Login page
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:21,355] Login - Step 01: Navigate to Login page
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:13,483] Login - Step 02: Enter to email textbox with value is afc5487@gmail.com
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:23,790] Login - Step 02: Enter to email textbox with value is afc5735@gmail.com
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:13,719] Login - Step 03: Enter to password textbox with value is 123456
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:24,049] Login - Step 03: Enter to password textbox with value is 123456
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:13,916] Login - Step 04: Click to login button
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:24,249] Login - Step 04: Click to login button
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:14,698] Login - Step 05: Verify My Account Link is displayed
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:25,038] Login - Step 05: Verify My Account Link is displayed
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:14,805]  -------------------------- PASSED -------------------------- 
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:25,159]  -------------------------- PASSED -------------------------- 
 <br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">User_01_Register</span>
+              <span class="reporter-method-name">User_03_My_Account</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:08,485] Register - Step 01: Navigate to Register page
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:25,171] MyAccount - Step 01: Navigate to My Account Page
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:09,146] Register - Step 02: click to Radio button
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:26,786] MyAccount - Step 02: Verify Customer Info page is displayed
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:09,299] Register - Step 03: Enter to Firstname textbox with value is Automation
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:26,865]  -------------------------- PASSED -------------------------- 
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:09,509] Register - Step 04: Enter to Lastname textbox with value is FC
-<br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:09,719] Register - Step 05: Select DateOfBirthDay, DateOfBirthMonth, DateOfBirthYear
-<br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:10,234] Register - Step 06: Enter to Email Adrress textbox with value is FC
-<br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:10,444] Register - Step 07: Click to Checkbox Newsletter
-<br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:10,542] Register - Step 08: Enter to Company textbox with value is Electronics
-<br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:10,733] Register - Step 09: Enter to Password textbox with value is 123456
-<br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:10,918] Register - Step 10: Enter to ConfirmPassword textbox with value is 123456
-<br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:11,094] Register - Step 11: Click to Register button
-<br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:11,967] Register - Step 12: Verify Register Success Message is displayed
-<br></span>
-                <span class="reporter-method-output">[INFO ] [2022-11-21 18:36:12,027]  -------------------------- PASSED -------------------------- 
+                <span class="reporter-method-output">[INFO ] [2022-11-29 15:20:26,865] MyAccount - Step 03: Verify First Name value is correct
 <br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -327,27 +371,29 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass(chrome)</span>
-                <span class="method-start">61 ms</span>
+                <span class="method-start">28 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">User_01_Register</span>
-                <span class="method-start">3237 ms</span>
+                <span class="method-start">5676 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">User_02_Login</span>
-                <span class="method-start">6909 ms</span>
+                <span class="method-start">12074 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">User_03_My_Account</span>
-                <span class="method-start">9629 ms</span>
+                <span class="method-start">15890 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">20606 ms</span>
+                <span class="method-start">47653 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">copyFileEnvironmentAfterExecute</span>
-                <span class="method-start">21568 ms</span>
+                <span class="method-start">47693 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

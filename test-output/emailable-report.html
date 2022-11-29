@@ -9,37 +9,64 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">NopCommerce - User</th></tr>
-<tr><td><a href="#t0">Run on Chrome</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">21,482</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Run on Chrome</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">47,636</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">NopCommerce - User</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.nopcommerce.user.Level_18_Pattern_Object</td><td><a href="#m0">User_01_Register</a></td><td rowspan="1">1669030568419</td><td rowspan="1">3608</td></tr><tr class="passedeven"><td><a href="#m1">User_02_Login</a></td><td rowspan="1">1669030572091</td><td rowspan="1">2714</td></tr><tr class="passedeven"><td><a href="#m2">User_03_My_Account</a></td><td rowspan="1">1669030574811</td><td rowspan="1">10966</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">NopCommerce - User</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on Chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.nopcommerce.user.Level_18_Pattern_Object</td><td><a href="#m0">User_03_My_Account</a></td><td rowspan="1">1669710025167</td><td rowspan="1">31754</td></tr><tr><th colspan="4">Run on Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.nopcommerce.user.Level_18_Pattern_Object</td><td><a href="#m1">User_01_Register</a></td><td rowspan="1">1669710014953</td><td rowspan="1">6339</td></tr><tr class="passedeven"><td><a href="#m2">User_02_Login</a></td><td rowspan="1">1669710021351</td><td rowspan="1">3808</td></tr></tbody>
 </table>
-<h2>Run on Chrome</h2><h3 id="m0">com.nopcommerce.user.Level_18_Pattern_Object#User_01_Register</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2022-11-21 18:36:08,485] Register - Step 01: Navigate to Register page
-<br><br/>[INFO ] [2022-11-21 18:36:09,146] Register - Step 02: click to Radio button
-<br><br/>[INFO ] [2022-11-21 18:36:09,299] Register - Step 03: Enter to Firstname textbox with value is Automation
-<br><br/>[INFO ] [2022-11-21 18:36:09,509] Register - Step 04: Enter to Lastname textbox with value is FC
-<br><br/>[INFO ] [2022-11-21 18:36:09,719] Register - Step 05: Select DateOfBirthDay, DateOfBirthMonth, DateOfBirthYear
-<br><br/>[INFO ] [2022-11-21 18:36:10,234] Register - Step 06: Enter to Email Adrress textbox with value is FC
-<br><br/>[INFO ] [2022-11-21 18:36:10,444] Register - Step 07: Click to Checkbox Newsletter
-<br><br/>[INFO ] [2022-11-21 18:36:10,542] Register - Step 08: Enter to Company textbox with value is Electronics
-<br><br/>[INFO ] [2022-11-21 18:36:10,733] Register - Step 09: Enter to Password textbox with value is 123456
-<br><br/>[INFO ] [2022-11-21 18:36:10,918] Register - Step 10: Enter to ConfirmPassword textbox with value is 123456
-<br><br/>[INFO ] [2022-11-21 18:36:11,094] Register - Step 11: Click to Register button
-<br><br/>[INFO ] [2022-11-21 18:36:11,967] Register - Step 12: Verify Register Success Message is displayed
-<br><br/>[INFO ] [2022-11-21 18:36:12,027]  -------------------------- PASSED -------------------------- 
+<h2>Run on Chrome</h2><h3 id="m0">com.nopcommerce.user.Level_18_Pattern_Object#User_03_My_Account</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2022-11-29 15:20:25,171] MyAccount - Step 01: Navigate to My Account Page
+<br><br/>[INFO ] [2022-11-29 15:20:26,786] MyAccount - Step 02: Verify Customer Info page is displayed
+<br><br/>[INFO ] [2022-11-29 15:20:26,865]  -------------------------- PASSED -------------------------- 
+<br><br/>[INFO ] [2022-11-29 15:20:26,865] MyAccount - Step 03: Verify First Name value is correct
+<br></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;FirstName&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.BasePage.waitForElementVisible(BasePage.java:429)
+	at commons.BasePage.getTextAttributeValueByID(BasePage.java:613)
+	at com.nopcommerce.user.Level_18_Pattern_Object.User_03_My_Account(Level_18_Pattern_Object.java:109)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.108)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;VN-MF10-NC100S7&apos;, ip: &apos;10.218.147.186&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.108, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\CUONG~1.TRU\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52975}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bbb7891442333b1c736b0399575325ed
+*** Element info: {Using=xpath, value=//input[@id=&apos;FirstName&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.nopcommerce.user.Level_18_Pattern_Object#User_01_Register</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2022-11-29 15:20:15,042] Register - Step 01: Navigate to Register page
+<br><br/>[INFO ] [2022-11-29 15:20:17,012] Register - Step 02: click to Radio button
+<br><br/>[INFO ] [2022-11-29 15:20:17,165] Register - Step 03: Enter to Firstname textbox with value is Automation
+<br><br/>[INFO ] [2022-11-29 15:20:17,409] Register - Step 04: Enter to Lastname textbox with value is FC
+<br><br/>[INFO ] [2022-11-29 15:20:17,613] Register - Step 05: Select DateOfBirthDay, DateOfBirthMonth, DateOfBirthYear
+<br><br/>[INFO ] [2022-11-29 15:20:18,148] Register - Step 06: Enter to Email Adrress textbox with value is FC
+<br><br/>[INFO ] [2022-11-29 15:20:18,379] Register - Step 07: Click to Checkbox Newsletter
+<br><br/>[INFO ] [2022-11-29 15:20:18,477] Register - Step 08: Enter to Company textbox with value is Electronics
+<br><br/>[INFO ] [2022-11-29 15:20:18,736] Register - Step 09: Enter to Password textbox with value is 123456
+<br><br/>[INFO ] [2022-11-29 15:20:18,961] Register - Step 10: Enter to ConfirmPassword textbox with value is 123456
+<br><br/>[INFO ] [2022-11-29 15:20:19,190] Register - Step 11: Click to Register button
+<br><br/>[INFO ] [2022-11-29 15:20:21,208] Register - Step 12: Verify Register Success Message is displayed
+<br><br/>[INFO ] [2022-11-29 15:20:21,292]  -------------------------- PASSED -------------------------- 
 <br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.nopcommerce.user.Level_18_Pattern_Object#User_02_Login</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2022-11-21 18:36:12,094] Login - Step 01: Navigate to Login page
-<br><br/>[INFO ] [2022-11-21 18:36:13,483] Login - Step 02: Enter to email textbox with value is afc5487@gmail.com
-<br><br/>[INFO ] [2022-11-21 18:36:13,719] Login - Step 03: Enter to password textbox with value is 123456
-<br><br/>[INFO ] [2022-11-21 18:36:13,916] Login - Step 04: Click to login button
-<br><br/>[INFO ] [2022-11-21 18:36:14,698] Login - Step 05: Verify My Account Link is displayed
-<br><br/>[INFO ] [2022-11-21 18:36:14,805]  -------------------------- PASSED -------------------------- 
-<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.nopcommerce.user.Level_18_Pattern_Object#User_03_My_Account</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2022-11-21 18:36:14,814] MyAccount - Step 01: Navigate to My Account Page
-<br><br/>[INFO ] [2022-11-21 18:36:15,386] MyAccount - Step 02: Verify Customer Info page is displayed
-<br><br/>[INFO ] [2022-11-21 18:36:15,490]  -------------------------- PASSED -------------------------- 
-<br><br/>[INFO ] [2022-11-21 18:36:15,491] MyAccount - Step 03: Verify First Name value is correct
-<br><br/>[INFO ] [2022-11-21 18:36:25,624] MyAccount - Step 04: Verify Last Name value is correct
-<br><br/>[INFO ] [2022-11-21 18:36:25,698] MyAccount - Step 05: Verify Email value is correct
+<h3 id="m2">com.nopcommerce.user.Level_18_Pattern_Object#User_02_Login</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2022-11-29 15:20:21,355] Login - Step 01: Navigate to Login page
+<br><br/>[INFO ] [2022-11-29 15:20:23,790] Login - Step 02: Enter to email textbox with value is afc5735@gmail.com
+<br><br/>[INFO ] [2022-11-29 15:20:24,049] Login - Step 03: Enter to password textbox with value is 123456
+<br><br/>[INFO ] [2022-11-29 15:20:24,249] Login - Step 04: Click to login button
+<br><br/>[INFO ] [2022-11-29 15:20:25,038] Login - Step 05: Verify My Account Link is displayed
+<br><br/>[INFO ] [2022-11-29 15:20:25,159]  -------------------------- PASSED -------------------------- 
 <br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
