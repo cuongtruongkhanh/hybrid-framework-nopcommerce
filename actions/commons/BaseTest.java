@@ -58,7 +58,9 @@ public class BaseTest {
 			FirefoxOptions options = new FirefoxOptions();
 			options.setProfile(profile);
 
-			driver = new FirefoxDriver();
+			options.addPreference("intl.accept_languages", "vi-vn, vi, en-us, en");
+
+			driver = new FirefoxDriver(options);
 		} else if (browserList == BrowserList.H_FIREFOX) {
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions options = new FirefoxOptions();
@@ -72,8 +74,9 @@ public class BaseTest {
 			File file = new File(GlobalConstants.PROJECT_PATH + "\\browserExtensions\\extension_2_0_12_0.crx");
 			ChromeOptions options = new ChromeOptions();
 			options.addExtensions(file);
+			// options.addArguments("--lang=vi");
 
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(options);
 		} else if (browserList == BrowserList.H_CHROME) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
