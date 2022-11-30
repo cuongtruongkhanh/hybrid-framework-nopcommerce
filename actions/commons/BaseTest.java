@@ -2,6 +2,9 @@ package commons;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -74,7 +77,28 @@ public class BaseTest {
 			File file = new File(GlobalConstants.PROJECT_PATH + "\\browserExtensions\\extension_2_0_12_0.crx");
 			ChromeOptions options = new ChromeOptions();
 			options.addExtensions(file);
-			// options.addArguments("--lang=vi");
+
+			// options.addArguments("--lang=vi"); -- Change language
+			// options.addArguments("--disable-notifications"); -- disable notification
+			// options.addArguments("--disable-geolocation"); -- disable GPS
+
+			// disable popup display automation notification
+			options.setExperimentalOption("useAutomationExtension", false);
+			options.setExperimentalOption("excludeSwitches", Collections.singleton("enable-automation"));
+
+			// Browser in InCognito/ InPrivate mode
+			// options.addArguments("--incognito");
+
+			Map<String, Object> prefs = new HashMap<String, Object>();
+			// setting not save password
+			prefs.put("credentials_enable_service", false);
+			prefs.put("profile.password_manager_enabled", false);
+
+			// setting auto save file
+			prefs.put("profile.default_content_settings.popup", 0);
+			prefs.put("download.default_directory", GlobalConstants.PROJECT_PATH + "\\downloadFiles");
+
+			options.setExperimentalOption("prefs", prefs);
 
 			driver = new ChromeDriver(options);
 		} else if (browserList == BrowserList.H_CHROME) {
