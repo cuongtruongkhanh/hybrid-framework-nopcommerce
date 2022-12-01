@@ -20,8 +20,6 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.opera.OperaDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
 
 import com.google.common.io.Files;
 
@@ -31,14 +29,14 @@ public class BaseTest {
 	private WebDriver driver;
 	protected final Log log;
 
-	@BeforeSuite
+	// @BeforeSuite
 	public void initBeforeSuite() {
 		System.out.println("---------START delete file in folder---------");
 		deleteAllureReport();
 		System.out.println("---------END delete file in folder---------");
 	}
 
-	@AfterSuite
+	// @AfterSuite
 	public void copyFileEnvironmentAfterExecute() {
 		System.out.println("---------START copy file in folder---------");
 		copyFileEnvironment();
