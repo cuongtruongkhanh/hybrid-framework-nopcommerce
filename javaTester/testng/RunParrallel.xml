@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="classes" name="Suite">
+<suite parallel="method" name="Suite">
 	
   <test name="Run on Chrome">
   <parameter name="browser" value="chrome"/>
