@@ -233,49 +233,6 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testng.ParrallelClass_03</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_01_New_Product">
-                  </a> <!-- TC_01_New_Product -->
-                  <span class="method-name">TC_01_New_Product</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_02_Edit_Product">
-                  </a> <!-- TC_02_Edit_Product -->
-                  <span class="method-name">TC_02_Edit_Product</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_03_View_Product">
-                  </a> <!-- TC_03_View_Product -->
-                  <span class="method-name">TC_03_View_Product</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_04_Search_Product">
-                  </a> <!-- TC_04_Search_Product -->
-                  <span class="method-name">TC_04_Search_Product</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_05_Delete_Product">
-                  </a> <!-- TC_05_Delete_Product -->
-                  <span class="method-name">TC_05_Delete_Product</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">testng.ParrallelClass_01</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -316,6 +273,49 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testng.ParrallelClass_03</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_01_New_Product">
+                  </a> <!-- TC_01_New_Product -->
+                  <span class="method-name">TC_01_New_Product</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_02_Edit_Product">
+                  </a> <!-- TC_02_Edit_Product -->
+                  <span class="method-name">TC_02_Edit_Product</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_03_View_Product">
+                  </a> <!-- TC_03_View_Product -->
+                  <span class="method-name">TC_03_View_Product</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_04_Search_Product">
+                  </a> <!-- TC_04_Search_Product -->
+                  <span class="method-name">TC_04_Search_Product</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_05_Delete_Product">
+                  </a> <!-- TC_05_Delete_Product -->
+                  <span class="method-name">TC_05_Delete_Product</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -325,8 +325,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;classes&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Run on Chrome&quot;&gt;
+&lt;suite name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Run on Chrome&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testng.ParrallelClass_01&quot;/&gt;
@@ -373,70 +373,70 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_01_New_Product')
-data.setCell(0, 2, 'testng.ParrallelClass_03')
-data.setCell(0, 3, 139);
+data.setCell(0, 1, 'TC_01_New_Account')
+data.setCell(0, 2, 'testng.ParrallelClass_01')
+data.setCell(0, 3, 50);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_01_New_User')
-data.setCell(1, 2, 'testng.ParrallelClass_02')
-data.setCell(1, 3, 139);
+data.setCell(1, 1, 'TC_05_Delete_Account')
+data.setCell(1, 2, 'testng.ParrallelClass_01')
+data.setCell(1, 3, 8);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_03_View_Product')
-data.setCell(2, 2, 'testng.ParrallelClass_03')
-data.setCell(2, 3, 16);
+data.setCell(2, 1, 'TC_01_New_User')
+data.setCell(2, 2, 'testng.ParrallelClass_02')
+data.setCell(2, 3, 6);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_03_View_User')
-data.setCell(3, 2, 'testng.ParrallelClass_02')
-data.setCell(3, 3, 16);
+data.setCell(3, 1, 'TC_05_Delete_Product')
+data.setCell(3, 2, 'testng.ParrallelClass_03')
+data.setCell(3, 3, 5);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_04_Search_User')
-data.setCell(4, 2, 'testng.ParrallelClass_02')
-data.setCell(4, 3, 13);
+data.setCell(4, 1, 'TC_02_Edit_Account')
+data.setCell(4, 2, 'testng.ParrallelClass_01')
+data.setCell(4, 3, 4);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC_05_Delete_User')
-data.setCell(5, 2, 'testng.ParrallelClass_02')
-data.setCell(5, 3, 13);
+data.setCell(5, 1, 'TC_03_View_Account')
+data.setCell(5, 2, 'testng.ParrallelClass_01')
+data.setCell(5, 3, 4);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC_03_View_Account')
-data.setCell(6, 2, 'testng.ParrallelClass_01')
-data.setCell(6, 3, 8);
+data.setCell(6, 1, 'TC_02_Edit_Product')
+data.setCell(6, 2, 'testng.ParrallelClass_03')
+data.setCell(6, 3, 4);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC_02_Edit_Product')
-data.setCell(7, 2, 'testng.ParrallelClass_03')
-data.setCell(7, 3, 8);
+data.setCell(7, 1, 'TC_05_Delete_User')
+data.setCell(7, 2, 'testng.ParrallelClass_02')
+data.setCell(7, 3, 3);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC_04_Search_Product')
+data.setCell(8, 1, 'TC_03_View_Product')
 data.setCell(8, 2, 'testng.ParrallelClass_03')
-data.setCell(8, 3, 6);
+data.setCell(8, 3, 3);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC_05_Delete_Product')
-data.setCell(9, 2, 'testng.ParrallelClass_03')
-data.setCell(9, 3, 6);
+data.setCell(9, 1, 'TC_02_Edit_User')
+data.setCell(9, 2, 'testng.ParrallelClass_02')
+data.setCell(9, 3, 3);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TC_02_Edit_User')
-data.setCell(10, 2, 'testng.ParrallelClass_02')
-data.setCell(10, 3, 5);
+data.setCell(10, 1, 'TC_01_New_Product')
+data.setCell(10, 2, 'testng.ParrallelClass_03')
+data.setCell(10, 3, 3);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'TC_04_Search_Account')
 data.setCell(11, 2, 'testng.ParrallelClass_01')
-data.setCell(11, 3, 5);
+data.setCell(11, 3, 2);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TC_05_Delete_Account')
-data.setCell(12, 2, 'testng.ParrallelClass_01')
-data.setCell(12, 3, 4);
+data.setCell(12, 1, 'TC_03_View_User')
+data.setCell(12, 2, 'testng.ParrallelClass_02')
+data.setCell(12, 3, 2);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'TC_01_New_Account')
-data.setCell(13, 2, 'testng.ParrallelClass_01')
-data.setCell(13, 3, 4);
+data.setCell(13, 1, 'TC_04_Search_User')
+data.setCell(13, 2, 'testng.ParrallelClass_02')
+data.setCell(13, 3, 2);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'TC_02_Edit_Account')
-data.setCell(14, 2, 'testng.ParrallelClass_01')
-data.setCell(14, 3, 4);
+data.setCell(14, 1, 'TC_04_Search_Product')
+data.setCell(14, 2, 'testng.ParrallelClass_03')
+data.setCell(14, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 386 ms</span>
+              <span class="suite-total-time">Total running time: 101 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -451,27 +451,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testng.ParrallelClass_02</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">copyFileEnvironmentAfterExecute</span>
-                <br/>
-                <span class="ignored-method-name">initBeforeSuite</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testng.ParrallelClass_03</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">copyFileEnvironmentAfterExecute</span>
-                <br/>
-                <span class="ignored-method-name">initBeforeSuite</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -481,134 +463,192 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">testng.ParrallelClass_01</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">initBeforeSuite</span>
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testng.ParrallelClass_03</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass(chrome)</span>
-                <span class="method-start">47 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testng.ParrallelClass_01</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass(chrome)</span>
-                <span class="method-start">47 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testng.ParrallelClass_02</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass(chrome)</span>
-                <span class="method-start">47 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">TC_01_New_User</span>
-                <span class="method-start">6993 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testng.ParrallelClass_03</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TC_01_New_Product</span>
-                <span class="method-start">6993 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testng.ParrallelClass_02</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TC_02_Edit_User</span>
-                <span class="method-start">7330 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testng.ParrallelClass_03</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TC_02_Edit_Product</span>
-                <span class="method-start">7330 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_03_View_Product</span>
-                <span class="method-start">7353 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testng.ParrallelClass_02</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TC_03_View_User</span>
-                <span class="method-start">7361 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testng.ParrallelClass_03</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TC_04_Search_Product</span>
-                <span class="method-start">7378 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_05_Delete_Product</span>
-                <span class="method-start">7395 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testng.ParrallelClass_02</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TC_04_Search_User</span>
-                <span class="method-start">7401 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_05_Delete_User</span>
-                <span class="method-start">7431 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testng.ParrallelClass_03</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">7433 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testng.ParrallelClass_02</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">7457 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testng.ParrallelClass_01</div> <!-- chronological-class-name -->
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_01_New_Account</span>
-                <span class="method-start">7921 ms</span>
+                <span class="method-start">3801 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">3872 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">4797 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_02_Edit_Account</span>
-                <span class="method-start">7933 ms</span>
+                <span class="method-start">7806 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">7818 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">8737 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_03_View_Account</span>
-                <span class="method-start">7946 ms</span>
+                <span class="method-start">11701 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">11717 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">12609 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_04_Search_Account</span>
-                <span class="method-start">7970 ms</span>
+                <span class="method-start">15723 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">15730 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">16587 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_05_Delete_Account</span>
-                <span class="method-start">7987 ms</span>
+                <span class="method-start">19838 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">7999 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-suite after">
-                <span class="method-name">copyFileEnvironmentAfterExecute</span>
-                <span class="method-start">9148 ms</span>
-              </div> <!-- configuration-suite after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">19855 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testng.ParrallelClass_02</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">20994 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_01_New_User</span>
+                <span class="method-start">24233 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">24246 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">25289 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_02_Edit_User</span>
+                <span class="method-start">28039 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">28054 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">29006 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_03_View_User</span>
+                <span class="method-start">31689 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">31695 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">32603 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_04_Search_User</span>
+                <span class="method-start">35231 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">35238 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">36141 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_05_Delete_User</span>
+                <span class="method-start">38795 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">38803 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testng.ParrallelClass_03</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">39735 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_01_New_Product</span>
+                <span class="method-start">42383 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">42401 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">43450 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_02_Edit_Product</span>
+                <span class="method-start">47020 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">47038 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">48153 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_03_View_Product</span>
+                <span class="method-start">51282 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">51289 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">52162 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_04_Search_Product</span>
+                <span class="method-start">55521 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">55529 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">56706 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_05_Delete_Product</span>
+                <span class="method-start">60270 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">60283 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
