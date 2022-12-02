@@ -7,6 +7,9 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
+import pageObjects.sauceLab.LoginPageObject;
+import pageObjects.sauceLab.PageGeneratorManager;
+import pageObjects.sauceLab.ProductPageObject;
 
 public class Level_19_Sort_Asc_Desc extends BaseTest {
 
@@ -14,16 +17,24 @@ public class Level_19_Sort_Asc_Desc extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName, String sauceAppUrl) {
 		driver = getBrowserDriver(browserName, sauceAppUrl);
+		loginPage = PageGeneratorManager.getLoginPage(driver);
+
+		loginPage.enterToUsernameTextbox("standard_user");
+		loginPage.enterToPaswordTextbox("secret_sauce");
+		productPage = loginPage.clickToLoginButton(driver);
 
 	}
 
 	@Test
 	public void Sort_01_Name() {
-
+		productPage.selectItemInProductSortDropdown("Name (A to Z)");
+		productPage.selectItemInProductSortDropdown("Name (Z to A)");
 	}
 
 	@Test
-	public void User_02_Login() {
+	public void User_02_Price() {
+		productPage.selectItemInProductSortDropdown("Price (low to high)");
+		productPage.selectItemInProductSortDropdown("Price (high to low)");
 	}
 
 	@Test
@@ -36,5 +47,6 @@ public class Level_19_Sort_Asc_Desc extends BaseTest {
 	}
 
 	WebDriver driver;
-
+	LoginPageObject loginPage;
+	ProductPageObject productPage;
 }

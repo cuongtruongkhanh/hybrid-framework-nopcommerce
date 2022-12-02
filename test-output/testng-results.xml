@@ -1,302 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-01T08:15:39Z" name="Suite" finished-at="2022-12-01T08:16:40Z" duration-ms="61351">
+  <suite started-at="2022-12-02T04:48:51Z" name="Sauce - User" finished-at="2022-12-02T04:48:56Z" duration-ms="4978">
     <groups>
     </groups>
-    <test started-at="2022-12-01T08:15:39Z" name="Run on Chrome" finished-at="2022-12-01T08:16:40Z" duration-ms="61351">
-      <class name="testng.ParrallelClass_02">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testng.ParrallelClass_02@44d52de2]" started-at="2022-12-01T08:16:00Z" name="beforeMethod" finished-at="2022-12-01T08:16:03Z" duration-ms="3220" status="PASS">
+    <test started-at="2022-12-02T04:48:51Z" name="Run on Chrome" finished-at="2022-12-02T04:48:56Z" duration-ms="4978">
+      <class name="com.saurcelab.sort.Level_19_Sort_Asc_Desc">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.saurcelab.sort.Level_19_Sort_Asc_Desc@119cbf96]" started-at="2022-12-02T04:48:51Z" name="beforeClass" finished-at="2022-12-02T04:48:55Z" duration-ms="3907" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_01_New_User()[pri:0, instance:testng.ParrallelClass_02@44d52de2]" started-at="2022-12-01T08:16:03Z" name="TC_01_New_User" finished-at="2022-12-01T08:16:03Z" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_01_New_User -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testng.ParrallelClass_02@44d52de2]" started-at="2022-12-01T08:16:03Z" name="afterMethod" finished-at="2022-12-01T08:16:04Z" duration-ms="1038" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testng.ParrallelClass_02@44d52de2]" started-at="2022-12-01T08:16:04Z" name="beforeMethod" finished-at="2022-12-01T08:16:07Z" duration-ms="2747" status="PASS">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[https://www.saucedemo.com/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_02_Edit_User()[pri:0, instance:testng.ParrallelClass_02@44d52de2]" started-at="2022-12-01T08:16:07Z" name="TC_02_Edit_User" finished-at="2022-12-01T08:16:07Z" duration-ms="3" status="PASS">
+        </test-method> <!-- beforeClass -->
+        <test-method signature="Sort_01_Name()[pri:0, instance:com.saurcelab.sort.Level_19_Sort_Asc_Desc@119cbf96]" started-at="2022-12-02T04:48:55Z" name="Sort_01_Name" finished-at="2022-12-02T04:48:55Z" duration-ms="64" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_02_Edit_User -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testng.ParrallelClass_02@44d52de2]" started-at="2022-12-01T08:16:07Z" name="afterMethod" finished-at="2022-12-01T08:16:08Z" duration-ms="941" status="PASS">
+        </test-method> <!-- Sort_01_Name -->
+        <test-method signature="User_02_Login()[pri:0, instance:com.saurcelab.sort.Level_19_Sort_Asc_Desc@119cbf96]" started-at="2022-12-02T04:48:55Z" name="User_02_Login" finished-at="2022-12-02T04:48:55Z" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testng.ParrallelClass_02@44d52de2]" started-at="2022-12-01T08:16:08Z" name="beforeMethod" finished-at="2022-12-01T08:16:11Z" duration-ms="2680" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- User_02_Login -->
+        <test-method signature="User_03_My_Account()[pri:0, instance:com.saurcelab.sort.Level_19_Sort_Asc_Desc@119cbf96]" started-at="2022-12-02T04:48:55Z" name="User_03_My_Account" finished-at="2022-12-02T04:48:55Z" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_03_View_User()[pri:0, instance:testng.ParrallelClass_02@44d52de2]" started-at="2022-12-01T08:16:11Z" name="TC_03_View_User" finished-at="2022-12-01T08:16:11Z" duration-ms="2" status="PASS">
+        </test-method> <!-- User_03_My_Account -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.saurcelab.sort.Level_19_Sort_Asc_Desc@119cbf96]" started-at="2022-12-02T04:48:55Z" name="afterClass" finished-at="2022-12-02T04:48:56Z" duration-ms="861" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_03_View_User -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testng.ParrallelClass_02@44d52de2]" started-at="2022-12-01T08:16:11Z" name="afterMethod" finished-at="2022-12-01T08:16:12Z" duration-ms="903" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testng.ParrallelClass_02@44d52de2]" started-at="2022-12-01T08:16:12Z" name="beforeMethod" finished-at="2022-12-01T08:16:14Z" duration-ms="2625" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_04_Search_User()[pri:0, instance:testng.ParrallelClass_02@44d52de2]" started-at="2022-12-01T08:16:14Z" name="TC_04_Search_User" finished-at="2022-12-01T08:16:14Z" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_Search_User -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testng.ParrallelClass_02@44d52de2]" started-at="2022-12-01T08:16:14Z" name="afterMethod" finished-at="2022-12-01T08:16:15Z" duration-ms="900" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testng.ParrallelClass_02@44d52de2]" started-at="2022-12-01T08:16:15Z" name="beforeMethod" finished-at="2022-12-01T08:16:18Z" duration-ms="2641" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_05_Delete_User()[pri:0, instance:testng.ParrallelClass_02@44d52de2]" started-at="2022-12-01T08:16:18Z" name="TC_05_Delete_User" finished-at="2022-12-01T08:16:18Z" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_05_Delete_User -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testng.ParrallelClass_02@44d52de2]" started-at="2022-12-01T08:16:18Z" name="afterMethod" finished-at="2022-12-01T08:16:19Z" duration-ms="929" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testng.ParrallelClass_02 -->
-      <class name="testng.ParrallelClass_01">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testng.ParrallelClass_01@60410cd]" started-at="2022-12-01T08:15:39Z" name="beforeMethod" finished-at="2022-12-01T08:15:43Z" duration-ms="3734" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_01_New_Account()[pri:0, instance:testng.ParrallelClass_01@60410cd]" started-at="2022-12-01T08:15:43Z" name="TC_01_New_Account" finished-at="2022-12-01T08:15:43Z" duration-ms="50" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_01_New_Account -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testng.ParrallelClass_01@60410cd]" started-at="2022-12-01T08:15:43Z" name="afterMethod" finished-at="2022-12-01T08:15:44Z" duration-ms="921" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testng.ParrallelClass_01@60410cd]" started-at="2022-12-01T08:15:44Z" name="beforeMethod" finished-at="2022-12-01T08:15:47Z" duration-ms="3006" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_02_Edit_Account()[pri:0, instance:testng.ParrallelClass_01@60410cd]" started-at="2022-12-01T08:15:47Z" name="TC_02_Edit_Account" finished-at="2022-12-01T08:15:47Z" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Edit_Account -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testng.ParrallelClass_01@60410cd]" started-at="2022-12-01T08:15:47Z" name="afterMethod" finished-at="2022-12-01T08:15:48Z" duration-ms="916" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testng.ParrallelClass_01@60410cd]" started-at="2022-12-01T08:15:48Z" name="beforeMethod" finished-at="2022-12-01T08:15:51Z" duration-ms="2959" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_03_View_Account()[pri:0, instance:testng.ParrallelClass_01@60410cd]" started-at="2022-12-01T08:15:51Z" name="TC_03_View_Account" finished-at="2022-12-01T08:15:51Z" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_View_Account -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testng.ParrallelClass_01@60410cd]" started-at="2022-12-01T08:15:51Z" name="afterMethod" finished-at="2022-12-01T08:15:52Z" duration-ms="888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testng.ParrallelClass_01@60410cd]" started-at="2022-12-01T08:15:52Z" name="beforeMethod" finished-at="2022-12-01T08:15:55Z" duration-ms="3111" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_04_Search_Account()[pri:0, instance:testng.ParrallelClass_01@60410cd]" started-at="2022-12-01T08:15:55Z" name="TC_04_Search_Account" finished-at="2022-12-01T08:15:55Z" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_Search_Account -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testng.ParrallelClass_01@60410cd]" started-at="2022-12-01T08:15:55Z" name="afterMethod" finished-at="2022-12-01T08:15:56Z" duration-ms="845" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testng.ParrallelClass_01@60410cd]" started-at="2022-12-01T08:15:56Z" name="beforeMethod" finished-at="2022-12-01T08:15:59Z" duration-ms="3244" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_05_Delete_Account()[pri:0, instance:testng.ParrallelClass_01@60410cd]" started-at="2022-12-01T08:15:59Z" name="TC_05_Delete_Account" finished-at="2022-12-01T08:15:59Z" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_05_Delete_Account -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testng.ParrallelClass_01@60410cd]" started-at="2022-12-01T08:15:59Z" name="afterMethod" finished-at="2022-12-01T08:16:00Z" duration-ms="1135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testng.ParrallelClass_01 -->
-      <class name="testng.ParrallelClass_03">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testng.ParrallelClass_03@95e33cc]" started-at="2022-12-01T08:16:19Z" name="beforeMethod" finished-at="2022-12-01T08:16:21Z" duration-ms="2644" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_01_New_Product()[pri:0, instance:testng.ParrallelClass_03@95e33cc]" started-at="2022-12-01T08:16:21Z" name="TC_01_New_Product" finished-at="2022-12-01T08:16:21Z" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_01_New_Product -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testng.ParrallelClass_03@95e33cc]" started-at="2022-12-01T08:16:22Z" name="afterMethod" finished-at="2022-12-01T08:16:23Z" duration-ms="1045" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testng.ParrallelClass_03@95e33cc]" started-at="2022-12-01T08:16:23Z" name="beforeMethod" finished-at="2022-12-01T08:16:26Z" duration-ms="3568" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_02_Edit_Product()[pri:0, instance:testng.ParrallelClass_03@95e33cc]" started-at="2022-12-01T08:16:26Z" name="TC_02_Edit_Product" finished-at="2022-12-01T08:16:26Z" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Edit_Product -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testng.ParrallelClass_03@95e33cc]" started-at="2022-12-01T08:16:26Z" name="afterMethod" finished-at="2022-12-01T08:16:27Z" duration-ms="1112" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testng.ParrallelClass_03@95e33cc]" started-at="2022-12-01T08:16:27Z" name="beforeMethod" finished-at="2022-12-01T08:16:30Z" duration-ms="3126" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_03_View_Product()[pri:0, instance:testng.ParrallelClass_03@95e33cc]" started-at="2022-12-01T08:16:30Z" name="TC_03_View_Product" finished-at="2022-12-01T08:16:30Z" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_View_Product -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testng.ParrallelClass_03@95e33cc]" started-at="2022-12-01T08:16:30Z" name="afterMethod" finished-at="2022-12-01T08:16:31Z" duration-ms="861" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testng.ParrallelClass_03@95e33cc]" started-at="2022-12-01T08:16:31Z" name="beforeMethod" finished-at="2022-12-01T08:16:35Z" duration-ms="3353" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_04_Search_Product()[pri:0, instance:testng.ParrallelClass_03@95e33cc]" started-at="2022-12-01T08:16:35Z" name="TC_04_Search_Product" finished-at="2022-12-01T08:16:35Z" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_Search_Product -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testng.ParrallelClass_03@95e33cc]" started-at="2022-12-01T08:16:35Z" name="afterMethod" finished-at="2022-12-01T08:16:36Z" duration-ms="1171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testng.ParrallelClass_03@95e33cc]" started-at="2022-12-01T08:16:36Z" name="beforeMethod" finished-at="2022-12-01T08:16:39Z" duration-ms="3551" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_05_Delete_Product()[pri:0, instance:testng.ParrallelClass_03@95e33cc]" started-at="2022-12-01T08:16:39Z" name="TC_05_Delete_Product" finished-at="2022-12-01T08:16:39Z" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_05_Delete_Product -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testng.ParrallelClass_03@95e33cc]" started-at="2022-12-01T08:16:39Z" name="afterMethod" finished-at="2022-12-01T08:16:40Z" duration-ms="1041" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testng.ParrallelClass_03 -->
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.saurcelab.sort.Level_19_Sort_Asc_Desc -->
     </test> <!-- Run on Chrome -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Sauce - User -->
 </testng-results>
