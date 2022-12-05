@@ -1,6 +1,7 @@
 package com.saurcelab.sort;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -28,17 +29,19 @@ public class Level_19_Sort_Asc_Desc extends BaseTest {
 	@Test
 	public void Sort_01_Name() {
 		productPage.selectItemInProductSortDropdown("Name (A to Z)");
+		productPage.sleepInSecond(2);
+		Assert.assertTrue(productPage.isProductNameSortByAscending());
+
 		productPage.selectItemInProductSortDropdown("Name (Z to A)");
+		productPage.sleepInSecond(2);
 	}
 
 	@Test
 	public void User_02_Price() {
 		productPage.selectItemInProductSortDropdown("Price (low to high)");
+		productPage.sleepInSecond(2);
 		productPage.selectItemInProductSortDropdown("Price (high to low)");
-	}
-
-	@Test
-	public void User_03_My_Account() {
+		productPage.sleepInSecond(2);
 	}
 
 	@AfterClass(alwaysRun = true)
