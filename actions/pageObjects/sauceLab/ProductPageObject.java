@@ -76,6 +76,7 @@ public class ProductPageObject extends BasePage {
 		List<WebElement> productNames = getListWebElement(driver, ProductPageUI.PRODUCT_PRICES);
 
 		for (WebElement priceName : productNames) {
+			System.out.println(priceName.getText());
 			productPriceList.add(Float.parseFloat(priceName.getText().replace("$", "")));
 		}
 
@@ -98,6 +99,7 @@ public class ProductPageObject extends BasePage {
 		List<WebElement> productNames = getListWebElement(driver, ProductPageUI.PRODUCT_PRICES);
 
 		for (WebElement priceName : productNames) {
+			System.out.println(priceName.getText());
 			productPriceList.add(Float.parseFloat(priceName.getText().replace("$", "")));
 		}
 
