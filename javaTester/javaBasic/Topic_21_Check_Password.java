@@ -16,7 +16,6 @@ public class Topic_21_Check_Password {
 	public static void isPasswordValid(String password) {
 		System.out.println(password.matches(".*[a-zA-Z].*"));
 		System.out.println(password.matches(".*[0-9].*"));
-		System.out.println(password.matches(".*[$#@].*"));
 	}
 
 }
