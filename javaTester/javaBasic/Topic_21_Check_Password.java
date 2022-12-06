@@ -17,7 +17,6 @@ public class Topic_21_Check_Password {
 		System.out.println(password.matches(".*[a-zA-Z].*"));
 		System.out.println(password.matches(".*[0-9].*"));
 		System.out.println(password.matches(".*[$#@].*"));
-		System.out.println(password.matches(".*[$#@].*"));
 	}
 
 }
