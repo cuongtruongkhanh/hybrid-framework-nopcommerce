@@ -11,11 +11,21 @@ public class Topic_21_Check_Password {
 	 */
 	public static void main(String[] args) {
 		isPasswordValid("ABd1234@1");
+		isPasswordValid("a F1#");
+		isPasswordValid("2w3E*");
+		isPasswordValid("2We3345");
 	}
 
 	public static void isPasswordValid(String password) {
-		System.out.println(password.matches(".*[a-zA-Z].*"));
-		System.out.println(password.matches(".*[0-9].*"));
+		if (password.length() >= 6 && password.length() <= 12) {
+			if (password.matches(".*[a-zA-Z].*") == true && password.matches(".*[0-9].*") == true && password.matches(".*[$#@].*") == true) {
+				System.out.println(password + " correct password");
+			} else {
+				System.out.println(password + " incorrect password");
+			}
+		} else {
+			System.out.println(password + " incorrect password");
+		}
 	}
 
 }
