@@ -15,8 +15,8 @@ public class Topic_20_Check_Phone_Number {
 		System.out.println(phoneNumber.charAt(0));
 
 		char firstNumber = 9;
-		char secondNumber = 9;
-		char thirdNumber = 9;
+		char secondNumber = 8;
+		char thirdNumber = 7;
 
 		int number = Character.compare(firstNumber, phoneNumber.charAt(0));
 		System.out.println(number);
