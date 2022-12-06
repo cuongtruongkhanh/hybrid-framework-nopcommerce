@@ -26,13 +26,15 @@ public class Level_19_Sort_Asc_Desc extends BaseTest {
 
 	}
 
-	@Test
+	// @Test
 	public void Sort_01_Name() {
 		productPage.selectItemInProductSortDropdown("Name (A to Z)");
 		productPage.sleepInSecond(2);
 		Assert.assertTrue(productPage.isProductNameSortByAscending());
 
 		productPage.selectItemInProductSortDropdown("Name (Z to A)");
+		Assert.assertTrue(productPage.isProductNameSortByDescending());
+
 		productPage.sleepInSecond(2);
 	}
 
@@ -40,8 +42,12 @@ public class Level_19_Sort_Asc_Desc extends BaseTest {
 	public void User_02_Price() {
 		productPage.selectItemInProductSortDropdown("Price (low to high)");
 		productPage.sleepInSecond(2);
+		Assert.assertTrue(productPage.isProductPriceSortByAscending());
+
 		productPage.selectItemInProductSortDropdown("Price (high to low)");
 		productPage.sleepInSecond(2);
+		Assert.assertTrue(productPage.isProductPriceSortByDescending());
+
 	}
 
 	@AfterClass(alwaysRun = true)
