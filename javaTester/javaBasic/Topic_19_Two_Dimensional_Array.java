@@ -14,6 +14,7 @@ public class Topic_19_Two_Dimensional_Array {
 				System.out.print(list[a][b]);
 			}
 			System.out.print("]");
+			System.out.print("]");
 		}
 	}
 }
