@@ -1,37 +1,256 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:25:56,981] Register - Step 01: Navigate to Register page
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:25:58,024] Register - Step 02: click to Radio button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:25:58,097] Register - Step 03: Enter to Firstname textbox with value is Darby
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:25:58,208] Register - Step 04: Enter to Lastname textbox with value is Ward
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:25:58,323] Register - Step 05: Select DateOfBirthDay, DateOfBirthMonth, DateOfBirthYear
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:25:58,614] Register - Step 06: Enter to Email Adrress textbox with value is Ward
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:25:58,729] Register - Step 07: Click to Checkbox Newsletter
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:25:58,780] Register - Step 08: Enter to Company textbox with value is Grant-Keeling
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:25:58,892] Register - Step 09: Enter to Password textbox with value is f1W&K70RPLt7p
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:25:58,986] Register - Step 10: Enter to ConfirmPassword textbox with value is f1W&K70RPLt7p
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:25:59,096] Register - Step 11: Click to Register button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:25:59,949] Register - Step 12: Verify Register Success Message is displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:25:59,994]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:26:00,033] Login - Step 01: Navigate to Login page
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:26:01,138] Login - Step 02: Enter to email textbox with value is glennis.stamm@gmail.com
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:26:01,260] Login - Step 03: Enter to password textbox with value is f1W&K70RPLt7p
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:26:01,366] Login - Step 04: Click to login button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:26:02,012] Login - Step 05: Verify My Account Link is displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:26:02,074]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:26:02,077] MyAccount - Step 01: Navigate to My Account Page
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:26:02,622] MyAccount - Step 02: Verify Customer Info page is displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:26:02,685]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:26:02,685] MyAccount - Step 03: Verify First Name value is correct
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:26:12,755] MyAccount - Step 04: Verify Last Name value is correct
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:26:12,814] MyAccount - Step 05: Verify Email value is correct
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:26:12,878] OS name = windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-12-08 18:26:12,878] Driver instance name = chromedriver: chrome on windows (43406d475ef5a85ab73dd28061ed774d)
+<br>]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-12-06T07:52:46Z" name="Sauce - User" finished-at="2022-12-06T07:52:56Z" duration-ms="10483">
+  <suite started-at="2022-12-08T11:25:51Z" name="NopCommerce - User" finished-at="2022-12-08T11:26:13Z" duration-ms="22044">
     <groups>
     </groups>
-    <test started-at="2022-12-06T07:52:46Z" name="Run on Chrome" finished-at="2022-12-06T07:52:56Z" duration-ms="10483">
-      <class name="com.saurcelab.sort.Level_19_Sort_Asc_Desc">
-        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.saurcelab.sort.Level_19_Sort_Asc_Desc@6f19ac19]" started-at="2022-12-06T07:52:46Z" name="beforeClass" finished-at="2022-12-06T07:52:50Z" duration-ms="4603" status="PASS">
+    <test started-at="2022-12-08T11:25:51Z" name="Run on Chrome" finished-at="2022-12-08T11:26:13Z" duration-ms="22044">
+      <class name="com.nopcommerce.user.Level_20_Fake_Data">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_20_Fake_Data@4ddbbdf8]" started-at="2022-12-08T11:25:51Z" name="beforeClass" finished-at="2022-12-08T11:25:56Z" duration-ms="5409" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chrome]]>
               </value>
             </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://www.saucedemo.com/]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="User_02_Price()[pri:0, instance:com.saurcelab.sort.Level_19_Sort_Asc_Desc@6f19ac19]" started-at="2022-12-06T07:52:50Z" name="User_02_Price" finished-at="2022-12-06T07:52:55Z" duration-ms="4961" status="PASS">
+        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_20_Fake_Data@4ddbbdf8]" started-at="2022-12-08T11:25:56Z" name="User_01_Register" finished-at="2022-12-08T11:25:59Z" duration-ms="3049" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:25:56,981] Register - Step 01: Navigate to Register page
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:25:58,024] Register - Step 02: click to Radio button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:25:58,097] Register - Step 03: Enter to Firstname textbox with value is Darby
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:25:58,208] Register - Step 04: Enter to Lastname textbox with value is Ward
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:25:58,323] Register - Step 05: Select DateOfBirthDay, DateOfBirthMonth, DateOfBirthYear
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:25:58,614] Register - Step 06: Enter to Email Adrress textbox with value is Ward
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:25:58,729] Register - Step 07: Click to Checkbox Newsletter
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:25:58,780] Register - Step 08: Enter to Company textbox with value is Grant-Keeling
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:25:58,892] Register - Step 09: Enter to Password textbox with value is f1W&K70RPLt7p
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:25:58,986] Register - Step 10: Enter to ConfirmPassword textbox with value is f1W&K70RPLt7p
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:25:59,096] Register - Step 11: Click to Register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:25:59,949] Register - Step 12: Verify Register Success Message is displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:25:59,994]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- User_02_Price -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.saurcelab.sort.Level_19_Sort_Asc_Desc@6f19ac19]" started-at="2022-12-06T07:52:55Z" name="afterClass" finished-at="2022-12-06T07:52:56Z" duration-ms="842" status="PASS">
+        </test-method> <!-- User_01_Register -->
+        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_20_Fake_Data@4ddbbdf8]" started-at="2022-12-08T11:26:00Z" name="User_02_Login" finished-at="2022-12-08T11:26:02Z" duration-ms="2043" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:26:00,033] Login - Step 01: Navigate to Login page
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:26:01,138] Login - Step 02: Enter to email textbox with value is glennis.stamm@gmail.com
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:26:01,260] Login - Step 03: Enter to password textbox with value is f1W&K70RPLt7p
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:26:01,366] Login - Step 04: Click to login button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:26:02,012] Login - Step 05: Verify My Account Link is displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:26:02,074]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- User_02_Login -->
+        <test-method signature="User_03_My_Account()[pri:0, instance:com.nopcommerce.user.Level_20_Fake_Data@4ddbbdf8]" started-at="2022-12-08T11:26:02Z" name="User_03_My_Account" finished-at="2022-12-08T11:26:12Z" duration-ms="10800" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:26:02,077] MyAccount - Step 01: Navigate to My Account Page
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:26:02,622] MyAccount - Step 02: Verify Customer Info page is displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:26:02,685]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:26:02,685] MyAccount - Step 03: Verify First Name value is correct
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:26:12,755] MyAccount - Step 04: Verify Last Name value is correct
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:26:12,814] MyAccount - Step 05: Verify Email value is correct
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- User_03_My_Account -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_20_Fake_Data@4ddbbdf8]" started-at="2022-12-08T11:26:12Z" name="afterClass" finished-at="2022-12-08T11:26:13Z" duration-ms="692" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:26:12,878] OS name = windows 10
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-12-08 18:26:12,878] Driver instance name = chromedriver: chrome on windows (43406d475ef5a85ab73dd28061ed774d)
+<br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.saurcelab.sort.Level_19_Sort_Asc_Desc -->
+      </class> <!-- com.nopcommerce.user.Level_20_Fake_Data -->
     </test> <!-- Run on Chrome -->
-  </suite> <!-- Sauce - User -->
+  </suite> <!-- NopCommerce - User -->
 </testng-results>
