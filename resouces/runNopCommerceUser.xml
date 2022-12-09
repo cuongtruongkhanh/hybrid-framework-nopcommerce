@@ -14,7 +14,7 @@
   <test name="Run on Chrome">
   <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_20_Fake_Data"/>
+      <class name="com.nopcommerce.user.Level_20_Manage_Data_By_UserData"/>
     </classes>
   </test>
 
