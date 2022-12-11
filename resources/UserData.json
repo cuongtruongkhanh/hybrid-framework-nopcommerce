@@ -6,5 +6,11 @@
 	"date": "25",
 	"month": "August",
 	"year": "2000",
-	"companyName": "LG Electronics"
+	"companyName": "LG Electronics",
+	
+	"login":{
+		"username":"khanhcuong",
+		"password":"123456"
+	}
+	
 }

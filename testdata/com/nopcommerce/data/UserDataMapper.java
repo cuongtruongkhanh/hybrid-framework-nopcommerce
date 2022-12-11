@@ -9,29 +9,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import commons.GlobalConstants;
 
 public class UserDataMapper {
-	@JsonProperty("firstName")
-	private String firstName;
-
-	@JsonProperty("lastName")
-	private String lastName;
-
-	@JsonProperty("emailAddress")
-	private String emailAdress;
-
-	@JsonProperty("password")
-	private String password;
-
-	@JsonProperty("date")
-	private String date;
-
-	@JsonProperty("month")
-	private String month;
-
-	@JsonProperty("year")
-	private String year;
-
-	@JsonProperty("companyName")
-	private String companyName;
 
 	public static UserDataMapper getUserData() {
 		try {
@@ -42,6 +19,25 @@ public class UserDataMapper {
 			e.printStackTrace();
 			return null;
 		}
+	}
+
+	@JsonProperty("login")
+	private Login login;
+
+	public static class Login {
+		@JsonProperty("username")
+		private String username;
+
+		@JsonProperty("password")
+		private String password;
+	}
+
+	public String getLoginUsername() {
+		return login.username;
+	}
+
+	public String getLoginPassword() {
+		return login.password;
 	}
 
 	public String getFirstName() {
@@ -76,4 +72,27 @@ public class UserDataMapper {
 		return companyName;
 	}
 
+	@JsonProperty("firstName")
+	private String firstName;
+
+	@JsonProperty("lastName")
+	private String lastName;
+
+	@JsonProperty("emailAddress")
+	private String emailAdress;
+
+	@JsonProperty("password")
+	private String password;
+
+	@JsonProperty("date")
+	private String date;
+
+	@JsonProperty("month")
+	private String month;
+
+	@JsonProperty("year")
+	private String year;
+
+	@JsonProperty("companyName")
+	private String companyName;
 }
