@@ -11,6 +11,17 @@
 	"login":{
 		"username":"khanhcuong",
 		"password":"123456"
-	}
+	},
+	
+	"subjects":[
+		{
+			"name":"Math",
+			"point":"10.0"
+		},
+		{
+			"name":"Physic",
+			"point":"8.5"
+		}
+	]
 	
 }

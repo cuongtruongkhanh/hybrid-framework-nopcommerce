@@ -33,6 +33,11 @@ public class Level_20_Manage_Data_By_Json extends BaseTest {
 		month = userDataMapper.getMonth();
 		year = userDataMapper.getYear();
 		companyName = userDataMapper.getCompanyName();
+
+		System.out.println(userDataMapper.getSubjects().get(0).getName());
+		System.out.println(userDataMapper.getSubjects().get(0).getPoint());
+		System.out.println(userDataMapper.getSubjects().get(1).getName());
+		System.out.println(userDataMapper.getSubjects().get(1).getPoint());
 	}
 
 	@Test
