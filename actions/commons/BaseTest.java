@@ -263,7 +263,7 @@ public class BaseTest {
 	}
 
 	public void copyFileEnvironment() {
-		File source = new File(GlobalConstants.PROJECT_PATH + "/resouces/environment.xml");
+		File source = new File(GlobalConstants.PROJECT_PATH + "/resources/environment.xml");
 		File dest = new File(GlobalConstants.PROJECT_PATH + "/allure-results/environment.xml");
 		try {
 			System.out.println(source.getName());

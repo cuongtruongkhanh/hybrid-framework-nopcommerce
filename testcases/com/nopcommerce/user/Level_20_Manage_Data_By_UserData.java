@@ -55,7 +55,7 @@ public class Level_20_Manage_Data_By_UserData extends BaseTest {
 		registerPage.selecToDropdownByName(driver, "DateOfBirthMonth", month);
 		registerPage.selecToDropdownByName(driver, "DateOfBirthYear", year);
 
-		log.info("Register - Step 06: Enter to Email Adrress textbox with value is " + lastName);
+		log.info("Register - Step 06: Enter to Email Adrress textbox with value is " + emailAdress);
 		registerPage.inputToTextboxByID(driver, "Email", emailAdress);
 
 		log.info("Register - Step 07: Click to Checkbox Newsletter");
