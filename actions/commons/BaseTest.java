@@ -133,7 +133,7 @@ public class BaseTest {
 		return driver;
 	}
 
-	protected WebDriver getBrowserDriver(String browserName, String environmentName) {
+	protected WebDriver getBrowserDriver(String browserName, String appUrl) {
 		BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
 		if (browserList == BrowserList.FIREFOX) {
 			WebDriverManager.firefoxdriver().setup();
@@ -175,7 +175,7 @@ public class BaseTest {
 		}
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get(getEnvironmentUrl(environmentName));
+		driver.get(appUrl);
 		return driver;
 	}
 
