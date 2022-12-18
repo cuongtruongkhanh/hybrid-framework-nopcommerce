@@ -21,9 +21,9 @@ import utilities.Environment;
 public class Level_23_Multiple_Environment_Owner_Grid extends BaseTest {
 	Environment environment;
 
-	@Parameters({ "browser", "environment" })
+	@Parameters({ "browser", "environment", "ipAddress", "portNumber" })
 	@BeforeClass
-	public void beforeClass(String browserName, String environmentName) {
+	public void beforeClass(String browserName, String environmentName, String ipAddress, String portNumber) {
 		ConfigFactory.setProperty("env", environmentName);
 		environment = ConfigFactory.create(Environment.class);
 
