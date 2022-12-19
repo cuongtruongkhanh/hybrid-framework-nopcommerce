@@ -28,6 +28,10 @@ public class GlobalConstants {
 	public static final String AUTO_IT_SCRIPT = PROJECT_PATH + File.separator + "autoIT";
 	public static final String REPORTING_SCREENSHOT = PROJECT_PATH + File.separator + "reportNGImages" + File.separator;
 
+	public static final String BROWSER_USERNAME = "khanhcuong_NYbcKG";
+	public static final String BROWSER_AUTOMATE_ACCESS_KEY = "MwY9ugky321yaiH39KCR";
+	public static final String BROWSER_STACK_URL = "https://" + BROWSER_USERNAME + ":" + BROWSER_AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
+
 	// Popup lên mới upload
 	// Headless browser
 	// Jenkins service (File cài đặt) - Headless

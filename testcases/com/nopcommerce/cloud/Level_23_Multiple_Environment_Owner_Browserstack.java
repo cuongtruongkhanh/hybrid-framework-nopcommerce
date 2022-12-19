@@ -21,13 +21,13 @@ import utilities.Environment;
 public class Level_23_Multiple_Environment_Owner_Browserstack extends BaseTest {
 	Environment environment;
 
-	@Parameters({ "browser", "environment" })
+	@Parameters({ "browser", "environment", "os", "osVersion" })
 	@BeforeClass
-	public void beforeClass(String browserName, String environmentName) {
+	public void beforeClass(String browserName, String environmentName, String osName, String osVersion) {
 		ConfigFactory.setProperty("env", environmentName);
 		environment = ConfigFactory.create(Environment.class);
 
-		driver = getBrowserDriver(browserName, environment.appUrl());
+		driver = getBrowserDriverBrowserstack(browserName, environment.appUrl(), osName, osVersion);
 
 		System.out.println(environment.appUrl());
 		System.out.println(environment.appPassword());

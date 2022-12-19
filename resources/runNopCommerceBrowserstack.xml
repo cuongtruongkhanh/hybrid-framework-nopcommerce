@@ -15,8 +15,10 @@
 	
   <test name="Run on Chrome">
   <parameter name="browser" value="chrome"/>
+  <parameter name="os" value="Windows"/>
+  <parameter name="osVersion" value="10"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_23_Multiple_Environment_Owner_Browserstack"/>
+      <class name="com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Browserstack"/>
     </classes>
   </test>
 

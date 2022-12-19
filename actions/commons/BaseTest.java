@@ -2,6 +2,8 @@ package commons;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -18,6 +20,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterSuite;
@@ -173,6 +177,33 @@ public class BaseTest {
 		} else {
 			throw new RuntimeException("Browser name invalid");
 		}
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.get(appUrl);
+		return driver;
+	}
+
+	protected WebDriver getBrowserDriverBrowserstack(String browserName, String appUrl, String osName, String osVersion) {
+		DesiredCapabilities capability = new DesiredCapabilities();
+		capability.setCapability("os", osName);
+		capability.setCapability("os_version", osVersion);
+		capability.setCapability("browser_version", "latest");
+		capability.setCapability("browserstack.debug", "true");
+		capability.setCapability("project", "Nopcommerce");
+		capability.setCapability("name", "Run on" + osName + " | " + osVersion + " | " + browserName);
+
+		if (osName.contains("Windows")) {
+			capability.setCapability("resolution", "1920x1080");
+		} else {
+			capability.setCapability("resolution", "1920x1440");
+		}
+
+		try {
+			driver = new RemoteWebDriver(new URL(GlobalConstants.BROWSER_STACK_URL), capability);
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(appUrl);
