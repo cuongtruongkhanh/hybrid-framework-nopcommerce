@@ -18,7 +18,7 @@ import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
 import utilities.Environment;
 
-public class Level_23_Multiple_Environment_Owner_CloudTest extends BaseTest {
+public class Level_23_Multiple_Environment_Owner_Browserstack extends BaseTest {
 	Environment environment;
 
 	@Parameters({ "browser", "environment" })
