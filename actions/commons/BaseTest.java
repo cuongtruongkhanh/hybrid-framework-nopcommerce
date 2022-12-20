@@ -24,7 +24,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import com.google.common.io.Files;
@@ -42,7 +41,7 @@ public class BaseTest {
 		System.out.println("---------END delete file in folder---------");
 	}
 
-	@AfterSuite
+	// @AfterSuite
 	public void copyFileEnvironmentAfterExecute() {
 		System.out.println("---------START copy file in folder---------");
 		copyFileEnvironment();
