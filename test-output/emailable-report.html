@@ -9,12 +9,74 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">NopCommerce - User</th></tr>
-<tr><td><a href="#t0">Run on Chrome</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">64,574</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Run on Mac</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">76,040</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">NopCommerce - User</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Browserstack</td><td><a href="#m0">User_01_Register</a></td><td rowspan="1">1671436840480</td><td rowspan="1">28498</td></tr><tr class="passedeven"><td><a href="#m1">User_02_Login</a></td><td rowspan="1">1671436869025</td><td rowspan="1">13744</td></tr><tr class="passedeven"><td><a href="#m2">User_03_My_Account</a></td><td rowspan="1">1671436882777</td><td rowspan="1">7178</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">NopCommerce - User</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on Mac &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Browserstack</td><td><a href="#m0">User_01_Register</a></td><td rowspan="1">1671522108127</td><td rowspan="1">24386</td></tr><tr class="failedeven"><td><a href="#m1">User_02_Login</a></td><td rowspan="1">1671522132595</td><td rowspan="1">20392</td></tr><tr class="failedeven"><td><a href="#m2">User_03_My_Account</a></td><td rowspan="1">1671522152993</td><td rowspan="1">20358</td></tr></tbody>
 </table>
-<h2>Run on Chrome</h2><h3 id="m0">com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Browserstack#User_01_Register</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Browserstack#User_02_Login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Browserstack#User_03_My_Account</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Run on Mac</h2><h3 id="m0">com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Browserstack#User_01_Register</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Your registration completed...] but found [Your registration completed]
+	at com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Browserstack.User_01_Register(Level_23_Multiple_Environment_Owner_Browserstack.java:87)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Browserstack#User_02_Login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@class=&apos;ico-logout&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.BasePage.waitForElementClickable(BasePage.java:475)
+	at pageObjects.nopCommerce.user.UserRegisterPageObject.clickToLogoutLink(UserRegisterPageObject.java:91)
+	at com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Browserstack.User_02_Login(Level_23_Multiple_Environment_Owner_Browserstack.java:94)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;ico-logout&apos;]&quot;}
+  (Session info: chrome=108.0.5359.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;VN-MF10-NC100S7&apos;, ip: &apos;10.218.147.55&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.71, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/3y/zz_w6_s56sl...}, goog:chromeOptions: {debuggerAddress: localhost:53471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: adcd18287fb38b36afcd3012886...}
+Session ID: adcd18287fb38b36afcd301288645a2ab139e4a2
+*** Element info: {Using=xpath, value=//a[@class=&apos;ico-logout&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Browserstack#User_03_My_Account</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@class=&apos;ico-account&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at commons.BasePage.waitForElementClickable(BasePage.java:475)
+	at pageObjects.nopCommerce.user.UserHomePageObject.openMyAccountPage(UserHomePageObject.java:42)
+	at com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Browserstack.User_03_My_Account(Level_23_Multiple_Environment_Owner_Browserstack.java:115)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;ico-account&apos;]&quot;}
+  (Session info: chrome=108.0.5359.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;VN-MF10-NC100S7&apos;, ip: &apos;10.218.147.55&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.71, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/3y/zz_w6_s56sl...}, goog:chromeOptions: {debuggerAddress: localhost:53471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: adcd18287fb38b36afcd3012886...}
+Session ID: adcd18287fb38b36afcd301288645a2ab139e4a2
+*** Element info: {Using=xpath, value=//a[@class=&apos;ico-account&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
