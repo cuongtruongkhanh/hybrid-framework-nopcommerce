@@ -13,13 +13,24 @@
 	
 	<parameter name="environment" value="testing"></parameter>
 	
-  <test name="Run on Chrome">
+ <!-- <test name="Run on Chrome">
   <parameter name="browser" value="chrome"/>
   <parameter name="os" value="Windows"/>
   <parameter name="osVersion" value="10"/>
     <classes>
       <class name="com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Browserstack"/>
     </classes>
+  </test>--> 
+  
+  <test name="Run on Mac">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="os" value="OS X"/>
+  <parameter name="osVersion" value="Big Sur"/>
+    <classes>
+      <class name="com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Browserstack"/>
+    </classes>
   </test>
+  
+  
 
 </suite>

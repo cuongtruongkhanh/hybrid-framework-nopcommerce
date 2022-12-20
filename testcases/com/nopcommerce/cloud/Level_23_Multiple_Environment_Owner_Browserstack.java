@@ -84,7 +84,7 @@ public class Level_23_Multiple_Environment_Owner_Browserstack extends BaseTest {
 		registerPage.clickToButtonByText(driver, "Register");
 
 		log.info("Register - Step 12: Verify Register Success Message is displayed");
-		verifyEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
+		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed...");
 
 	}
 

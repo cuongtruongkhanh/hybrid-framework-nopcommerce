@@ -205,6 +205,25 @@ public class BaseTest {
 		return driver;
 	}
 
+	protected WebDriver getBrowserDriverSouceLab(String browserName, String appUrl, String osName) {
+		DesiredCapabilities capability = new DesiredCapabilities();
+		capability.setCapability("browserName", browserName);
+		capability.setCapability("platform", osName);
+		capability.setCapability("version", "latest");
+		capability.setCapability("screenResolution", "1920x1080");
+
+		try {
+			driver = new RemoteWebDriver(new URL(GlobalConstants.SAUCELAB_STACK_URL), capability);
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
+
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.get(appUrl);
+		return driver;
+	}
+
 	public WebDriver getDriverInstance() {
 		return this.driver;
 	}

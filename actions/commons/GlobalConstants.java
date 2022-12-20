@@ -32,6 +32,10 @@ public class GlobalConstants {
 	public static final String BROWSER_AUTOMATE_ACCESS_KEY = "MwY9ugky321yaiH39KCR";
 	public static final String BROWSER_STACK_URL = "https://" + BROWSER_USERNAME + ":" + BROWSER_AUTOMATE_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
+	public static final String SAUCELAB_USERNAME = "oauth-khanhcuong.hanu-34976";
+	public static final String SAUCELAB_AUTOMATE_ACCESS_KEY = "65b4d8a0-91ee-4d11-9a90-5f4657c46fa9";
+	public static final String SAUCELAB_STACK_URL = "https://" + SAUCELAB_USERNAME + ":" + SAUCELAB_AUTOMATE_ACCESS_KEY + "@ondemand.apac-southeast-1.saucelabs.com:443/wd/hub";
+
 	// Popup lên mới upload
 	// Headless browser
 	// Jenkins service (File cài đặt) - Headless
