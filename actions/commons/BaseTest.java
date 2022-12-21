@@ -28,6 +28,9 @@ import org.testng.annotations.BeforeSuite;
 
 import com.google.common.io.Files;
 
+import factoryServer.BrowserstackFactory;
+import factoryServer.LocalFactory;
+import factoryServer.SaucelabFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
@@ -50,6 +53,28 @@ public class BaseTest {
 
 	protected BaseTest() {
 		log = LogFactory.getLog(getClass());
+	}
+
+	protected WebDriver getBrowserDriver(String browserName, String appUrl, String EnvName, String osName, String osVersion) {
+		switch (EnvName) {
+		case "local":
+			driver = new LocalFactory(browserName).createDriver();
+			break;
+		case "browserStack":
+			driver = new BrowserstackFactory(browserName, osName, osVersion).createDriver();
+			break;
+		case "saucelab":
+			driver = new SaucelabFactory(browserName, osName).createDriver();
+			break;
+		default:
+			driver = new LocalFactory(browserName).createDriver();
+			break;
+		}
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.get(appUrl);
+		return driver;
+
 	}
 
 	protected WebDriver getBrowserDriver(String browserName) {
