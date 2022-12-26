@@ -13,21 +13,21 @@
 	
 	<parameter name="environment" value="testing"></parameter>
 	
-  <test name="Run on Firefox">
+ <!--  <test name="Run on Firefox">
   <parameter name="browser" value="firefox"/>
   <parameter name="ipAddress" value="localhost" />
   <parameter name="portNumber" value="4446" />
     <classes>
-      <class name="com.nopcommerce.user.Level_22_Multiple_Environment_Owner"/>
+      <class name="com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Grid"/>
     </classes>
   </test>
-  
+  -->
     <test name="Run on Chrome">
   <parameter name="browser" value="chrome"/>
   <parameter name="ipAddress" value="localhost" />
   <parameter name="portNumber" value="4445" />
     <classes>
-      <class name="com.nopcommerce.user.Level_22_Multiple_Environment_Owner"/>
+      <class name="com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Grid"/>
     </classes>
   </test>
 

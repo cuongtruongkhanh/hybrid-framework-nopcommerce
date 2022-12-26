@@ -1,0 +1,14 @@
+{
+"port":4444,
+"newSessionWaitTimeout":-1,
+"servlets" : [],
+"custom" : {},
+"capabilityMatcher":"org.openqa.grid.internal.ultils.DefaultCapabilityMatcher",
+"registry": "org.openqa.grid.internal.DefaultGridRegistry",
+"throwOnCapabilityNotPresent":true,
+"cleanUpcycle":5000,
+"role": "hub",
+"debug":false,
+"browserTimeout":0,
+"timeout":1800
+}
