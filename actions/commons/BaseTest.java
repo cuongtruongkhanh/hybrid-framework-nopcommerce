@@ -31,6 +31,7 @@ import org.testng.annotations.BeforeSuite;
 import com.google.common.io.Files;
 
 import factoryServer.BrowserstackFactory;
+import factoryServer.GridFactory;
 import factoryServer.LocalFactory;
 import factoryServer.SaucelabFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -63,7 +64,7 @@ public class BaseTest {
 			driver = new LocalFactory(browserName).createDriver();
 			break;
 		case "Grid":
-			// driver = new GridFactory(browserName, ipAddress, portNumber).createDriver();
+			driver = new GridFactory(browserName, ipAddress, portNumber).createDriver();
 			break;
 		case "browserStack":
 			driver = new BrowserstackFactory(browserName, osName, osVersion).createDriver();
@@ -212,7 +213,7 @@ public class BaseTest {
 		return driver;
 	}
 
-	protected WebDriver getBrowserDriver(String browserName, String appUrl, String ipAddress, String portNumber) {
+	protected WebDriver getBrowserDriverGrid(String browserName, String appUrl, String ipAddress, String portNumber) {
 		BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
 		DesiredCapabilities capability = new DesiredCapabilities();
 
