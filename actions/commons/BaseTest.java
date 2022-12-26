@@ -57,10 +57,13 @@ public class BaseTest {
 		log = LogFactory.getLog(getClass());
 	}
 
-	protected WebDriver getBrowserDriver(String browserName, String appUrl, String EnvName, String osName, String osVersion) {
+	protected WebDriver getBrowserDriver(String browserName, String appUrl, String EnvName, String ipAddress, String portNumber, String osName, String osVersion) {
 		switch (EnvName) {
 		case "local":
 			driver = new LocalFactory(browserName).createDriver();
+			break;
+		case "Grid":
+			// driver = new GridFactory(browserName, ipAddress, portNumber).createDriver();
 			break;
 		case "browserStack":
 			driver = new BrowserstackFactory(browserName, osName, osVersion).createDriver();
