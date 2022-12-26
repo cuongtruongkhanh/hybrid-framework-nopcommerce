@@ -58,8 +58,8 @@ public class BaseTest {
 		log = LogFactory.getLog(getClass());
 	}
 
-	protected WebDriver getBrowserDriver(String browserName, String appUrl, String EnvName, String ipAddress, String portNumber, String osName, String osVersion) {
-		switch (EnvName) {
+	protected WebDriver getBrowserDriver(String serverName, String browserName, String appUrl, String ipAddress, String portNumber, String osName, String osVersion) {
+		switch (serverName) {
 		case "local":
 			driver = new LocalFactory(browserName).createDriver();
 			break;
