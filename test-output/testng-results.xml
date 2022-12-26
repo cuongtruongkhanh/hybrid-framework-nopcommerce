@@ -2,56 +2,64 @@
 <testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-26T10:18:23Z" name="NopCommerce - User" finished-at="2022-12-26T10:18:28Z" duration-ms="5149">
+  <suite started-at="2022-12-26T17:03:23Z" name="NopCommerce - User" finished-at="2022-12-26T17:03:24Z" duration-ms="120">
     <groups>
     </groups>
-    <test started-at="2022-12-26T10:18:23Z" name="Run on Chrome" finished-at="2022-12-26T10:18:28Z" duration-ms="5149">
-      <class name="com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Grid">
-        <test-method is-config="true" signature="initBeforeSuite()[pri:0, instance:com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Grid@6f7923a5]" started-at="2022-12-26T10:18:23Z" name="initBeforeSuite" finished-at="2022-12-26T10:18:23Z" duration-ms="9" status="PASS">
+    <test started-at="2022-12-26T17:03:23Z" name="Run on Chrome" finished-at="2022-12-26T17:03:24Z" duration-ms="120">
+      <class name="com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_All">
+        <test-method is-config="true" signature="initBeforeSuite()[pri:0, instance:com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_All@6f7923a5]" started-at="2022-12-26T17:03:23Z" name="initBeforeSuite" finished-at="2022-12-26T17:03:23Z" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBeforeSuite -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Grid@6f7923a5]" started-at="2022-12-26T10:18:23Z" name="beforeClass" finished-at="2022-12-26T10:18:28Z" duration-ms="5041" status="FAIL">
+        <test-method is-config="true" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_All@6f7923a5]" started-at="2022-12-26T17:03:23Z" name="beforeClass" finished-at="2022-12-26T17:03:23Z" duration-ms="23" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[local]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[testing]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[localhost]]>
+                <![CDATA[testing]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[4445]]>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[4444]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[10]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+          <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'ADMIN', ip: '172.31.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: driver.version: RemoteWebDriver]]>
+              <![CDATA[No enum constant commons.BrowserList.LOCAL]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'ADMIN', ip: '172.31.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-at commons.BaseTest.getBrowserDriver(BaseTest.java:266)
-at com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Grid.beforeClass(Level_23_Multiple_Environment_Owner_Grid.java:30)
+              <![CDATA[java.lang.IllegalArgumentException: No enum constant commons.BrowserList.LOCAL
+at java.base/java.lang.Enum.valueOf(Enum.java:240)
+at commons.BrowserList.valueOf(BrowserList.java:1)
+at factoryServer.LocalFactory.createDriver(LocalFactory.java:23)
+at commons.BaseTest.getBrowserDriver(BaseTest.java:76)
+at com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_All.beforeClass(Level_23_Multiple_Environment_Owner_All.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -78,67 +86,24 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:4445
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-... 31 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-... 53 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Grid@6f7923a5]" started-at="2022-12-26T10:18:28Z" name="User_01_Register" finished-at="2022-12-26T10:18:28Z" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_All@6f7923a5]" started-at="2022-12-26T17:03:24Z" name="User_01_Register" finished-at="2022-12-26T17:03:24Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'ADMIN', ip: '172.31.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: driver.version: RemoteWebDriver]]>
+              <![CDATA[No enum constant commons.BrowserList.LOCAL]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'ADMIN', ip: '172.31.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-at commons.BaseTest.getBrowserDriver(BaseTest.java:266)
-at com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Grid.beforeClass(Level_23_Multiple_Environment_Owner_Grid.java:30)
+              <![CDATA[java.lang.IllegalArgumentException: No enum constant commons.BrowserList.LOCAL
+at java.base/java.lang.Enum.valueOf(Enum.java:240)
+at commons.BrowserList.valueOf(BrowserList.java:1)
+at factoryServer.LocalFactory.createDriver(LocalFactory.java:23)
+at commons.BaseTest.getBrowserDriver(BaseTest.java:76)
+at com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_All.beforeClass(Level_23_Multiple_Environment_Owner_All.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -165,67 +130,24 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:4445
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-... 31 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-... 53 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- User_01_Register -->
-        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Grid@6f7923a5]" started-at="2022-12-26T10:18:28Z" name="User_02_Login" finished-at="2022-12-26T10:18:28Z" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_All@6f7923a5]" started-at="2022-12-26T17:03:24Z" name="User_02_Login" finished-at="2022-12-26T17:03:24Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'ADMIN', ip: '172.31.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: driver.version: RemoteWebDriver]]>
+              <![CDATA[No enum constant commons.BrowserList.LOCAL]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'ADMIN', ip: '172.31.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-at commons.BaseTest.getBrowserDriver(BaseTest.java:266)
-at com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Grid.beforeClass(Level_23_Multiple_Environment_Owner_Grid.java:30)
+              <![CDATA[java.lang.IllegalArgumentException: No enum constant commons.BrowserList.LOCAL
+at java.base/java.lang.Enum.valueOf(Enum.java:240)
+at commons.BrowserList.valueOf(BrowserList.java:1)
+at factoryServer.LocalFactory.createDriver(LocalFactory.java:23)
+at commons.BaseTest.getBrowserDriver(BaseTest.java:76)
+at com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_All.beforeClass(Level_23_Multiple_Environment_Owner_All.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -252,67 +174,24 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:4445
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-... 31 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-... 53 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- User_02_Login -->
-        <test-method signature="User_03_My_Account()[pri:0, instance:com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Grid@6f7923a5]" started-at="2022-12-26T10:18:28Z" name="User_03_My_Account" finished-at="2022-12-26T10:18:28Z" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+        <test-method signature="User_03_My_Account()[pri:0, instance:com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_All@6f7923a5]" started-at="2022-12-26T17:03:24Z" name="User_03_My_Account" finished-at="2022-12-26T17:03:24Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'ADMIN', ip: '172.31.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: driver.version: RemoteWebDriver]]>
+              <![CDATA[No enum constant commons.BrowserList.LOCAL]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'ADMIN', ip: '172.31.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-at commons.BaseTest.getBrowserDriver(BaseTest.java:266)
-at com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Grid.beforeClass(Level_23_Multiple_Environment_Owner_Grid.java:30)
+              <![CDATA[java.lang.IllegalArgumentException: No enum constant commons.BrowserList.LOCAL
+at java.base/java.lang.Enum.valueOf(Enum.java:240)
+at commons.BrowserList.valueOf(BrowserList.java:1)
+at factoryServer.LocalFactory.createDriver(LocalFactory.java:23)
+at commons.BaseTest.getBrowserDriver(BaseTest.java:76)
+at com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_All.beforeClass(Level_23_Multiple_Environment_Owner_All.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -339,49 +218,13 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:4445
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-... 31 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-... 53 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- User_03_My_Account -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Grid@6f7923a5]" started-at="2022-12-26T10:18:28Z" name="afterClass" finished-at="2022-12-26T10:18:28Z" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_All@6f7923a5]" started-at="2022-12-26T17:03:24Z" name="afterClass" finished-at="2022-12-26T17:03:24Z" duration-ms="1" status="FAIL">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Empty command]]>
@@ -390,8 +233,8 @@ at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:
               <![CDATA[java.lang.IllegalArgumentException: Empty command
 at java.base/java.lang.Runtime.exec(Runtime.java:407)
 at java.base/java.lang.Runtime.exec(Runtime.java:310)
-at commons.BaseTest.closeBrowserAndDriver(BaseTest.java:475)
-at com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Grid.afterClass(Level_23_Multiple_Environment_Owner_Grid.java:131)
+at commons.BaseTest.closeBrowserAndDriver(BaseTest.java:476)
+at com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_All.afterClass(Level_23_Multiple_Environment_Owner_All.java:133)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -424,7 +267,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_Grid -->
+      </class> <!-- com.nopcommerce.cloud.Level_23_Multiple_Environment_Owner_All -->
     </test> <!-- Run on Chrome -->
   </suite> <!-- NopCommerce - User -->
 </testng-results>
