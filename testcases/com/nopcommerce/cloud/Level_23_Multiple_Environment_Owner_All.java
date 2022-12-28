@@ -86,11 +86,11 @@ public class Level_23_Multiple_Environment_Owner_All extends BaseTest {
 		registerPage.clickToButtonByText(driver, "Register");
 
 		log.info("Register - Step 12: Verify Register Success Message is displayed");
-		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed...");
+		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 
 	}
 
-	@Test
+	// @Test
 	public void User_02_Login() {
 		log.info("Login - Step 01: Navigate to Login page");
 		homePage = registerPage.clickToLogoutLink();
@@ -111,7 +111,7 @@ public class Level_23_Multiple_Environment_Owner_All extends BaseTest {
 
 	}
 
-	@Test
+	// @Test
 	public void User_03_My_Account() {
 		log.info("MyAccount - Step 01: Navigate to My Account Page");
 		customerInfoPage = homePage.openMyAccountPage();

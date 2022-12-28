@@ -13,7 +13,8 @@ public class EdgeDriverManager implements BrowserFactory {
 
 	@Override
 	public WebDriver getBrowserDriver() {
-		if (!IS_OS_WINDOWS || !IS_OS_MAC) {
+
+		if (!IS_OS_WINDOWS && !IS_OS_MAC) {
 			throw new BrowserNotSupportedException("Edge is not support on " + System.getProperty("os.name"));
 		}
 
