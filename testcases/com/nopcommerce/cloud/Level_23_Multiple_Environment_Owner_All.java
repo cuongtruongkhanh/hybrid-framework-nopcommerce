@@ -45,6 +45,8 @@ public class Level_23_Multiple_Environment_Owner_All extends BaseTest {
 		year = userDataMapper.getYear();
 		companyName = userDataMapper.getCompanyName();
 
+		System.out.printf("Parallel: %s - id: %d \n", Thread.currentThread().getName(), Thread.currentThread().getId());
+
 	}
 
 	@Test
