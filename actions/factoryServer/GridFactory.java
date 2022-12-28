@@ -13,7 +13,7 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import commons.BrowserList;
+import factoryBrowser.BrowserList;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class GridFactory {

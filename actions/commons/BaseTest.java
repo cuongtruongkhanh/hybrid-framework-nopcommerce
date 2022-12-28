@@ -30,6 +30,7 @@ import org.testng.annotations.BeforeSuite;
 
 import com.google.common.io.Files;
 
+import factoryBrowser.BrowserList;
 import factoryServer.BrowserstackFactory;
 import factoryServer.GridFactory;
 import factoryServer.LocalFactory;
